@@ -69,3 +69,93 @@ nav a {
 nav a:hover {
   color: #d9e7ff;
 }
+
+/* ===============================
+   Hero Section
+=============================== */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+}
+.hero-content {
+  max-width: 800px;
+}
+.hero h2 {
+  font-size: 3.5rem;
+
+  color: #1f2937;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===============================
+   Buttons
+=============================== */
+
+.btn {
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  font-size: 1rem;
+
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+
+.btn-primary {
+  background-color: #2563eb;
+
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+/* Secondary Button */
+
+.btn-secondary {
+  border: 2px solid #2563eb;
+
+  color: #2563eb;
+}
+
+.btn-secondary:hover {
+  background-color: #2563eb;
+
+  color: white;
+}
