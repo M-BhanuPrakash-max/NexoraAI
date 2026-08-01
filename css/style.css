@@ -45,3 +45,27 @@ p {
   font-size: 1.2rem;
   color: #4b5563;
 }
+
+/* ===============================
+   Navigation
+=============================== */
+
+nav {
+  background-color: #2866eb;
+  padding: 15px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+nav a:hover {
+  color: #d9e7ff;
+}
