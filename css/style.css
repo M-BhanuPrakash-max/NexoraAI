@@ -243,6 +243,9 @@ nav a:hover {
     grid-template-columns: 1fr;
   }
 
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
   .hero h2 {
     font-size: 2.5rem;
   }
@@ -250,4 +253,58 @@ nav a:hover {
   .section-title h2 {
     font-size: 2rem;
   }
+}
+
+/* =====================================
+   Featured AI Tools
+===================================== */
+
+.featured-tools {
+  padding: 100px 8%;
+
+  background: #f8fafc;
+}
+
+.tools-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-top: 60px;
+}
+
+.tool-card {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.tool-card h3 {
+  font-size: 1.5rem;
+
+  color: #1f2937;
+
+  margin-bottom: 15px;
+}
+
+.tool-card p {
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  margin-bottom: 25px;
 }
