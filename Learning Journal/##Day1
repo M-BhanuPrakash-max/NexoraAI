@@ -1,5 +1,17 @@
-Learned HTML Structure
-Learned CSS basics
-Created Navigationbar
-Learned Flexbox
-Used Git for commits
+Day 1
+HTML basics
+CSS basics
+Folder structure
+Git
+Day 2
+Navigation Bar -gives Navigation
+Hero Section - main Section
+Reusable Buttons - can be used many times
+Day 3
+CSS Grid = arranges in order like 2 things in a line home insert
+Grid Columns= gives Columns to the grids one below the other
+Cards - clickable things which lead to new page
+Shadows = gives shadow effect to the cards
+Hover Effects - gives transition effects every time the cursor enters or leaves the card
+Transitions = takes time for the effect
+Responsive Design - adjusts according to the device ( mobile,pc)
