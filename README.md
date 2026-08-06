@@ -54,19 +54,46 @@ NexoraAI/
 
 ## 🚧 Current Status
 
-Version 1.0
+Version 1.0 – Homepage Development
 
-✅ Homepage Started
+## Features Completed
 
-✅ Navigation Completed
+### ✅ Milestone 1
 
-⬜ Hero Section
+- Project setup
+- Folder structure
+- HTML, CSS and JavaScript connected
+- Git initialized
 
-⬜ Featured AI Tools
+### ✅ Milestone 2
 
-⬜ Articles
+- Website header
+- Navigation bar
 
-⬜ Footer
+### ✅ Milestone 3
+
+- Hero section
+- Call-to-action button
+
+### ✅ Feature 4
+
+- Services section
+- Responsive service cards
+
+### ✅ Feature 5
+
+- Featured AI Tools section
+- Responsive tool cards
+
+### ✅ Feature 6
+
+- Latest AI Articles section
+- Article cards
+
+### ✅ Feature 7
+
+- Why Choose Nexora AI section
+- Feature cards
 
 ---
 
@@ -105,3 +132,8 @@ This project is being built from scratch as part of a 15-day web development cha
 ## 📌 Author
 
 Nexora AI
+
+
+**Project Started:** August 2026
+
+**Current Version:** v1.0 (Homepage Under Development)

@@ -119,7 +119,7 @@ nav a:hover {
 =============================== */
 
 .btn {
-  display: inline-block;
+  display: block;
 
   padding: 15px 30px;
 
@@ -404,4 +404,87 @@ nav a:hover {
 .why-card p {
   color: #555;
   line-height: 1.8;
+}
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+.contact {
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.contact input,
+.contact textarea {
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact-info h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.contact-info p {
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.2);
+}
+
+.info-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.contact button {
+  width: fit-content;
+  padding: 15px 35px;
 }
