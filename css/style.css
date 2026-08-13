@@ -14,7 +14,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: f7f9fc;
+  background-color: #f7f9fc;
   color: #1f2937;
 }
 
@@ -487,4 +487,396 @@ nav a:hover {
 .contact button {
   width: fit-content;
   padding: 15px 35px;
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+footer {
+  background: #111827;
+  color: white;
+  padding: 70px 10% 90px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer-brand h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.footer-brand p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+.footer-links h3 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 50px;
+  padding-top: 25px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+/* =====================================
+   ARTICLE PAGE STYLES
+===================================== */
+
+.article-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 30px 45px;
+  text-align: center;
+}
+
+.article-category {
+  margin-bottom: 15px;
+  color: #2563eb;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.article-header h1 {
+  max-width: 1000px;
+  margin: 0 auto 25px;
+  color: #111827;
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.article-intro {
+  max-width: 850px;
+  margin: 0 auto 15px;
+  color: #4b5563;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* =====================================
+   ARTICLE CONTENT
+===================================== */
+
+.article-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px 30px 70px;
+}
+
+.article-section {
+  margin-bottom: 55px;
+}
+
+.article-section h2 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 750;
+}
+
+.article-section h3 {
+  margin: 35px 0 15px;
+  color: #172033;
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+.article-section p {
+  margin: 0 0 20px;
+  color: #374151;
+  font-size: 1.08rem;
+  line-height: 1.85;
+}
+
+/* =====================================
+   HIGHLIGHTED CONTENT
+===================================== */
+
+.article-highlight {
+  margin: 30px 0;
+  padding: 25px 30px;
+  border-left: 4px solid #2563eb;
+  border-radius: 8px;
+  background: #f3f6fb;
+}
+
+.article-highlight p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* =====================================
+   LISTS
+===================================== */
+
+.article-section ul,
+.article-section ol {
+  margin: 20px 0 25px;
+  padding-left: 28px;
+}
+
+.article-section li {
+  margin-bottom: 10px;
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* =====================================
+   TABLES
+===================================== */
+
+.article-section table {
+  width: 100%;
+  margin: 30px 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-size: 0.98rem;
+}
+
+.article-section th,
+.article-section td {
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+.article-section th {
+  background: #f3f6fb;
+  color: #111827;
+  font-weight: 700;
+}
+
+.article-section td {
+  color: #374151;
+}
+
+/* =====================================
+   BLOCKQUOTES
+===================================== */
+
+.article-section blockquote {
+  margin: 30px 0;
+  padding: 20px 25px;
+  border-left: 4px solid #2563eb;
+  background: #f8fafc;
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* =====================================
+   CODE / WORKFLOW BLOCKS
+===================================== */
+
+.article-section pre {
+  margin: 30px 0;
+  padding: 22px;
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #111827;
+  color: #f9fafb;
+  line-height: 1.7;
+}
+
+.article-section code {
+  font-family: Consolas, Monaco, monospace;
+}
+
+/* =====================================
+   RELATED ARTICLES
+===================================== */
+
+.related-articles {
+  margin-top: 20px;
+  padding: 35px;
+  border-radius: 12px;
+  background: #f3f6fb;
+}
+
+.related-articles h2 {
+  margin: 0 0 15px;
+  color: #111827;
+  font-size: 1.8rem;
+}
+
+.related-articles p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.related-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.related-article-card {
+  display: block;
+  padding: 22px;
+  background: #ffffff;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.related-article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.related-article-card h3 {
+  margin: 0 0 10px;
+  color: #1f2937;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.related-article-card p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .related-articles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =====================================
+   ARTICLE FOOTER
+===================================== */
+
+body > footer {
+  margin-top: 0;
+}
+
+/* =====================================
+   MOBILE RESPONSIVENESS
+===================================== */
+
+@media (max-width: 768px) {
+  .article-header {
+    padding: 45px 20px 35px;
+  }
+
+  .article-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .article-intro {
+    font-size: 1.05rem;
+  }
+
+  .article-container {
+    padding: 15px 20px 50px;
+  }
+
+  .article-section {
+    margin-bottom: 42px;
+  }
+
+  .article-section h2 {
+    font-size: 1.65rem;
+  }
+
+  .article-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .article-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-highlight {
+    padding: 20px;
+  }
+
+  .article-section table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .related-articles {
+    padding: 25px;
+  }
+}
+
+/* Article images */
+.article-hero {
+  width: 100%;
+  margin: 2rem 0 3rem;
+  overflow: hidden;
+}
+
+.article-hero img,
+.article-section img {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 12px;
+}
+
+.article-image {
+  width: 100%;
+  margin: 35px auto;
+}
+
+.article-image img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
 }

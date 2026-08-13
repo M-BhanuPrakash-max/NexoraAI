@@ -95,6 +95,40 @@ Version 1.0 – Homepage Development
 - Why Choose Nexora AI section
 - Feature cards
 
+### ✅ Feature 8 – Contact Section
+
+### Added
+
+- Responsive contact section
+- Contact form with:
+  - Name field
+  - Email field
+  - Message field
+  - Send Message button
+- Business email information card
+- Response time information card
+- Suggestions information card
+
+### Technologies Used
+
+- HTML5 Forms
+- CSS Grid
+- CSS Flexbox
+- Responsive Design
+- CSS Transitions & Hover Effects
+
+### Concepts Learned
+
+- Difference between Grid and Flexbox
+- Building responsive form layouts
+- Organizing information using cards
+- Styling form elements
+- Creating reusable card components
+
+## Feature 9
+
+- Professional Footer
+
 ---
 
 ## 📅 Development Progress
@@ -132,7 +166,6 @@ This project is being built from scratch as part of a 15-day web development cha
 ## 📌 Author
 
 Nexora AI
-
 
 **Project Started:** August 2026
 
