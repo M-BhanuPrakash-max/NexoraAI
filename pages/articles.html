@@ -45,12 +45,35 @@
           Explore our practical guides and learn how to use AI more effectively.
         </p>
 
+        <div class="article-filters">
+          <button class="filter-button active" data-category="all">All</button>
+
+          <button class="filter-button" data-category="ai-tools">
+            AI Tools
+          </button>
+
+          <button class="filter-button" data-category="ai-study">
+            AI Study
+          </button>
+
+          <button class="filter-button" data-category="productivity">
+            Productivity
+          </button>
+
+          <button class="filter-button" data-category="programming">
+            Programming
+          </button>
+
+          <button class="filter-button" data-category="career">Career</button>
+        </div>
+
         <div class="related-articles-grid">
           <!-- Published Article -->
 
           <a
             href="../articles/perfect-ai-study-system.html"
             class="related-article-card"
+            data-category="ai-study"
           >
             <h3>The Perfect AI Study System: A Complete Guide for Students</h3>
 
@@ -59,7 +82,7 @@
 
           <!-- Upcoming Article -->
 
-          <div class="related-article-card">
+          <div class="related-article-card" data-category="ai-tools">
             <h3>10 Best Free AI Websites Every Student Should Know</h3>
 
             <p>Coming soon</p>
@@ -67,7 +90,7 @@
 
           <!-- Upcoming Article -->
 
-          <div class="related-article-card">
+          <div class="related-article-card" data-category="ai-tools">
             <h3>7 Smart AI Tools for Serious Students</h3>
 
             <p>Coming soon</p>
@@ -75,7 +98,7 @@
 
           <!-- Upcoming Article -->
 
-          <div class="related-article-card">
+          <div class="related-article-card" data-category="ai-tools">
             <h3>The Ultimate AI Student Toolkit</h3>
 
             <p>Coming soon</p>
@@ -91,5 +114,6 @@
     <footer>
       <p>© 2026 Nexora AI. All Rights Reserved.</p>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
