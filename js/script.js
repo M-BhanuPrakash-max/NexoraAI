@@ -36,3 +36,24 @@ filterButtons.forEach((button) => {
     });
   });
 });
+
+// ---------SEARCH SECTION OF ARTICLES-------//
+const searchInput = document.querySelector("#article-search-input");
+searchInput.addEventListener("input", function () {
+  const searchTerm = searchInput.value
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+
+  for (let i = 0; i < articleCards.length; i++) {
+    const heading = articleCards[i].querySelector("h3");
+
+    const title = heading.textContent.toLowerCase();
+
+    if (title.includes(searchTerm)) {
+      articleCards[i].style.display = "";
+    } else {
+      articleCards[i].style.display = "none";
+    }
+  }
+});
