@@ -12,10 +12,11 @@ console.log("Welcome to your web development journey!");
 
 const filterButtons = document.querySelectorAll(".filter-button");
 const articleCards = document.querySelectorAll(".related-article-card");
-
+const noResultsMessage = document.querySelector("#no-results-message");
+let selectedCategory = "all";
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const selectedCategory = button.dataset.category;
+    selectedCategory = button.dataset.category;
 
     // Update active button
     filterButtons.forEach((btn) => {
@@ -37,23 +38,43 @@ filterButtons.forEach((button) => {
   });
 });
 
-// ---------SEARCH SECTION OF ARTICLES-------//
+// ---------INPUT SEARCH SECTION OF ARTICLES-------//
+// --------- INPUT SEARCH SECTION OF ARTICLES ------- //
+
 const searchInput = document.querySelector("#article-search-input");
-searchInput.addEventListener("input", function () {
+
+function filterArticles() {
   const searchTerm = searchInput.value
     .toLowerCase()
     .trim()
     .replace(/\s+/g, " ");
 
+  let matchCount = 0;
+
   for (let i = 0; i < articleCards.length; i++) {
+    const articleCategory = articleCards[i].dataset.category;
+
     const heading = articleCards[i].querySelector("h3");
 
     const title = heading.textContent.toLowerCase();
 
-    if (title.includes(searchTerm)) {
+    if (
+      (selectedCategory === "all" || articleCategory === selectedCategory) &&
+      title.includes(searchTerm)
+    ) {
       articleCards[i].style.display = "";
+      matchCount++;
     } else {
       articleCards[i].style.display = "none";
     }
   }
-});
+
+  // Check after ALL articles have been checked
+  if (matchCount === 0 && searchTerm !== "") {
+    noResultsMessage.style.display = "block";
+  } else {
+    noResultsMessage.style.display = "none";
+  }
+}
+
+searchInput.addEventListener("input", filterArticles);

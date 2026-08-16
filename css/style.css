@@ -914,3 +914,9 @@ body > footer {
   border-color: #2563eb;
   color: #ffffff;
 }
+
+/* No search results message */
+
+#no-results-message {
+  display: none;
+}
