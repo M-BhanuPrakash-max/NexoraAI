@@ -77,4 +77,49 @@ function filterArticles() {
   }
 }
 
-searchInput.addEventListener("input", filterArticles);
+if (searchInput) {
+  searchInput.addEventListener("input", filterArticles);
+}
+
+// =========================================
+// Reading Progress Bar
+// =========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+  const readingProgress = document.querySelector("#reading-progress");
+
+  console.log("Reading progress element:", readingProgress);
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const documentHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+
+    const scrollPercentage = (scrollTop / documentHeight) * 100;
+
+    readingProgress.style.width = `${scrollPercentage}%`;
+  });
+});
+
+// =========================================
+// Back to Top Button
+// =========================================
+
+const backToTop = document.querySelector("#back-to-top");
+
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTop.style.display = "flex";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}

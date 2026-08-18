@@ -928,3 +928,84 @@ body > footer {
 #no-results-message {
   display: none;
 }
+
+/* =========================================
+   Table of Contents
+   ========================================= */
+
+.article-toc {
+  margin: 40px 0;
+  padding: 28px 32px;
+  background: #f5f8ff;
+  border: 1px solid #dbe5ff;
+  border-radius: 12px;
+}
+
+.article-toc h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.article-toc li {
+  margin: 8px 0;
+  padding-left: 4px;
+}
+
+.article-toc a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.article-toc a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   Reading Progress Bar
+   ========================================= */
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #2563eb;
+  z-index: 9999;
+  transition: width 0.1s ease;
+}
+
+/* =========================================
+   Back to Top Button
+   ========================================= */
+
+#back-to-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#back-to-top:hover {
+  background: #1d4ed8;
+}
