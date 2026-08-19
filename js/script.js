@@ -123,3 +123,70 @@ if (backToTop) {
     });
   });
 }
+
+// =========================================
+// Automatic Reading Time
+// =========================================
+
+const readingTime = document.querySelector("#reading-time");
+const articleSections = document.querySelectorAll(".article-section");
+
+if (readingTime && articleSections.length > 0) {
+  let articleText = "";
+
+  articleSections.forEach((section) => {
+    articleText += section.innerText + " ";
+  });
+
+  const wordCount = articleText.trim().split(/\s+/).length;
+  const wordsPerMinute = 200;
+  const minutes = Math.max(1, Math.ceil(wordCount / wordsPerMinute));
+
+  readingTime.textContent = `${minutes} min read`;
+}
+
+// =========================================
+// Article Share
+// =========================================
+
+const shareArticle = document.querySelector("#share-article");
+const copyArticleLink = document.querySelector("#copy-article-link");
+
+if (shareArticle) {
+  shareArticle.addEventListener("click", async () => {
+    const shareData = {
+      title: document.title,
+      text: "The Perfect AI Study System: A Complete Guide for Students",
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          console.error("Share failed:", error);
+        }
+      }
+    } else {
+      await navigator.clipboard.writeText(window.location.href);
+      shareArticle.textContent = "Link Copied!";
+
+      setTimeout(() => {
+        shareArticle.textContent = "Share";
+      }, 2000);
+    }
+  });
+}
+
+if (copyArticleLink) {
+  copyArticleLink.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(window.location.href);
+
+    copyArticleLink.textContent = "Copied!";
+
+    setTimeout(() => {
+      copyArticleLink.textContent = "Copy Link";
+    }, 2000);
+  });
+}
