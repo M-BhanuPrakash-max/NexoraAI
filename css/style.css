@@ -636,6 +636,25 @@ footer {
 }
 
 /* =====================================
+   ARTICLE TABLE WRAPPER
+===================================== */
+
+.table-wrapper {
+  width: 100%;
+  margin: 30px 0;
+  overflow-x: auto;
+}
+/* =====================================
+   ARTICLE SECTION DIVIDERS
+===================================== */
+
+.article-section hr {
+  margin: 40px 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* =====================================
    HIGHLIGHTED CONTENT
 ===================================== */
 
@@ -858,32 +877,21 @@ body > footer {
   }
 }
 
-/* Article images */
-.article-hero {
+/* =====================================
+   UNIVERSAL ARTICLE IMAGES
+===================================== */
+
+.article-content-image {
   width: 100%;
-  margin: 2rem 0 3rem;
-  overflow: hidden;
+  max-width: 850px;
+  margin: 40px auto;
+  text-align: center;
 }
 
-.article-hero img,
-.article-section img {
+.article-content-image img {
   display: block;
   width: 100%;
-  max-width: 1100px;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 12px;
-}
-
-.article-image {
-  width: 100%;
-  margin: 35px auto;
-}
-
-.article-image img {
-  display: block;
-  width: 100%;
-  max-width: 900px;
+  max-width: 850px;
   height: auto;
   margin: 0 auto;
   border-radius: 12px;

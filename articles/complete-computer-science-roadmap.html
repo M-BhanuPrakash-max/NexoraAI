@@ -40,7 +40,10 @@
       content="https://nexoraai.com/articles/complete-computer-science-roadmap.html"
     />
 
-    <!-- OG image will be added after Article #2 images are prepared -->
+    <meta
+      property="og:image"
+      content="../assets/images/articles/complete-computer-science-roadmap/complete-computer-science-roadmap-hero.png"
+    />
 
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -54,7 +57,10 @@
       content="A practical computer science roadmap for beginners covering programming, DSA, development, projects, internships and software careers."
     />
 
-    <!-- Twitter image will be added after Article #2 images are prepared -->
+    <meta
+      name="twitter:image"
+      content="../assets/images/articles/complete-computer-science-roadmap/computer-science-roadmap-skills.png"
+    />
 
     <script type="application/ld+json">
       {
@@ -62,6 +68,7 @@
         "@type": "Article",
         "headline": "The Complete Computer Science Roadmap: From Beginner to Job-Ready",
         "description": "A practical computer science roadmap for beginners covering programming, DSA, development, projects, internships and software careers.",
+        "image": "https://nexoraai.com/assets/images/articles/complete-computer-science-roadmap/complete-computer-science-roadmap-hero.png",
         "author": {
           "@type": "Organization",
           "name": "Nexora AI"
@@ -102,7 +109,7 @@
 
       <h1>The Complete Computer Science Roadmap: From Beginner to Job-Ready</h1>
 
-      <p class="article-subtitle">
+      <p class="article-intro">
         A practical roadmap for learning computer science, building software
         skills, creating projects, preparing for internships, and progressing
         toward a software development career.
@@ -116,1047 +123,1101 @@
         <span>20 min read</span>
       </div>
     </header>
-    <!-- =========================================
+
+    <figure class="article-content-image">
+      <img
+        src="../assets/images/articles/complete-computer-science-roadmap/complete-computer-science-roadmap-hero.png"
+        alt="Computer science learning roadmap from programming fundamentals to a software developer career"
+        loading="eager"
+      />
+    </figure>
+    <main class="article-container">
+      <article>
+        <!-- =========================================
      Table of Contents
 ========================================= -->
 
-    <nav class="article-toc" aria-label="Table of contents">
-      <h2>Table of Contents</h2>
+        <nav class="article-toc" aria-label="Table of contents">
+          <h2>Table of Contents</h2>
 
-      <ol>
-        <li>
-          <a href="#roadmap">Quick Answer: The Computer Science Roadmap</a>
-        </li>
-        <li>
-          <a href="#problems">What This Roadmap Is Actually Trying to Solve</a>
-        </li>
-        <li>
-          <a href="#programming"> Start With Programming Fundamentals</a>
-        </li>
-        <li><a href="#problem-solving"> Learn Problem Solving</a></li>
-        <li><a href="#oop"> Learn Object-Oriented Programming</a></li>
-        <li><a href="#dsa"> Learn Data Structures and Algorithms</a></li>
-        <li><a href="#git"> Learn Git and a Development Workflow</a></li>
-        <li><a href="#sql"> Learn SQL and Database Fundamentals</a></li>
-        <li><a href="#development-path"> Choose One Development Path</a></li>
-        <li>
-          <a href="#apis-backend"> Learn APIs and Backend Development</a>
-        </li>
-        <li><a href="#operating-systems"> Learn Operating Systems</a></li>
-        <li><a href="#networks"> Learn Computer Networks</a></li>
-        <li>
-          <a href="#testing-debugging"> Learn Testing and Debugging</a>
-        </li>
-        <li><a href="#deployment"> Learn Deployment</a></li>
-        <li>
-          <a href="#projects"> Build Projects Throughout the Roadmap</a>
-        </li>
-        <li>
-          <a href="#project-progress"> Build Projects That Show Progress</a>
-        </li>
-        <li><a href="#portfolio"> Prepare Your Portfolio and GitHub</a></li>
-        <li><a href="#resume"> Prepare Your Resume</a></li>
-        <li><a href="#internships"> Start Preparing for Internships</a></li>
-        <li><a href="#interviews"> Prepare for Technical Interviews</a></li>
-        <li><a href="#not-yet">What You Should NOT Learn Yet</a></li>
-        <li>
-          <a href="#recommended-progression">The Recommended Progression</a>
-        </li>
-        <li><a href="#complete-example">A Complete Example</a></li>
-        <li><a href="#honest-take">Our Honest Take</a></li>
-        <li><a href="#pros-limitations">Pros &amp; Limitations</a></li>
-        <li><a href="#alternatives">Alternatives &amp; Comparisons</a></li>
-        <li><a href="#faq">Frequently Asked Questions</a></li>
-        <li><a href="#final-verdict">Final Verdict</a></li>
-      </ol>
-    </nav>
-    <!-- =========================================
+          <ol>
+            <li>
+              <a href="#roadmap">Quick Answer: The Computer Science Roadmap</a>
+            </li>
+            <li>
+              <a href="#problems"
+                >What This Roadmap Is Actually Trying to Solve</a
+              >
+            </li>
+            <li>
+              <a href="#programming"> Start With Programming Fundamentals</a>
+            </li>
+            <li><a href="#problem-solving"> Learn Problem Solving</a></li>
+            <li><a href="#oop"> Learn Object-Oriented Programming</a></li>
+            <li><a href="#dsa"> Learn Data Structures and Algorithms</a></li>
+            <li><a href="#git"> Learn Git and a Development Workflow</a></li>
+            <li><a href="#sql"> Learn SQL and Database Fundamentals</a></li>
+            <li>
+              <a href="#development-path"> Choose One Development Path</a>
+            </li>
+            <li>
+              <a href="#apis-backend"> Learn APIs and Backend Development</a>
+            </li>
+            <li><a href="#operating-systems"> Learn Operating Systems</a></li>
+            <li><a href="#networks"> Learn Computer Networks</a></li>
+            <li>
+              <a href="#testing-debugging"> Learn Testing and Debugging</a>
+            </li>
+            <li><a href="#deployment"> Learn Deployment</a></li>
+            <li>
+              <a href="#projects"> Build Projects Throughout the Roadmap</a>
+            </li>
+            <li>
+              <a href="#project-progress"> Build Projects That Show Progress</a>
+            </li>
+            <li><a href="#portfolio"> Prepare Your Portfolio and GitHub</a></li>
+            <li><a href="#resume"> Prepare Your Resume</a></li>
+            <li><a href="#internships"> Start Preparing for Internships</a></li>
+            <li><a href="#interviews"> Prepare for Technical Interviews</a></li>
+            <li><a href="#not-yet">What You Should NOT Learn Yet</a></li>
+            <li>
+              <a href="#recommended-progression">The Recommended Progression</a>
+            </li>
+            <li><a href="#complete-example">A Complete Example</a></li>
+            <li><a href="#honest-take">Our Honest Take</a></li>
+            <li><a href="#pros-limitations">Pros &amp; Limitations</a></li>
+            <li><a href="#alternatives">Alternatives &amp; Comparisons</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#final-verdict">Final Verdict</a></li>
+          </ol>
+        </nav>
+        <!-- =========================================
      Quick Answer
 ========================================= -->
 
-    <section id="roadmap">
-      <h2>Quick Answer: The Computer Science Roadmap</h2>
+        <section id="roadmap" class="article-section">
+          <h2>1. Quick Answer: The Computer Science Roadmap</h2>
 
-      <p>A practical progression looks like this:</p>
+          <p>A practical progression looks like this:</p>
 
-      <p>
-        <strong>
-          Programming Fundamentals → Problem Solving → OOP → DSA → Git → SQL
-          &amp; DBMS → Development → APIs &amp; Backend → OS &amp; Networks →
-          Testing &amp; Debugging → Deployment → Projects → Portfolio →
-          Internships → Interviews
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Programming Fundamentals → Problem Solving → OOP → DSA → Git → SQL
+              &amp; DBMS → Development → APIs &amp; Backend → OS &amp; Networks
+              → Testing &amp; Debugging → Deployment → Projects → Portfolio →
+              Internships → Interviews
+            </strong>
+          </p>
 
-      <p>
-        You don't have to completely master one stage before touching the next.
-        Projects and practice should run alongside the roadmap.
-      </p>
+          <p>
+            You don't have to completely master one stage before touching the
+            next. Projects and practice should run alongside the roadmap.
+          </p>
 
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th>Stage</th>
-              <th>Main goal</th>
-              <th>Readiness milestone</th>
-            </tr>
-          </thead>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Stage</th>
+                  <th>Main goal</th>
+                  <th>Readiness milestone</th>
+                </tr>
+              </thead>
 
-          <tbody>
-            <tr>
-              <td>1. Programming Fundamentals</td>
-              <td>Learn how to code</td>
-              <td>Write small programs independently</td>
-            </tr>
+              <tbody>
+                <tr>
+                  <td>1. Programming Fundamentals</td>
+                  <td>Learn how to code</td>
+                  <td>Write small programs independently</td>
+                </tr>
 
-            <tr>
-              <td>2. Problem Solving</td>
-              <td>Learn to approach unfamiliar problems</td>
-              <td>Break problems into steps before coding</td>
-            </tr>
+                <tr>
+                  <td>2. Problem Solving</td>
+                  <td>Learn to approach unfamiliar problems</td>
+                  <td>Break problems into steps before coding</td>
+                </tr>
 
-            <tr>
-              <td>3. OOP</td>
-              <td>Structure larger programs</td>
-              <td>Build a multi-class application</td>
-            </tr>
+                <tr>
+                  <td>3. OOP</td>
+                  <td>Structure larger programs</td>
+                  <td>Build a multi-class application</td>
+                </tr>
 
-            <tr>
-              <td>4. DSA</td>
-              <td>Develop algorithmic thinking</td>
-              <td>Solve common problems and explain your approach</td>
-            </tr>
+                <tr>
+                  <td>4. DSA</td>
+                  <td>Develop algorithmic thinking</td>
+                  <td>Solve common problems and explain your approach</td>
+                </tr>
 
-            <tr>
-              <td>5. Git</td>
-              <td>Track development work</td>
-              <td>Commit, branch and recover changes confidently</td>
-            </tr>
+                <tr>
+                  <td>5. Git</td>
+                  <td>Track development work</td>
+                  <td>Commit, branch and recover changes confidently</td>
+                </tr>
 
-            <tr>
-              <td>6. SQL &amp; DBMS</td>
-              <td>Work with persistent data</td>
-              <td>Design tables and write useful queries</td>
-            </tr>
+                <tr>
+                  <td>6. SQL &amp; DBMS</td>
+                  <td>Work with persistent data</td>
+                  <td>Design tables and write useful queries</td>
+                </tr>
 
-            <tr>
-              <td>7. Development Path</td>
-              <td>Build real applications</td>
-              <td>Complete a small application in your chosen area</td>
-            </tr>
+                <tr>
+                  <td>7. Development Path</td>
+                  <td>Build real applications</td>
+                  <td>Complete a small application in your chosen area</td>
+                </tr>
 
-            <tr>
-              <td>8. APIs &amp; Backend</td>
-              <td>Connect application components</td>
-              <td>Build and consume a basic API</td>
-            </tr>
+                <tr>
+                  <td>8. APIs &amp; Backend</td>
+                  <td>Connect application components</td>
+                  <td>Build and consume a basic API</td>
+                </tr>
 
-            <tr>
-              <td>9. OS &amp; Networks</td>
-              <td>Understand the environment software runs in</td>
-              <td>Explain core concepts and troubleshoot basic issues</td>
-            </tr>
+                <tr>
+                  <td>9. OS &amp; Networks</td>
+                  <td>Understand the environment software runs in</td>
+                  <td>Explain core concepts and troubleshoot basic issues</td>
+                </tr>
 
-            <tr>
-              <td>10. Testing &amp; Debugging</td>
-              <td>Make software reliable</td>
-              <td>Find, reproduce and fix bugs systematically</td>
-            </tr>
+                <tr>
+                  <td>10. Testing &amp; Debugging</td>
+                  <td>Make software reliable</td>
+                  <td>Find, reproduce and fix bugs systematically</td>
+                </tr>
 
-            <tr>
-              <td>11. Deployment</td>
-              <td>Make applications usable outside your laptop</td>
-              <td>Deploy a working project</td>
-            </tr>
+                <tr>
+                  <td>11. Deployment</td>
+                  <td>Make applications usable outside your laptop</td>
+                  <td>Deploy a working project</td>
+                </tr>
 
-            <tr>
-              <td>12. Projects</td>
-              <td>Turn knowledge into evidence</td>
-              <td>Complete projects you can explain independently</td>
-            </tr>
+                <tr>
+                  <td>12. Projects</td>
+                  <td>Turn knowledge into evidence</td>
+                  <td>Complete projects you can explain independently</td>
+                </tr>
 
-            <tr>
-              <td>13. Portfolio &amp; Resume</td>
-              <td>Present your abilities</td>
-              <td>Clearly demonstrate your strongest work</td>
-            </tr>
+                <tr>
+                  <td>13. Portfolio &amp; Resume</td>
+                  <td>Present your abilities</td>
+                  <td>Clearly demonstrate your strongest work</td>
+                </tr>
 
-            <tr>
-              <td>14. Internship Preparation</td>
-              <td>Become application-ready</td>
-              <td>Apply and explain your skills and projects</td>
-            </tr>
+                <tr>
+                  <td>14. Internship Preparation</td>
+                  <td>Become application-ready</td>
+                  <td>Apply and explain your skills and projects</td>
+                </tr>
 
-            <tr>
-              <td>15. Interview Preparation</td>
-              <td>Demonstrate your knowledge</td>
-              <td>Handle coding, technical and behavioral questions</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+                <tr>
+                  <td>15. Interview Preparation</td>
+                  <td>Demonstrate your knowledge</td>
+                  <td>Handle coding, technical and behavioral questions</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-      <p>
-        The important thing isn't completing every bullet in this table. It's
-        reaching the <strong>capability described by each milestone</strong>.
-      </p>
-    </section>
-    <!-- =========================================
+          <figure class="article-content-image">
+            <img
+              src="../assets/images/articles/complete-computer-science-roadmap/computer-science-roadmap-skills.png"
+              alt="Computer science roadmap from skills and projects to portfolio, internships, technical interviews, and a software developer career"
+              loading="lazy"
+            />
+          </figure>
+
+          <p>
+            The important thing isn't completing every bullet in this table.
+            It's reaching the
+            <strong>capability described by each milestone</strong>.
+          </p>
+        </section>
+        <!-- =========================================
      What This Roadmap Is Actually Trying to Solve
 ========================================= -->
 
-    <section id="problems">
-      <h2>What This Roadmap Is Actually Trying to Solve</h2>
+        <section id="problems" class="article-section">
+          <h2>What This Roadmap Is Actually Trying to Solve</h2>
 
-      <p>There are three common problems beginners face.</p>
+          <p>There are three common problems beginners face.</p>
 
-      <h3>
-        Problem 1: Learning technologies without understanding fundamentals
-      </h3>
+          <h3>
+            Problem 1: Learning technologies without understanding fundamentals
+          </h3>
 
-      <p>A beginner might jump straight into:</p>
+          <p>A beginner might jump straight into:</p>
 
-      <p>
-        <strong>React → Node.js → MongoDB → Docker → AWS</strong>
-      </p>
+          <p>
+            <strong>React → Node.js → MongoDB → Docker → AWS</strong>
+          </p>
 
-      <p>
-        without being comfortable writing a basic program, understanding
-        functions, debugging code or working with SQL.
-      </p>
+          <p>
+            without being comfortable writing a basic program, understanding
+            functions, debugging code or working with SQL.
+          </p>
 
-      <p>That creates a technology-heavy skill set with weak foundations.</p>
+          <p>
+            That creates a technology-heavy skill set with weak foundations.
+          </p>
 
-      <p>
-        Frameworks and tools change. Fundamental programming concepts remain
-        useful across languages and technologies.
-      </p>
+          <p>
+            Frameworks and tools change. Fundamental programming concepts remain
+            useful across languages and technologies.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Problem 2: Trying to learn everything at once</h3>
+          <h3>Problem 2: Trying to learn everything at once</h3>
 
-      <p>You might find a roadmap containing:</p>
+          <p>You might find a roadmap containing:</p>
 
-      <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>SQL</li>
-        <li>MongoDB</li>
-        <li>Docker</li>
-        <li>Kubernetes</li>
-        <li>AWS</li>
-        <li>Git</li>
-        <li>Linux</li>
-        <li>DSA</li>
-        <li>System Design</li>
-        <li>Machine Learning</li>
-      </ul>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>AWS</li>
+            <li>Git</li>
+            <li>Linux</li>
+            <li>DSA</li>
+            <li>System Design</li>
+            <li>Machine Learning</li>
+          </ul>
 
-      <p>and conclude:</p>
+          <p>and conclude:</p>
 
-      <blockquote>
-        <p>“I need to learn all of this.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“I need to learn all of this.”</p>
+          </blockquote>
 
-      <p>You don't.</p>
+          <p>You don't.</p>
 
-      <p>
-        A good roadmap should tell you <strong>what to postpone</strong>, not
-        just what to learn.
-      </p>
+          <p>
+            A good roadmap should tell you <strong>what to postpone</strong>,
+            not just what to learn.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Problem 3: Learning without building</h3>
+          <h3>Problem 3: Learning without building</h3>
 
-      <p>
-        You can finish dozens of tutorials and still struggle when someone asks:
-      </p>
+          <p>
+            You can finish dozens of tutorials and still struggle when someone
+            asks:
+          </p>
 
-      <blockquote>
-        <p>“Build something without following the tutorial.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“Build something without following the tutorial.”</p>
+          </blockquote>
 
-      <p>That's why projects appear throughout this roadmap.</p>
+          <p>That's why projects appear throughout this roadmap.</p>
 
-      <p>The objective isn't:</p>
+          <p>The objective isn't:</p>
 
-      <p>
-        <strong>Learn → Learn → Learn → Learn → Job</strong>
-      </p>
+          <p>
+            <strong>Learn → Learn → Learn → Learn → Job</strong>
+          </p>
 
-      <p>It is:</p>
+          <p>It is:</p>
 
-      <p>
-        <strong>
-          Learn → Practice → Build → Understand → Build something harder → Apply
-        </strong>
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            <strong>
+              Learn → Practice → Build → Understand → Build something harder →
+              Apply
+            </strong>
+          </p>
+        </section>
+        <figure class="article-content-image">
+          <img
+            src="../assets/images/articles/complete-computer-science-roadmap/computer-science-roadmap-career.png"
+            alt="Detailed computer science roadmap from programming fundamentals through internships and technical interviews"
+            loading="lazy"
+          />
+        </figure>
+
+        <section id="programming" class="article-section">
+          <h2>Start With Programming Fundamentals</h2>
+          <!-- =========================================
      1. Programming Fundamentals
 ========================================= -->
 
-    <section id="programming">
-      <h2>1. Start With Programming Fundamentals</h2>
+          <p>Programming is the foundation.</p>
 
-      <p>Programming is the foundation.</p>
+          <p>
+            Before worrying about frameworks or difficult interview problems,
+            you need to become comfortable giving a computer precise
+            instructions.
+          </p>
 
-      <p>
-        Before worrying about frameworks or difficult interview problems, you
-        need to become comfortable giving a computer precise instructions.
-      </p>
+          <p>Start with <strong>one programming language</strong>.</p>
 
-      <p>Start with <strong>one programming language</strong>.</p>
+          <p>Reasonable first choices include:</p>
 
-      <p>Reasonable first choices include:</p>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+          </ul>
 
-      <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>JavaScript</li>
-      </ul>
+          <p>There isn't one universally correct choice.</p>
 
-      <p>There isn't one universally correct choice.</p>
+          <h3>Choose based on your direction</h3>
 
-      <h3>Choose based on your direction</h3>
+          <p>
+            <strong>Python</strong> is a practical choice for general
+            programming, automation, data and AI-related paths.
+          </p>
 
-      <p>
-        <strong>Python</strong> is a practical choice for general programming,
-        automation, data and AI-related paths.
-      </p>
+          <p>
+            <strong>Java</strong> is a strong option for students interested in
+            object-oriented programming and Java-based backend development.
+          </p>
 
-      <p>
-        <strong>Java</strong> is a strong option for students interested in
-        object-oriented programming and Java-based backend development.
-      </p>
+          <p>
+            <strong>C++</strong> can be useful for students interested in
+            performance-oriented programming or competitive programming.
+          </p>
 
-      <p>
-        <strong>C++</strong> can be useful for students interested in
-        performance-oriented programming or competitive programming.
-      </p>
+          <p>
+            <strong>JavaScript</strong> is a natural choice if your immediate
+            goal is web development.
+          </p>
 
-      <p>
-        <strong>JavaScript</strong> is a natural choice if your immediate goal
-        is web development.
-      </p>
+          <p>The important rule is:</p>
 
-      <p>The important rule is:</p>
+          <blockquote>
+            <p>
+              <strong
+                >One language deeply is better than four languages
+                superficially.</strong
+              >
+            </p>
+          </blockquote>
 
-      <blockquote>
-        <p>
-          <strong
-            >One language deeply is better than four languages
-            superficially.</strong
-          >
-        </p>
-      </blockquote>
+          <p>
+            You can learn another language later when you have a reason to use
+            it.
+          </p>
 
-      <p>
-        You can learn another language later when you have a reason to use it.
-      </p>
+          <h3>What to learn first</h3>
 
-      <h3>What to learn first</h3>
+          <p>Your first programming stage should cover:</p>
 
-      <p>Your first programming stage should cover:</p>
+          <ul>
+            <li>Variables</li>
+            <li>Data types</li>
+            <li>Operators</li>
+            <li>Input and output</li>
+            <li>Conditional statements</li>
+            <li>Loops</li>
+            <li>Functions</li>
+            <li>Arrays or lists</li>
+            <li>Strings</li>
+            <li>Basic collections</li>
+            <li>Error handling</li>
+            <li>File handling</li>
+            <li>Basic debugging</li>
+          </ul>
 
-      <ul>
-        <li>Variables</li>
-        <li>Data types</li>
-        <li>Operators</li>
-        <li>Input and output</li>
-        <li>Conditional statements</li>
-        <li>Loops</li>
-        <li>Functions</li>
-        <li>Arrays or lists</li>
-        <li>Strings</li>
-        <li>Basic collections</li>
-        <li>Error handling</li>
-        <li>File handling</li>
-        <li>Basic debugging</li>
-      </ul>
+          <p>Don't rush through these simply because they look easy.</p>
 
-      <p>Don't rush through these simply because they look easy.</p>
+          <p>
+            Eventually, you should be able to look at a small problem and think:
+          </p>
 
-      <p>
-        Eventually, you should be able to look at a small problem and think:
-      </p>
+          <blockquote>
+            <p>“I know how to break this down and write the solution.”</p>
+          </blockquote>
 
-      <blockquote>
-        <p>“I know how to break this down and write the solution.”</p>
-      </blockquote>
+          <h3>Readiness milestone</h3>
 
-      <h3>Readiness milestone</h3>
+          <p>
+            You're ready to move forward when you can build small programs
+            without copying the implementation line by line.
+          </p>
 
-      <p>
-        You're ready to move forward when you can build small programs without
-        copying the implementation line by line.
-      </p>
+          <p>Examples:</p>
 
-      <p>Examples:</p>
+          <ul>
+            <li>Calculator</li>
+            <li>Number guessing game</li>
+            <li>Unit converter</li>
+            <li>Quiz application</li>
+            <li>Student marks calculator</li>
+            <li>Contact list</li>
+            <li>Basic command-line to-do application</li>
+          </ul>
 
-      <ul>
-        <li>Calculator</li>
-        <li>Number guessing game</li>
-        <li>Unit converter</li>
-        <li>Quiz application</li>
-        <li>Student marks calculator</li>
-        <li>Contact list</li>
-        <li>Basic command-line to-do application</li>
-      </ul>
+          <p>You don't need to build all of them.</p>
 
-      <p>You don't need to build all of them.</p>
-
-      <p>A few small programs that you genuinely understand are enough.</p>
-    </section>
-    <!-- =========================================
+          <p>A few small programs that you genuinely understand are enough.</p>
+        </section>
+        <!-- =========================================
      2. Problem Solving
 ========================================= -->
 
-    <section id="problem-solving">
-      <h2>2. Learn Problem Solving</h2>
+        <section id="problem-solving" class="article-section">
+          <h2>2. Learn Problem Solving</h2>
 
-      <p>Knowing syntax isn't the same as knowing how to program.</p>
+          <p>Knowing syntax isn't the same as knowing how to program.</p>
 
-      <p>Suppose someone asks:</p>
+          <p>Suppose someone asks:</p>
 
-      <blockquote>
-        <p>“Find the largest number in an array.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“Find the largest number in an array.”</p>
+          </blockquote>
 
-      <p>Knowing a <code>for</code> loop helps.</p>
+          <p>Knowing a <code>for</code> loop helps.</p>
 
-      <p>But the real skill is deciding:</p>
+          <p>But the real skill is deciding:</p>
 
-      <ol>
-        <li>What information do I need?</li>
-        <li>What should I track?</li>
-        <li>How should I move through the array?</li>
-        <li>What happens with an empty array?</li>
-        <li>What should happen with duplicate values?</li>
-      </ol>
+          <ol>
+            <li>What information do I need?</li>
+            <li>What should I track?</li>
+            <li>How should I move through the array?</li>
+            <li>What happens with an empty array?</li>
+            <li>What should happen with duplicate values?</li>
+          </ol>
 
-      <p>That's problem solving.</p>
+          <p>That's problem solving.</p>
 
-      <h3>Use a repeatable process</h3>
+          <h3>Use a repeatable process</h3>
 
-      <p>Before writing code:</p>
+          <p>Before writing code:</p>
 
-      <h4>Step 1: Understand the problem</h4>
+          <h4>Step 1: Understand the problem</h4>
 
-      <p>What exactly is being asked?</p>
+          <p>What exactly is being asked?</p>
 
-      <h4>Step 2: Identify the input</h4>
+          <h4>Step 2: Identify the input</h4>
 
-      <p>What information are you receiving?</p>
+          <p>What information are you receiving?</p>
 
-      <h4>Step 3: Identify the output</h4>
+          <h4>Step 3: Identify the output</h4>
 
-      <p>What must your program produce?</p>
+          <p>What must your program produce?</p>
 
-      <h4>Step 4: Work through an example</h4>
+          <h4>Step 4: Work through an example</h4>
 
-      <p>Solve a small example manually.</p>
+          <p>Solve a small example manually.</p>
 
-      <h4>Step 5: Design the logic</h4>
+          <h4>Step 5: Design the logic</h4>
 
-      <p>Write the solution in plain language or pseudocode.</p>
+          <p>Write the solution in plain language or pseudocode.</p>
 
-      <h4>Step 6: Code it</h4>
+          <h4>Step 6: Code it</h4>
 
-      <p>Only now should you write the implementation.</p>
+          <p>Only now should you write the implementation.</p>
 
-      <h4>Step 7: Test it</h4>
+          <h4>Step 7: Test it</h4>
 
-      <p>Try normal cases, edge cases and unexpected inputs.</p>
+          <p>Try normal cases, edge cases and unexpected inputs.</p>
 
-      <p>
-        This habit becomes particularly valuable when you reach DSA and
-        technical interviews.
-      </p>
+          <p>
+            This habit becomes particularly valuable when you reach DSA and
+            technical interviews.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>You don't need to solve difficult problems yet.</p>
+          <p>You don't need to solve difficult problems yet.</p>
 
-      <p>
-        You should be able to take an unfamiliar beginner-level problem, explain
-        your approach before coding, implement it and test the result without
-        immediately searching for the solution.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            You should be able to take an unfamiliar beginner-level problem,
+            explain your approach before coding, implement it and test the
+            result without immediately searching for the solution.
+          </p>
+        </section>
+        <!-- =========================================
      3. Object-Oriented Programming
 ========================================= -->
 
-    <section id="oop">
-      <h2>3. Learn Object-Oriented Programming</h2>
+        <section id="oop" class="article-section">
+          <h2>3. Learn Object-Oriented Programming</h2>
 
-      <p>
-        Once you're comfortable with basic programming, learn how to structure
-        larger programs.
-      </p>
+          <p>
+            Once you're comfortable with basic programming, learn how to
+            structure larger programs.
+          </p>
 
-      <p>
-        This is where <strong>Object-Oriented Programming (OOP)</strong> becomes
-        important.
-      </p>
+          <p>
+            This is where
+            <strong>Object-Oriented Programming (OOP)</strong> becomes
+            important.
+          </p>
 
-      <p>Core concepts include:</p>
+          <p>Core concepts include:</p>
 
-      <ul>
-        <li>Classes</li>
-        <li>Objects</li>
-        <li>Constructors</li>
-        <li>Encapsulation</li>
-        <li>Inheritance</li>
-        <li>Polymorphism</li>
-        <li>Abstraction</li>
-        <li>Interfaces where applicable</li>
-        <li>Composition</li>
-      </ul>
+          <ul>
+            <li>Classes</li>
+            <li>Objects</li>
+            <li>Constructors</li>
+            <li>Encapsulation</li>
+            <li>Inheritance</li>
+            <li>Polymorphism</li>
+            <li>Abstraction</li>
+            <li>Interfaces where applicable</li>
+            <li>Composition</li>
+          </ul>
 
-      <p>Don't learn these only as definitions.</p>
+          <p>Don't learn these only as definitions.</p>
 
-      <p>Ask:</p>
+          <p>Ask:</p>
 
-      <blockquote>
-        <p>“What problem does this concept solve?”</p>
-      </blockquote>
+          <blockquote>
+            <p>“What problem does this concept solve?”</p>
+          </blockquote>
 
-      <p>Imagine you're building a library-management system.</p>
+          <p>Imagine you're building a library-management system.</p>
 
-      <p>You might have:</p>
+          <p>You might have:</p>
 
-      <ul>
-        <li><code>Book</code></li>
-        <li><code>Student</code></li>
-        <li><code>Librarian</code></li>
-        <li><code>Library</code></li>
-        <li><code>Transaction</code></li>
-      </ul>
+          <ul>
+            <li><code>Book</code></li>
+            <li><code>Student</code></li>
+            <li><code>Librarian</code></li>
+            <li><code>Library</code></li>
+            <li><code>Transaction</code></li>
+          </ul>
 
-      <p>
-        Instead of putting everything into one enormous program, OOP provides
-        ways to organize related data and behavior.
-      </p>
+          <p>
+            Instead of putting everything into one enormous program, OOP
+            provides ways to organize related data and behavior.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>Build a small application containing multiple interacting classes.</p>
+          <p>
+            Build a small application containing multiple interacting classes.
+          </p>
 
-      <p>Examples:</p>
+          <p>Examples:</p>
 
-      <ul>
-        <li>Library management system</li>
-        <li>Bank account simulator</li>
-        <li>Student management system</li>
-        <li>Inventory system</li>
-      </ul>
+          <ul>
+            <li>Library management system</li>
+            <li>Bank account simulator</li>
+            <li>Student management system</li>
+            <li>Inventory system</li>
+          </ul>
 
-      <p>
-        You should be able to explain
-        <strong>why you created each class and how the objects interact</strong
-        >.
-      </p>
+          <p>
+            You should be able to explain
+            <strong
+              >why you created each class and how the objects interact</strong
+            >.
+          </p>
 
-      <p>
-        If you can only repeat definitions such as “polymorphism means...” but
-        cannot use the concepts in a project, spend more time practicing.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            If you can only repeat definitions such as “polymorphism means...”
+            but cannot use the concepts in a project, spend more time
+            practicing.
+          </p>
+        </section>
+        <!-- =========================================
      4. Data Structures and Algorithms
 ========================================= -->
 
-    <section id="dsa">
-      <h2>4. Learn Data Structures and Algorithms</h2>
+        <section id="dsa" class="article-section">
+          <h2>4. Learn Data Structures and Algorithms</h2>
 
-      <p>
-        Now you're ready for one of the most important parts of a computer
-        science roadmap:
-      </p>
+          <p>
+            Now you're ready for one of the most important parts of a computer
+            science roadmap:
+          </p>
 
-      <p>
-        <strong>Data Structures and Algorithms (DSA).</strong>
-      </p>
+          <p>
+            <strong>Data Structures and Algorithms (DSA).</strong>
+          </p>
 
-      <p>
-        DSA isn't only an interview subject. It teaches you how to represent
-        information and solve problems efficiently.
-      </p>
+          <p>
+            DSA isn't only an interview subject. It teaches you how to represent
+            information and solve problems efficiently.
+          </p>
 
-      <h3>Learn data structures progressively</h3>
+          <h3>Learn data structures progressively</h3>
 
-      <p>A sensible progression is:</p>
+          <p>A sensible progression is:</p>
 
-      <ol>
-        <li>Arrays</li>
-        <li>Strings</li>
-        <li>Linked Lists</li>
-        <li>Stacks</li>
-        <li>Queues</li>
-        <li>Hash Tables / Hash Maps</li>
-        <li>Trees</li>
-        <li>Heaps / Priority Queues</li>
-        <li>Graphs</li>
-      </ol>
+          <ol>
+            <li>Arrays</li>
+            <li>Strings</li>
+            <li>Linked Lists</li>
+            <li>Stacks</li>
+            <li>Queues</li>
+            <li>Hash Tables / Hash Maps</li>
+            <li>Trees</li>
+            <li>Heaps / Priority Queues</li>
+            <li>Graphs</li>
+          </ol>
 
-      <p>
-        Then explore more specialized structures when your goals require them.
-      </p>
+          <p>
+            Then explore more specialized structures when your goals require
+            them.
+          </p>
 
-      <h3>Learn algorithms alongside them</h3>
+          <h3>Learn algorithms alongside them</h3>
 
-      <p>Important areas include:</p>
+          <p>Important areas include:</p>
 
-      <ul>
-        <li>Searching</li>
-        <li>Sorting</li>
-        <li>Recursion</li>
-        <li>Two pointers</li>
-        <li>Sliding window</li>
-        <li>Hashing</li>
-        <li>Tree traversal</li>
-        <li>Graph traversal</li>
-        <li>Greedy algorithms</li>
-        <li>Dynamic programming</li>
-        <li>Backtracking</li>
-      </ul>
+          <ul>
+            <li>Searching</li>
+            <li>Sorting</li>
+            <li>Recursion</li>
+            <li>Two pointers</li>
+            <li>Sliding window</li>
+            <li>Hashing</li>
+            <li>Tree traversal</li>
+            <li>Graph traversal</li>
+            <li>Greedy algorithms</li>
+            <li>Dynamic programming</li>
+            <li>Backtracking</li>
+          </ul>
 
-      <p>Don't try to memorize hundreds of solutions.</p>
+          <p>Don't try to memorize hundreds of solutions.</p>
 
-      <p>Instead ask:</p>
+          <p>Instead ask:</p>
 
-      <blockquote>
-        <p><strong>Why does this solution work?</strong></p>
-      </blockquote>
+          <blockquote>
+            <p><strong>Why does this solution work?</strong></p>
+          </blockquote>
 
-      <p>and:</p>
+          <p>and:</p>
 
-      <blockquote>
-        <p>
-          <strong
-            >Why is this solution more efficient than another approach?</strong
-          >
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong
+                >Why is this solution more efficient than another
+                approach?</strong
+              >
+            </p>
+          </blockquote>
 
-      <h3>Learn complexity</h3>
+          <h3>Learn complexity</h3>
 
-      <p>You should gradually become comfortable with:</p>
+          <p>You should gradually become comfortable with:</p>
 
-      <ul>
-        <li>Time complexity</li>
-        <li>Space complexity</li>
-        <li>Big-O notation</li>
-      </ul>
+          <ul>
+            <li>Time complexity</li>
+            <li>Space complexity</li>
+            <li>Big-O notation</li>
+          </ul>
 
-      <p>
-        You don't need to turn every beginner exercise into a theoretical
-        analysis exercise.
-      </p>
+          <p>
+            You don't need to turn every beginner exercise into a theoretical
+            analysis exercise.
+          </p>
 
-      <p>But you should develop the habit of asking:</p>
+          <p>But you should develop the habit of asking:</p>
 
-      <blockquote>
-        <p>“How much work does this solution perform as the input grows?”</p>
-      </blockquote>
+          <blockquote>
+            <p>
+              “How much work does this solution perform as the input grows?”
+            </p>
+          </blockquote>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>
-        You're ready to rely more heavily on DSA for interview preparation when
-        you can:
-      </p>
+          <p>
+            You're ready to rely more heavily on DSA for interview preparation
+            when you can:
+          </p>
 
-      <ul>
-        <li>Recognize common problem patterns</li>
-        <li>Choose an appropriate data structure</li>
-        <li>Explain your approach before coding</li>
-        <li>Estimate basic time and space complexity</li>
-        <li>Solve common problems without copying the solution</li>
-        <li>Explain why your solution works</li>
-      </ul>
+          <ul>
+            <li>Recognize common problem patterns</li>
+            <li>Choose an appropriate data structure</li>
+            <li>Explain your approach before coding</li>
+            <li>Estimate basic time and space complexity</li>
+            <li>Solve common problems without copying the solution</li>
+            <li>Explain why your solution works</li>
+          </ul>
 
-      <p>
-        You do <strong>not</strong> need to finish every advanced DSA topic
-        before starting development projects.
-      </p>
+          <p>
+            You do <strong>not</strong> need to finish every advanced DSA topic
+            before starting development projects.
+          </p>
 
-      <p>Keep both tracks moving.</p>
-    </section>
-    <!-- =========================================
+          <p>Keep both tracks moving.</p>
+        </section>
+        <!-- =========================================
      5. Git and Development Workflow
 ========================================= -->
 
-    <section id="git">
-      <h2>5. Learn Git and a Development Workflow</h2>
+        <section id="git" class="article-section">
+          <h2>5. Learn Git and a Development Workflow</h2>
 
-      <p>
-        Git is a version-control system used to track changes in software
-        projects. GitHub is a separate platform that provides hosted
-        repositories and development workflows around Git.
-      </p>
+          <p>
+            Git is a version-control system used to track changes in software
+            projects. GitHub is a separate platform that provides hosted
+            repositories and development workflows around Git.
+          </p>
 
-      <p>Start with:</p>
+          <p>Start with:</p>
 
-      <ul>
-        <li>Repository</li>
-        <li>Commit</li>
-        <li>Status</li>
-        <li>Add</li>
-        <li>Branch</li>
-        <li>Merge</li>
-        <li>Log</li>
-        <li>Diff</li>
-        <li>Pull</li>
-        <li>Push</li>
-      </ul>
+          <ul>
+            <li>Repository</li>
+            <li>Commit</li>
+            <li>Status</li>
+            <li>Add</li>
+            <li>Branch</li>
+            <li>Merge</li>
+            <li>Log</li>
+            <li>Diff</li>
+            <li>Pull</li>
+            <li>Push</li>
+          </ul>
 
-      <p>
-        More important than memorizing commands is understanding
-        <strong>why version control exists</strong>.
-      </p>
+          <p>
+            More important than memorizing commands is understanding
+            <strong>why version control exists</strong>.
+          </p>
 
-      <p>
-        Imagine spending three weeks building a project and then breaking
-        something while experimenting.
-      </p>
+          <p>
+            Imagine spending three weeks building a project and then breaking
+            something while experimenting.
+          </p>
 
-      <p>
-        With version control, you can inspect previous changes and work with a
-        history of the project instead of treating the project folder as one
-        irreversible state.
-      </p>
+          <p>
+            With version control, you can inspect previous changes and work with
+            a history of the project instead of treating the project folder as
+            one irreversible state.
+          </p>
 
-      <h3>Git vs GitHub</h3>
+          <h3>Git vs GitHub</h3>
 
-      <p>These aren't interchangeable terms.</p>
+          <p>These aren't interchangeable terms.</p>
 
-      <p><strong>Git</strong> handles version control.</p>
+          <p><strong>Git</strong> handles version control.</p>
 
-      <p>
-        <strong>GitHub</strong> provides a hosted platform and collaboration
-        features around Git repositories.
-      </p>
+          <p>
+            <strong>GitHub</strong> provides a hosted platform and collaboration
+            features around Git repositories.
+          </p>
 
-      <p>
-        You can learn Git locally without immediately publishing every project.
-      </p>
+          <p>
+            You can learn Git locally without immediately publishing every
+            project.
+          </p>
 
-      <p>Later, GitHub can become useful for:</p>
+          <p>Later, GitHub can become useful for:</p>
 
-      <ul>
-        <li>Sharing projects</li>
-        <li>Collaboration</li>
-        <li>Pull requests</li>
-        <li>Open-source contributions</li>
-        <li>Portfolio visibility</li>
-        <li>Project documentation</li>
-      </ul>
+          <ul>
+            <li>Sharing projects</li>
+            <li>Collaboration</li>
+            <li>Pull requests</li>
+            <li>Open-source contributions</li>
+            <li>Portfolio visibility</li>
+            <li>Project documentation</li>
+          </ul>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>You should be able to:</p>
+          <p>You should be able to:</p>
 
-      <ul>
-        <li>Create or clone a repository</li>
-        <li>Make meaningful commits</li>
-        <li>Inspect changes</li>
-        <li>Create a branch</li>
-        <li>Merge changes</li>
-        <li>Recover from common mistakes</li>
-        <li>Push a project when appropriate</li>
-        <li>Explain what your commit history represents</li>
-      </ul>
+          <ul>
+            <li>Create or clone a repository</li>
+            <li>Make meaningful commits</li>
+            <li>Inspect changes</li>
+            <li>Create a branch</li>
+            <li>Merge changes</li>
+            <li>Recover from common mistakes</li>
+            <li>Push a project when appropriate</li>
+            <li>Explain what your commit history represents</li>
+          </ul>
 
-      <p>
-        At this point, version control should become part of your normal
-        development workflow rather than another topic you “study.”
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            At this point, version control should become part of your normal
+            development workflow rather than another topic you “study.”
+          </p>
+        </section>
+        <!-- =========================================
      6. SQL and Database Fundamentals
 ========================================= -->
 
-    <section id="sql">
-      <h2>6. Learn SQL and Database Fundamentals</h2>
+        <section id="sql" class="article-section">
+          <h2>6. Learn SQL and Database Fundamentals</h2>
 
-      <p>Most useful software needs to store data.</p>
+          <p>Most useful software needs to store data.</p>
 
-      <p>
-        A student-management application needs students. An e-commerce
-        application needs products and orders. A social application needs users
-        and interactions.
-      </p>
+          <p>
+            A student-management application needs students. An e-commerce
+            application needs products and orders. A social application needs
+            users and interactions.
+          </p>
 
-      <p>That is where databases come in.</p>
+          <p>That is where databases come in.</p>
 
-      <p>Start with <strong>SQL and relational database concepts</strong>.</p>
+          <p>
+            Start with <strong>SQL and relational database concepts</strong>.
+          </p>
 
-      <p>Learn:</p>
+          <p>Learn:</p>
 
-      <ul>
-        <li>Tables</li>
-        <li>Rows and columns</li>
-        <li>Primary keys</li>
-        <li>Foreign keys</li>
-        <li>Relationships</li>
-        <li><code>SELECT</code></li>
-        <li><code>INSERT</code></li>
-        <li><code>UPDATE</code></li>
-        <li><code>DELETE</code></li>
-        <li>Filtering</li>
-        <li>Sorting</li>
-        <li>Aggregation</li>
-        <li>Joins</li>
-        <li>Grouping</li>
-        <li>Constraints</li>
-        <li>Indexes</li>
-        <li>Transactions</li>
-        <li>Normalization</li>
-      </ul>
+          <ul>
+            <li>Tables</li>
+            <li>Rows and columns</li>
+            <li>Primary keys</li>
+            <li>Foreign keys</li>
+            <li>Relationships</li>
+            <li><code>SELECT</code></li>
+            <li><code>INSERT</code></li>
+            <li><code>UPDATE</code></li>
+            <li><code>DELETE</code></li>
+            <li>Filtering</li>
+            <li>Sorting</li>
+            <li>Aggregation</li>
+            <li>Joins</li>
+            <li>Grouping</li>
+            <li>Constraints</li>
+            <li>Indexes</li>
+            <li>Transactions</li>
+            <li>Normalization</li>
+          </ul>
 
-      <p>You don't need to learn every database product.</p>
+          <p>You don't need to learn every database product.</p>
 
-      <p>First understand the underlying concepts.</p>
+          <p>First understand the underlying concepts.</p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>Build an application that stores real data.</p>
+          <p>Build an application that stores real data.</p>
 
-      <p>For example, a student-management system could store:</p>
+          <p>For example, a student-management system could store:</p>
 
-      <ul>
-        <li>Students</li>
-        <li>Courses</li>
-        <li>Marks</li>
-        <li>Attendance</li>
-      </ul>
+          <ul>
+            <li>Students</li>
+            <li>Courses</li>
+            <li>Marks</li>
+            <li>Attendance</li>
+          </ul>
 
-      <p>Then write queries that retrieve and manipulate that information.</p>
+          <p>
+            Then write queries that retrieve and manipulate that information.
+          </p>
 
-      <p>
-        Once you can connect your program to a database and understand what
-        happens when data is created, read, updated and deleted, you're ready to
-        move toward larger applications.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            Once you can connect your program to a database and understand what
+            happens when data is created, read, updated and deleted, you're
+            ready to move toward larger applications.
+          </p>
+        </section>
+        <!-- =========================================
      7. Choose One Development Path
 ========================================= -->
 
-    <section id="development-path">
-      <h2>7. Choose One Development Path</h2>
+        <section id="development-path" class="article-section">
+          <h2>7. Choose One Development Path</h2>
 
-      <p>This is where many beginner roadmaps become confusing.</p>
+          <p>This is where many beginner roadmaps become confusing.</p>
 
-      <p>
-        They list ten technologies and make it look as though you need all of
-        them.
-      </p>
+          <p>
+            They list ten technologies and make it look as though you need all
+            of them.
+          </p>
 
-      <p>You don't.</p>
+          <p>You don't.</p>
 
-      <p>
-        After building your foundation, choose
-        <strong>one primary development direction</strong>.
-      </p>
+          <p>
+            After building your foundation, choose
+            <strong>one primary development direction</strong>.
+          </p>
 
-      <p>You can explore other areas later.</p>
+          <p>You can explore other areas later.</p>
 
-      <h3>Path A: Web / Full-Stack Development</h3>
+          <h3>Path A: Web / Full-Stack Development</h3>
 
-      <p>A practical progression:</p>
+          <p>A practical progression:</p>
 
-      <p>
-        <strong>
-          HTML → CSS → JavaScript → Frontend → Backend → Database → Deployment
-        </strong>
-      </p>
+          <p>
+            <strong>
+              HTML → CSS → JavaScript → Frontend → Backend → Database →
+              Deployment
+            </strong>
+          </p>
 
-      <p>Learn frontend fundamentals before jumping into a framework.</p>
+          <p>Learn frontend fundamentals before jumping into a framework.</p>
 
-      <p>
-        Later, depending on your goals, you can add technologies such as React
-        and a backend framework.
-      </p>
+          <p>
+            Later, depending on your goals, you can add technologies such as
+            React and a backend framework.
+          </p>
 
-      <h4>Choose this if:</h4>
+          <h4>Choose this if:</h4>
 
-      <p>
-        You enjoy building websites and interactive applications and want to see
-        your work directly in a browser.
-      </p>
+          <p>
+            You enjoy building websites and interactive applications and want to
+            see your work directly in a browser.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Path B: Java Backend Development</h3>
+          <h3>Path B: Java Backend Development</h3>
 
-      <p>A practical progression:</p>
+          <p>A practical progression:</p>
 
-      <p>
-        <strong>
-          Java → OOP → SQL → HTTP → REST APIs → Spring/Spring Boot → Database →
-          Testing → Deployment
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Java → OOP → SQL → HTTP → REST APIs → Spring/Spring Boot →
+              Database → Testing → Deployment
+            </strong>
+          </p>
 
-      <h4>Choose this if:</h4>
+          <h4>Choose this if:</h4>
 
-      <p>
-        You enjoy backend logic, Java and building server-side applications.
-      </p>
+          <p>
+            You enjoy backend logic, Java and building server-side applications.
+          </p>
 
-      <p>
-        This path also fits naturally with a student who has already chosen Java
-        for programming and DSA.
-      </p>
+          <p>
+            This path also fits naturally with a student who has already chosen
+            Java for programming and DSA.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Path C: Python Backend Development</h3>
+          <h3>Path C: Python Backend Development</h3>
 
-      <p>A practical progression:</p>
+          <p>A practical progression:</p>
 
-      <p>
-        <strong>
-          Python → OOP → SQL → Web fundamentals → Backend framework → APIs →
-          Database → Testing → Deployment
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Python → OOP → SQL → Web fundamentals → Backend framework → APIs →
+              Database → Testing → Deployment
+            </strong>
+          </p>
 
-      <h4>Choose this if:</h4>
+          <h4>Choose this if:</h4>
 
-      <p>
-        You enjoy Python and want to build backend applications while keeping
-        the language itself relatively lightweight.
-      </p>
+          <p>
+            You enjoy Python and want to build backend applications while
+            keeping the language itself relatively lightweight.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Path D: Another Specialization</h3>
+          <h3>Path D: Another Specialization</h3>
 
-      <p>You can later branch toward:</p>
+          <p>You can later branch toward:</p>
 
-      <ul>
-        <li>Mobile development</li>
-        <li>AI/ML</li>
-        <li>Data engineering</li>
-        <li>Cybersecurity</li>
-        <li>DevOps</li>
-        <li>Cloud</li>
-        <li>Game development</li>
-        <li>Systems programming</li>
-      </ul>
+          <ul>
+            <li>Mobile development</li>
+            <li>AI/ML</li>
+            <li>Data engineering</li>
+            <li>Cybersecurity</li>
+            <li>DevOps</li>
+            <li>Cloud</li>
+            <li>Game development</li>
+            <li>Systems programming</li>
+          </ul>
 
-      <p>
-        These are legitimate paths, but
-        <strong>don't branch simply because a technology is popular</strong>.
-      </p>
+          <p>
+            These are legitimate paths, but
+            <strong>don't branch simply because a technology is popular</strong
+            >.
+          </p>
 
-      <p>
-        Choose based on what you want to build and the roles you eventually want
-        to pursue.
-      </p>
+          <p>
+            Choose based on what you want to build and the roles you eventually
+            want to pursue.
+          </p>
 
-      <h3>The decision rule</h3>
+          <h3>The decision rule</h3>
 
-      <p>
-        If you're unsure which path to choose, don't spend months researching
-        every possible career.
-      </p>
+          <p>
+            If you're unsure which path to choose, don't spend months
+            researching every possible career.
+          </p>
 
-      <p>Build your fundamentals first.</p>
+          <p>Build your fundamentals first.</p>
 
-      <p>Then ask:</p>
+          <p>Then ask:</p>
 
-      <blockquote>
-        <p>
-          <strong>“What kind of software do I actually want to build?”</strong>
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong
+                >“What kind of software do I actually want to build?”</strong
+              >
+            </p>
+          </blockquote>
 
-      <p>If the answer is:</p>
+          <p>If the answer is:</p>
 
-      <ul>
-        <li>Websites and web applications → Web/full-stack</li>
-        <li>Server-side Java applications → Java backend</li>
-        <li>Python-based applications → Python/backend</li>
-        <li>Intelligent systems → AI/ML</li>
-        <li>Security tools and infrastructure → Cybersecurity</li>
-        <li>Mobile applications → Mobile development</li>
-        <li>Infrastructure and deployment → Cloud/DevOps</li>
-      </ul>
+          <ul>
+            <li>Websites and web applications → Web/full-stack</li>
+            <li>Server-side Java applications → Java backend</li>
+            <li>Python-based applications → Python/backend</li>
+            <li>Intelligent systems → AI/ML</li>
+            <li>Security tools and infrastructure → Cybersecurity</li>
+            <li>Mobile applications → Mobile development</li>
+            <li>Infrastructure and deployment → Cloud/DevOps</li>
+          </ul>
 
-      <p>You don't have to commit forever.</p>
+          <p>You don't have to commit forever.</p>
 
-      <p>
-        You're choosing your <strong>next direction</strong>, not your entire
-        career.
-      </p>
+          <p>
+            You're choosing your <strong>next direction</strong>, not your
+            entire career.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>
-        You should be able to build
-        <strong
-          >one small application in your chosen path without following a
-          tutorial step by step</strong
-        >.
-      </p>
+          <p>
+            You should be able to build
+            <strong
+              >one small application in your chosen path without following a
+              tutorial step by step</strong
+            >.
+          </p>
 
-      <p>
-        That is the point at which your development path becomes real rather
-        than theoretical.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            That is the point at which your development path becomes real rather
+            than theoretical.
+          </p>
+        </section>
+        <!-- =========================================
      8. APIs and Backend Development
 ========================================= -->
 
-    <section id="apis-backend">
-      <h2>8. Learn APIs and Backend Development</h2>
+        <section id="apis-backend" class="article-section">
+          <h2>8. Learn APIs and Backend Development</h2>
 
-      <p>Once you start building applications, you'll encounter APIs.</p>
+          <p>Once you start building applications, you'll encounter APIs.</p>
 
-      <p>
-        In web applications, HTTP uses a client-server model where clients send
-        requests and servers return responses. HTTP APIs use this communication
-        model to allow software components to interact.
-      </p>
+          <p>
+            In web applications, HTTP uses a client-server model where clients
+            send requests and servers return responses. HTTP APIs use this
+            communication model to allow software components to interact.
+          </p>
 
-      <p>You should understand:</p>
+          <p>You should understand:</p>
 
-      <ul>
-        <li>Client</li>
-        <li>Server</li>
-        <li>Request</li>
-        <li>Response</li>
-        <li>URL</li>
-        <li>HTTP methods</li>
-        <li>Status codes</li>
-        <li>Headers</li>
-        <li>JSON</li>
-        <li>Authentication</li>
-        <li>CRUD operations</li>
-        <li>REST-style API design</li>
-      </ul>
+          <ul>
+            <li>Client</li>
+            <li>Server</li>
+            <li>Request</li>
+            <li>Response</li>
+            <li>URL</li>
+            <li>HTTP methods</li>
+            <li>Status codes</li>
+            <li>Headers</li>
+            <li>JSON</li>
+            <li>Authentication</li>
+            <li>CRUD operations</li>
+            <li>REST-style API design</li>
+          </ul>
 
-      <p>A useful mental model is:</p>
+          <p>A useful mental model is:</p>
 
-      <pre><code>Frontend
+          <pre><code>Frontend
    ↓
 HTTP Request
    ↓
@@ -1170,179 +1231,182 @@ HTTP Response
    ↓
 Frontend</code></pre>
 
-      <p>
-        This becomes much easier to understand when you've actually built one.
-      </p>
+          <p>
+            This becomes much easier to understand when you've actually built
+            one.
+          </p>
 
-      <h3>Don't ignore API security</h3>
+          <h3>Don't ignore API security</h3>
 
-      <p>
-        As your applications become more realistic, security becomes part of
-        development rather than something to add at the end.
-      </p>
+          <p>
+            As your applications become more realistic, security becomes part of
+            development rather than something to add at the end.
+          </p>
 
-      <p>
-        For example, API developers need to think about authorization,
-        authentication, input handling, resource consumption and configuration.
-        OWASP's API Security Top 10 includes risks such as broken object-level
-        authorization, broken authentication, unrestricted resource consumption
-        and security misconfiguration.
-      </p>
+          <p>
+            For example, API developers need to think about authorization,
+            authentication, input handling, resource consumption and
+            configuration. OWASP's API Security Top 10 includes risks such as
+            broken object-level authorization, broken authentication,
+            unrestricted resource consumption and security misconfiguration.
+          </p>
 
-      <p>You don't need to become a security specialist at this stage.</p>
+          <p>You don't need to become a security specialist at this stage.</p>
 
-      <p>But you should develop the habit of asking:</p>
+          <p>But you should develop the habit of asking:</p>
 
-      <blockquote>
-        <p>
-          <strong>
-            “Who is allowed to perform this action, and what data should they be
-            able to access?”
-          </strong>
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong>
+                “Who is allowed to perform this action, and what data should
+                they be able to access?”
+              </strong>
+            </p>
+          </blockquote>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>Build a small API that can:</p>
+          <p>Build a small API that can:</p>
 
-      <ul>
-        <li>Create data</li>
-        <li>Read data</li>
-        <li>Update data</li>
-        <li>Delete data</li>
-      </ul>
+          <ul>
+            <li>Create data</li>
+            <li>Read data</li>
+            <li>Update data</li>
+            <li>Delete data</li>
+          </ul>
 
-      <p>For example:</p>
+          <p>For example:</p>
 
-      <pre><code>POST   /tasks
+          <pre><code>POST   /tasks
 GET    /tasks
 GET    /tasks/:id
 PUT    /tasks/:id
 DELETE /tasks/:id</code></pre>
 
-      <p>Then connect it to a frontend or another client.</p>
+          <p>Then connect it to a frontend or another client.</p>
 
-      <p>
-        At this point, you're beginning to understand how real software systems
-        fit together.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            At this point, you're beginning to understand how real software
+            systems fit together.
+          </p>
+        </section>
+        <!-- =========================================
      9. Operating Systems
 ========================================= -->
 
-    <section id="operating-systems">
-      <h2>9. Learn Operating Systems</h2>
+        <section id="operating-systems" class="article-section">
+          <h2>9. Learn Operating Systems</h2>
 
-      <p>You don't need to become a kernel developer.</p>
+          <p>You don't need to become a kernel developer.</p>
 
-      <p>
-        But a strong computer science foundation should include an understanding
-        of what happens underneath your programs.
-      </p>
+          <p>
+            But a strong computer science foundation should include an
+            understanding of what happens underneath your programs.
+          </p>
 
-      <p>Important topics include:</p>
+          <p>Important topics include:</p>
 
-      <ul>
-        <li>Processes</li>
-        <li>Threads</li>
-        <li>Scheduling</li>
-        <li>Memory management</li>
-        <li>Virtual memory</li>
-        <li>File systems</li>
-        <li>Concurrency</li>
-        <li>Synchronization</li>
-        <li>Deadlocks</li>
-      </ul>
+          <ul>
+            <li>Processes</li>
+            <li>Threads</li>
+            <li>Scheduling</li>
+            <li>Memory management</li>
+            <li>Virtual memory</li>
+            <li>File systems</li>
+            <li>Concurrency</li>
+            <li>Synchronization</li>
+            <li>Deadlocks</li>
+          </ul>
 
-      <p>
-        For example, when you run a program, the operating system manages
-        resources and provides the environment in which that program executes.
-      </p>
+          <p>
+            For example, when you run a program, the operating system manages
+            resources and provides the environment in which that program
+            executes.
+          </p>
 
-      <p>
-        That knowledge becomes useful when you're debugging performance,
-        concurrency or resource-related problems.
-      </p>
+          <p>
+            That knowledge becomes useful when you're debugging performance,
+            concurrency or resource-related problems.
+          </p>
 
-      <h3>What to postpone</h3>
+          <h3>What to postpone</h3>
 
-      <p>
-        You don't need to memorize every operating-system implementation detail
-        before building software.
-      </p>
+          <p>
+            You don't need to memorize every operating-system implementation
+            detail before building software.
+          </p>
 
-      <p>Learn the major concepts first.</p>
+          <p>Learn the major concepts first.</p>
 
-      <p>
-        Go deeper when your coursework, interviews, projects or specialization
-        requires it.
-      </p>
+          <p>
+            Go deeper when your coursework, interviews, projects or
+            specialization requires it.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>You should be able to explain, at a basic level:</p>
+          <p>You should be able to explain, at a basic level:</p>
 
-      <ul>
-        <li>What a process is</li>
-        <li>How a thread differs from a process</li>
-        <li>Why memory management matters</li>
-        <li>What virtual memory is trying to achieve</li>
-        <li>Why race conditions and deadlocks can occur</li>
-      </ul>
+          <ul>
+            <li>What a process is</li>
+            <li>How a thread differs from a process</li>
+            <li>Why memory management matters</li>
+            <li>What virtual memory is trying to achieve</li>
+            <li>Why race conditions and deadlocks can occur</li>
+          </ul>
 
-      <p>
-        That's enough foundation for most beginner software-development paths.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            That's enough foundation for most beginner software-development
+            paths.
+          </p>
+        </section>
+        <!-- =========================================
      10. Computer Networks
 ========================================= -->
 
-    <section id="networks">
-      <h2>10. Learn Computer Networks</h2>
+        <section id="networks" class="article-section">
+          <h2>10. Learn Computer Networks</h2>
 
-      <p>Software rarely exists alone.</p>
+          <p>Software rarely exists alone.</p>
 
-      <p>Applications communicate with other applications and systems.</p>
+          <p>Applications communicate with other applications and systems.</p>
 
-      <p>Start with:</p>
+          <p>Start with:</p>
 
-      <ul>
-        <li>IP addresses</li>
-        <li>DNS</li>
-        <li>TCP/IP</li>
-        <li>HTTP/HTTPS</li>
-        <li>Ports</li>
-        <li>Client-server architecture</li>
-        <li>Routers</li>
-        <li>Basic networking concepts</li>
-        <li>Basic security concepts</li>
-      </ul>
+          <ul>
+            <li>IP addresses</li>
+            <li>DNS</li>
+            <li>TCP/IP</li>
+            <li>HTTP/HTTPS</li>
+            <li>Ports</li>
+            <li>Client-server architecture</li>
+            <li>Routers</li>
+            <li>Basic networking concepts</li>
+            <li>Basic security concepts</li>
+          </ul>
 
-      <p>You don't need to become a network engineer.</p>
+          <p>You don't need to become a network engineer.</p>
 
-      <p>
-        Your first goal is to understand what happens when you enter a URL into
-        a browser.
-      </p>
+          <p>
+            Your first goal is to understand what happens when you enter a URL
+            into a browser.
+          </p>
 
-      <p>
-        HTTP operates at the application layer and follows a client-server
-        request/response model.
-      </p>
+          <p>
+            HTTP operates at the application layer and follows a client-server
+            request/response model.
+          </p>
 
-      <p>
-        That knowledge becomes particularly useful when working with APIs,
-        backend systems and debugging.
-      </p>
+          <p>
+            That knowledge becomes particularly useful when working with APIs,
+            backend systems and debugging.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>You should be able to explain a simple request flow:</p>
+          <p>You should be able to explain a simple request flow:</p>
 
-      <pre><code>Browser
+          <pre><code>Browser
    ↓
 DNS / Network
    ↓
@@ -1356,631 +1420,646 @@ Response
    ↓
 Browser</code></pre>
 
-      <p>You don't need to explain every packet in detail.</p>
+          <p>You don't need to explain every packet in detail.</p>
 
-      <p>
-        You need enough understanding to reason about where a problem might
-        occur.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            You need enough understanding to reason about where a problem might
+            occur.
+          </p>
+        </section>
+        <!-- =========================================
      11. Testing and Debugging
 ========================================= -->
 
-    <section id="testing-debugging">
-      <h2>11. Learn Testing and Debugging</h2>
+        <section id="testing-debugging" class="article-section">
+          <h2>11. Learn Testing and Debugging</h2>
 
-      <p>Beginners often think:</p>
+          <p>Beginners often think:</p>
 
-      <blockquote>
-        <p>“If the program runs, I'm finished.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“If the program runs, I'm finished.”</p>
+          </blockquote>
 
-      <p>Software can run and still be wrong.</p>
+          <p>Software can run and still be wrong.</p>
 
-      <p>You need to learn how to:</p>
+          <p>You need to learn how to:</p>
 
-      <ul>
-        <li>Reproduce bugs</li>
-        <li>Read error messages</li>
-        <li>Use a debugger</li>
-        <li>Add useful logging</li>
-        <li>Test edge cases</li>
-        <li>Write unit tests</li>
-        <li>Test APIs</li>
-        <li>Verify database operations</li>
-        <li>Identify regression bugs</li>
-      </ul>
+          <ul>
+            <li>Reproduce bugs</li>
+            <li>Read error messages</li>
+            <li>Use a debugger</li>
+            <li>Add useful logging</li>
+            <li>Test edge cases</li>
+            <li>Write unit tests</li>
+            <li>Test APIs</li>
+            <li>Verify database operations</li>
+            <li>Identify regression bugs</li>
+          </ul>
 
-      <h3>Use a repeatable debugging process</h3>
+          <h3>Use a repeatable debugging process</h3>
 
-      <h4>1. Reproduce it</h4>
+          <h4>1. Reproduce it</h4>
 
-      <p>Can you make the problem happen consistently?</p>
+          <p>Can you make the problem happen consistently?</p>
 
-      <h4>2. Isolate it</h4>
+          <h4>2. Isolate it</h4>
 
-      <p>Which part of the system is failing?</p>
+          <p>Which part of the system is failing?</p>
 
-      <h4>3. Inspect the evidence</h4>
+          <h4>3. Inspect the evidence</h4>
 
-      <p>Look at:</p>
+          <p>Look at:</p>
 
-      <ul>
-        <li>Error messages</li>
-        <li>Logs</li>
-        <li>Inputs</li>
-        <li>Outputs</li>
-        <li>Network requests</li>
-        <li>Database results</li>
-      </ul>
+          <ul>
+            <li>Error messages</li>
+            <li>Logs</li>
+            <li>Inputs</li>
+            <li>Outputs</li>
+            <li>Network requests</li>
+            <li>Database results</li>
+          </ul>
 
-      <h4>4. Form a hypothesis</h4>
+          <h4>4. Form a hypothesis</h4>
 
-      <p>What do you think is causing the problem?</p>
+          <p>What do you think is causing the problem?</p>
 
-      <h4>5. Test the hypothesis</h4>
+          <h4>5. Test the hypothesis</h4>
 
-      <p>Make the smallest useful change.</p>
+          <p>Make the smallest useful change.</p>
 
-      <h4>6. Verify</h4>
+          <h4>6. Verify</h4>
 
-      <p>Did the fix actually solve the original problem?</p>
+          <p>Did the fix actually solve the original problem?</p>
 
-      <p>
-        This is much better than randomly changing code until the error
-        disappears.
-      </p>
+          <p>
+            This is much better than randomly changing code until the error
+            disappears.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>
-        You should be able to take a broken project, reproduce a bug, identify
-        the likely source, fix it and explain
-        <strong>why the fix worked</strong>.
-      </p>
+          <p>
+            You should be able to take a broken project, reproduce a bug,
+            identify the likely source, fix it and explain
+            <strong>why the fix worked</strong>.
+          </p>
 
-      <p>That last part matters.</p>
+          <p>That last part matters.</p>
 
-      <p>
-        Debugging isn't simply making an error disappear. It's understanding the
-        cause.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            Debugging isn't simply making an error disappear. It's understanding
+            the cause.
+          </p>
+        </section>
+        <!-- =========================================
      12. Deployment
 ========================================= -->
 
-    <section id="deployment">
-      <h2>12. Learn Deployment</h2>
+        <section id="deployment" class="article-section">
+          <h2>12. Learn Deployment</h2>
 
-      <p>Eventually your application needs to leave your laptop.</p>
+          <p>Eventually your application needs to leave your laptop.</p>
 
-      <p>
-        Deployment means making your software available in an environment where
-        other people or systems can use it.
-      </p>
+          <p>
+            Deployment means making your software available in an environment
+            where other people or systems can use it.
+          </p>
 
-      <p>Gradually learn:</p>
+          <p>Gradually learn:</p>
 
-      <ul>
-        <li>Hosting</li>
-        <li>Environment variables</li>
-        <li>Build processes</li>
-        <li>Domains</li>
-        <li>HTTPS</li>
-        <li>Application configuration</li>
-        <li>Logs</li>
-        <li>Basic monitoring</li>
-        <li>Database deployment</li>
-        <li>Secrets management</li>
-      </ul>
+          <ul>
+            <li>Hosting</li>
+            <li>Environment variables</li>
+            <li>Build processes</li>
+            <li>Domains</li>
+            <li>HTTPS</li>
+            <li>Application configuration</li>
+            <li>Logs</li>
+            <li>Basic monitoring</li>
+            <li>Database deployment</li>
+            <li>Secrets management</li>
+          </ul>
 
-      <p>You don't need to master every cloud platform.</p>
+          <p>You don't need to master every cloud platform.</p>
 
-      <p>Start by deploying a small application.</p>
+          <p>Start by deploying a small application.</p>
 
-      <p>Your first deployment doesn't need to handle millions of users.</p>
+          <p>Your first deployment doesn't need to handle millions of users.</p>
 
-      <p>
-        It needs to
-        <strong>work reliably enough for someone else to open and use</strong>.
-      </p>
+          <p>
+            It needs to
+            <strong
+              >work reliably enough for someone else to open and use</strong
+            >.
+          </p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>
-        Someone who doesn't have your development environment should be able to
-        access your deployed application and use its main functionality.
-      </p>
+          <p>
+            Someone who doesn't have your development environment should be able
+            to access your deployed application and use its main functionality.
+          </p>
 
-      <p>
-        You should also know where to look when the deployed version doesn't
-        behave like your local version.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            You should also know where to look when the deployed version doesn't
+            behave like your local version.
+          </p>
+        </section>
+        <!-- =========================================
      13. Projects Throughout the Roadmap
 ========================================= -->
 
-    <section id="projects">
-      <h2>13. Build Projects Throughout the Roadmap</h2>
+        <section id="projects" class="article-section">
+          <h2>13. Build Projects Throughout the Roadmap</h2>
 
-      <p>This is where everything starts coming together.</p>
+          <p>This is where everything starts coming together.</p>
 
-      <p>Don't wait until you've "finished computer science."</p>
+          <p>Don't wait until you've "finished computer science."</p>
 
-      <p>Build while learning.</p>
+          <p>Build while learning.</p>
 
-      <h3>Project Level 1 — Beginner</h3>
+          <h3>Project Level 1 — Beginner</h3>
 
-      <p>Use projects to reinforce programming.</p>
+          <p>Use projects to reinforce programming.</p>
 
-      <p>Examples:</p>
+          <p>Examples:</p>
 
-      <ul>
-        <li>Calculator</li>
-        <li>Quiz application</li>
-        <li>Expense tracker</li>
-        <li>Contact manager</li>
-        <li>Student marks system</li>
-      </ul>
+          <ul>
+            <li>Calculator</li>
+            <li>Quiz application</li>
+            <li>Expense tracker</li>
+            <li>Contact manager</li>
+            <li>Student marks system</li>
+          </ul>
 
-      <h4>Goal</h4>
+          <h4>Goal</h4>
 
-      <p>
-        <strong>Prove that you can program.</strong>
-      </p>
+          <p>
+            <strong>Prove that you can program.</strong>
+          </p>
 
-      <h3>Project Level 2 — Intermediate</h3>
+          <h3>Project Level 2 — Intermediate</h3>
 
-      <p>Combine programming with databases or larger application logic.</p>
+          <p>Combine programming with databases or larger application logic.</p>
 
-      <p>Examples:</p>
+          <p>Examples:</p>
 
-      <ul>
-        <li>Library management system</li>
-        <li>Task manager</li>
-        <li>Inventory management system</li>
-        <li>Personal finance tracker</li>
-        <li>Student management application</li>
-      </ul>
+          <ul>
+            <li>Library management system</li>
+            <li>Task manager</li>
+            <li>Inventory management system</li>
+            <li>Personal finance tracker</li>
+            <li>Student management application</li>
+          </ul>
 
-      <h4>Goal</h4>
+          <h4>Goal</h4>
 
-      <p>
-        <strong>
-          Prove that you can structure an application and work with data.
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Prove that you can structure an application and work with data.
+            </strong>
+          </p>
 
-      <h3>Project Level 3 — Full Application</h3>
+          <h3>Project Level 3 — Full Application</h3>
 
-      <p>Combine:</p>
+          <p>Combine:</p>
 
-      <p>
-        <strong>
-          Frontend + Backend + Database + Authentication + API + Deployment
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Frontend + Backend + Database + Authentication + API + Deployment
+            </strong>
+          </p>
 
-      <p>Examples:</p>
+          <p>Examples:</p>
 
-      <ul>
-        <li>College productivity platform</li>
-        <li>Job application tracker</li>
-        <li>Study management platform</li>
-        <li>Event management system</li>
-        <li>E-commerce prototype</li>
-        <li>Collaborative task application</li>
-      </ul>
+          <ul>
+            <li>College productivity platform</li>
+            <li>Job application tracker</li>
+            <li>Study management platform</li>
+            <li>Event management system</li>
+            <li>E-commerce prototype</li>
+            <li>Collaborative task application</li>
+          </ul>
 
-      <h4>Goal</h4>
+          <h4>Goal</h4>
 
-      <p>
-        <strong>
-          Prove that you can build and connect multiple parts of a software
-          system.
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Prove that you can build and connect multiple parts of a software
+              system.
+            </strong>
+          </p>
 
-      <h3>Project Level 4 — Problem-focused project</h3>
+          <h3>Project Level 4 — Problem-focused project</h3>
 
-      <p>
-        Now build something because you identified a real problem rather than
-        because a tutorial told you what to build.
-      </p>
+          <p>
+            Now build something because you identified a real problem rather
+            than because a tutorial told you what to build.
+          </p>
 
-      <h4>Goal</h4>
+          <h4>Goal</h4>
 
-      <p>
-        <strong>
-          Prove that you can make technical decisions independently.
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Prove that you can make technical decisions independently.
+            </strong>
+          </p>
 
-      <p>This is often the most valuable project level for a portfolio.</p>
-    </section>
-    <!-- =========================================
+          <p>This is often the most valuable project level for a portfolio.</p>
+        </section>
+        <!-- =========================================
      14. Build Projects That Show Progress
 ========================================= -->
 
-    <section id="project-progress">
-      <h2>14. Build Projects That Show Progress</h2>
+        <section id="project-progress" class="article-section">
+          <h2>14. Build Projects That Show Progress</h2>
 
-      <p>A strong portfolio doesn't need 30 projects.</p>
+          <p>A strong portfolio doesn't need 30 projects.</p>
 
-      <p>A better progression is:</p>
+          <p>A better progression is:</p>
 
-      <h3>Project 1</h3>
+          <h3>Project 1</h3>
 
-      <blockquote>
-        <p>“I can program.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“I can program.”</p>
+          </blockquote>
 
-      <h3>Project 2</h3>
+          <h3>Project 2</h3>
 
-      <blockquote>
-        <p>“I understand data and application structure.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“I understand data and application structure.”</p>
+          </blockquote>
 
-      <h3>Project 3</h3>
+          <h3>Project 3</h3>
 
-      <blockquote>
-        <p>“I can build and connect a complete application.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“I can build and connect a complete application.”</p>
+          </blockquote>
 
-      <h3>Project 4</h3>
+          <h3>Project 4</h3>
 
-      <blockquote>
-        <p>“I can identify a problem and build a solution independently.”</p>
-      </blockquote>
+          <blockquote>
+            <p>
+              “I can identify a problem and build a solution independently.”
+            </p>
+          </blockquote>
 
-      <p>
-        That progression tells a stronger story than a folder containing dozens
-        of tutorial clones.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            That progression tells a stronger story than a folder containing
+            dozens of tutorial clones.
+          </p>
+        </section>
+        <!-- =========================================
      15. Portfolio and GitHub
 ========================================= -->
 
-    <section id="portfolio">
-      <h2>15. Prepare Your Portfolio and GitHub</h2>
+        <section id="portfolio" class="article-section">
+          <h2>15. Prepare Your Portfolio and GitHub</h2>
 
-      <p>Once you have projects worth showing, organize them properly.</p>
+          <p>Once you have projects worth showing, organize them properly.</p>
 
-      <p>Each serious project should ideally have:</p>
+          <p>Each serious project should ideally have:</p>
 
-      <ul>
-        <li>Clear project name</li>
-        <li>Problem statement</li>
-        <li>Features</li>
-        <li>Technologies used</li>
-        <li>Setup instructions</li>
-        <li>Screenshots where useful</li>
-        <li>Architecture explanation where appropriate</li>
-        <li>Challenges encountered</li>
-        <li>What you learned</li>
-        <li>Future improvements</li>
-      </ul>
+          <ul>
+            <li>Clear project name</li>
+            <li>Problem statement</li>
+            <li>Features</li>
+            <li>Technologies used</li>
+            <li>Setup instructions</li>
+            <li>Screenshots where useful</li>
+            <li>Architecture explanation where appropriate</li>
+            <li>Challenges encountered</li>
+            <li>What you learned</li>
+            <li>Future improvements</li>
+          </ul>
 
-      <p>A repository should be understandable to another developer.</p>
+          <p>A repository should be understandable to another developer.</p>
 
-      <p>
-        GitHub supports software-development workflows including planning,
-        collaboration and repositories, which makes it useful as part of a
-        development portfolio.
-      </p>
+          <p>
+            GitHub supports software-development workflows including planning,
+            collaboration and repositories, which makes it useful as part of a
+            development portfolio.
+          </p>
 
-      <p>But remember:</p>
+          <p>But remember:</p>
 
-      <blockquote>
-        <p>
-          <strong
-            >A polished repository cannot compensate for a weak project.</strong
-          >
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong
+                >A polished repository cannot compensate for a weak
+                project.</strong
+              >
+            </p>
+          </blockquote>
 
-      <p>The project itself comes first.</p>
+          <p>The project itself comes first.</p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>Someone viewing your repository should be able to understand:</p>
+          <p>Someone viewing your repository should be able to understand:</p>
 
-      <ul>
-        <li>What the project does</li>
-        <li>Why you built it</li>
-        <li>How to run it</li>
-        <li>What technologies you used</li>
-        <li>What you personally implemented</li>
-      </ul>
+          <ul>
+            <li>What the project does</li>
+            <li>Why you built it</li>
+            <li>How to run it</li>
+            <li>What technologies you used</li>
+            <li>What you personally implemented</li>
+          </ul>
 
-      <p>
-        You should also be able to explain the project without reading your
-        README.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            You should also be able to explain the project without reading your
+            README.
+          </p>
+        </section>
+        <!-- =========================================
      16. Resume
 ========================================= -->
 
-    <section id="resume">
-      <h2>16. Prepare Your Resume</h2>
+        <section id="resume" class="article-section">
+          <h2>16. Prepare Your Resume</h2>
 
-      <p>Your resume should communicate three things quickly:</p>
+          <p>Your resume should communicate three things quickly:</p>
 
-      <p>
-        <strong>What can you do?</strong>
-      </p>
+          <p>
+            <strong>What can you do?</strong>
+          </p>
 
-      <p>
-        <strong>What have you built?</strong>
-      </p>
+          <p>
+            <strong>What have you built?</strong>
+          </p>
 
-      <p>
-        <strong>What evidence supports your skills?</strong>
-      </p>
+          <p>
+            <strong>What evidence supports your skills?</strong>
+          </p>
 
-      <p>Instead of:</p>
+          <p>Instead of:</p>
 
-      <blockquote>
-        <p>“Learned Java, SQL, HTML, CSS and Git.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“Learned Java, SQL, HTML, CSS and Git.”</p>
+          </blockquote>
 
-      <p>
-        A stronger project description explains what you actually built and what
-        you contributed.
-      </p>
+          <p>
+            A stronger project description explains what you actually built and
+            what you contributed.
+          </p>
 
-      <p>For example:</p>
+          <p>For example:</p>
 
-      <blockquote>
-        <p>
-          <strong>
-            Built a task-management application using Java, REST APIs and SQL,
-            implementing task creation, updates, deletion and persistent
-            database storage.
-          </strong>
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong>
+                Built a task-management application using Java, REST APIs and
+                SQL, implementing task creation, updates, deletion and
+                persistent database storage.
+              </strong>
+            </p>
+          </blockquote>
 
-      <p>The second version provides evidence.</p>
+          <p>The second version provides evidence.</p>
 
-      <h3>Readiness milestone</h3>
+          <h3>Readiness milestone</h3>
 
-      <p>You should have enough evidence to identify:</p>
+          <p>You should have enough evidence to identify:</p>
 
-      <ul>
-        <li>Your strongest technical skills</li>
-        <li>Your strongest projects</li>
-        <li>Your relevant coursework</li>
-        <li>Your development direction</li>
-        <li>The type of internship you're targeting</li>
-      </ul>
+          <ul>
+            <li>Your strongest technical skills</li>
+            <li>Your strongest projects</li>
+            <li>Your relevant coursework</li>
+            <li>Your development direction</li>
+            <li>The type of internship you're targeting</li>
+          </ul>
 
-      <p>
-        Then your resume can be built around those strengths rather than around
-        a giant list of technologies.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            Then your resume can be built around those strengths rather than
+            around a giant list of technologies.
+          </p>
+        </section>
+        <!-- =========================================
      17. Internship Preparation
 ========================================= -->
 
-    <section id="internships">
-      <h2>17. Start Preparing for Internships</h2>
+        <section id="internships" class="article-section">
+          <h2>17. Start Preparing for Internships</h2>
 
-      <p>Don't wait until you're "perfect."</p>
+          <p>Don't wait until you're "perfect."</p>
 
-      <p>Internship preparation can begin once you have:</p>
+          <p>Internship preparation can begin once you have:</p>
 
-      <ul>
-        <li>One programming language</li>
-        <li>Basic DSA</li>
-        <li>At least one meaningful project</li>
-        <li>Basic Git</li>
-        <li>Basic SQL</li>
-        <li>A resume</li>
-        <li>A way to explain your projects</li>
-      </ul>
+          <ul>
+            <li>One programming language</li>
+            <li>Basic DSA</li>
+            <li>At least one meaningful project</li>
+            <li>Basic Git</li>
+            <li>Basic SQL</li>
+            <li>A resume</li>
+            <li>A way to explain your projects</li>
+          </ul>
 
-      <p>Then continue improving while applying.</p>
+          <p>Then continue improving while applying.</p>
 
-      <h3>What should you be able to explain?</h3>
+          <h3>What should you be able to explain?</h3>
 
-      <p>If an interviewer asks:</p>
+          <p>If an interviewer asks:</p>
 
-      <blockquote>
-        <p>“Tell me about your project.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“Tell me about your project.”</p>
+          </blockquote>
 
-      <p>You should be able to explain:</p>
+          <p>You should be able to explain:</p>
 
-      <ul>
-        <li>What problem it solves</li>
-        <li>Why you built it</li>
-        <li>How it works</li>
-        <li>Technologies used</li>
-        <li>Database structure</li>
-        <li>API design</li>
-        <li>Biggest challenge</li>
-        <li>A bug you encountered</li>
-        <li>How you fixed it</li>
-        <li>What you would improve</li>
-      </ul>
+          <ul>
+            <li>What problem it solves</li>
+            <li>Why you built it</li>
+            <li>How it works</li>
+            <li>Technologies used</li>
+            <li>Database structure</li>
+            <li>API design</li>
+            <li>Biggest challenge</li>
+            <li>A bug you encountered</li>
+            <li>How you fixed it</li>
+            <li>What you would improve</li>
+          </ul>
 
-      <p>
-        If you built the project yourself, these questions become much easier.
-      </p>
+          <p>
+            If you built the project yourself, these questions become much
+            easier.
+          </p>
 
-      <h3>Internship readiness checkpoint</h3>
+          <h3>Internship readiness checkpoint</h3>
 
-      <p>Before applying seriously, you should ideally have:</p>
+          <p>Before applying seriously, you should ideally have:</p>
 
-      <p>
-        <strong>Programming:</strong> One language you can use independently.
-      </p>
+          <p>
+            <strong>Programming:</strong> One language you can use
+            independently.
+          </p>
 
-      <p>
-        <strong>DSA:</strong> Enough practice to handle common
-        beginner/intermediate problems.
-      </p>
+          <p>
+            <strong>DSA:</strong> Enough practice to handle common
+            beginner/intermediate problems.
+          </p>
 
-      <p><strong>Development:</strong> At least one meaningful project.</p>
+          <p><strong>Development:</strong> At least one meaningful project.</p>
 
-      <p><strong>Database:</strong> Basic SQL and database understanding.</p>
+          <p>
+            <strong>Database:</strong> Basic SQL and database understanding.
+          </p>
 
-      <p><strong>Git:</strong> Comfortable enough to manage your projects.</p>
+          <p>
+            <strong>Git:</strong> Comfortable enough to manage your projects.
+          </p>
 
-      <p><strong>Resume:</strong> Focused on evidence rather than buzzwords.</p>
+          <p>
+            <strong>Resume:</strong> Focused on evidence rather than buzzwords.
+          </p>
 
-      <p>
-        <strong>Communication:</strong> Able to explain your technical decisions
-        clearly.
-      </p>
+          <p>
+            <strong>Communication:</strong> Able to explain your technical
+            decisions clearly.
+          </p>
 
-      <p>You don't need to be an expert in every category.</p>
+          <p>You don't need to be an expert in every category.</p>
 
-      <p>
-        You need enough ability to demonstrate that you're
-        <strong>worth interviewing</strong>.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            You need enough ability to demonstrate that you're
+            <strong>worth interviewing</strong>.
+          </p>
+        </section>
+        <!-- =========================================
      18. Technical Interviews
 ========================================= -->
 
-    <section id="interviews">
-      <h2>18. Prepare for Technical Interviews</h2>
+        <section id="interviews" class="article-section">
+          <h2>18. Prepare for Technical Interviews</h2>
 
-      <p>
-        Interview preparation should happen alongside development rather than
-        replacing it.
-      </p>
+          <p>
+            Interview preparation should happen alongside development rather
+            than replacing it.
+          </p>
 
-      <h3>DSA</h3>
+          <h3>DSA</h3>
 
-      <p>Focus on:</p>
+          <p>Focus on:</p>
 
-      <ul>
-        <li>Arrays</li>
-        <li>Strings</li>
-        <li>Hashing</li>
-        <li>Linked lists</li>
-        <li>Stacks and queues</li>
-        <li>Trees</li>
-        <li>Graphs</li>
-        <li>Searching</li>
-        <li>Sorting</li>
-        <li>Recursion</li>
-        <li>Dynamic programming</li>
-      </ul>
+          <ul>
+            <li>Arrays</li>
+            <li>Strings</li>
+            <li>Hashing</li>
+            <li>Linked lists</li>
+            <li>Stacks and queues</li>
+            <li>Trees</li>
+            <li>Graphs</li>
+            <li>Searching</li>
+            <li>Sorting</li>
+            <li>Recursion</li>
+            <li>Dynamic programming</li>
+          </ul>
 
-      <h3>CS fundamentals</h3>
+          <h3>CS fundamentals</h3>
 
-      <p>Depending on the role:</p>
+          <p>Depending on the role:</p>
 
-      <ul>
-        <li>OOP</li>
-        <li>DBMS</li>
-        <li>SQL</li>
-        <li>Operating systems</li>
-        <li>Computer networks</li>
-      </ul>
+          <ul>
+            <li>OOP</li>
+            <li>DBMS</li>
+            <li>SQL</li>
+            <li>Operating systems</li>
+            <li>Computer networks</li>
+          </ul>
 
-      <h3>Programming</h3>
+          <h3>Programming</h3>
 
-      <p>
-        You should be able to write code without relying on autocomplete or AI
-        to do the thinking for you.
-      </p>
+          <p>
+            You should be able to write code without relying on autocomplete or
+            AI to do the thinking for you.
+          </p>
 
-      <h3>Projects</h3>
+          <h3>Projects</h3>
 
-      <p>Be ready to discuss everything you actually built.</p>
+          <p>Be ready to discuss everything you actually built.</p>
 
-      <h3>Behavioral questions</h3>
+          <h3>Behavioral questions</h3>
 
-      <p>Prepare for questions such as:</p>
+          <p>Prepare for questions such as:</p>
 
-      <ul>
-        <li>Tell me about yourself.</li>
-        <li>Tell me about a project you're proud of.</li>
-        <li>Describe a difficult problem you solved.</li>
-        <li>Tell me about a mistake you made.</li>
-        <li>Why are you interested in this role?</li>
-      </ul>
-    </section>
-    <!-- =========================================
+          <ul>
+            <li>Tell me about yourself.</li>
+            <li>Tell me about a project you're proud of.</li>
+            <li>Describe a difficult problem you solved.</li>
+            <li>Tell me about a mistake you made.</li>
+            <li>Why are you interested in this role?</li>
+          </ul>
+        </section>
+        <!-- =========================================
      What You Should NOT Learn Yet
 ========================================= -->
 
-    <section id="not-yet">
-      <h2>What You Should NOT Learn Yet</h2>
+        <section id="not-yet" class="article-section">
+          <h2>What You Should NOT Learn Yet</h2>
 
-      <p>This may be the most important part of the roadmap.</p>
+          <p>This may be the most important part of the roadmap.</p>
 
-      <p>You do <strong>not</strong> need to learn everything immediately.</p>
+          <p>
+            You do <strong>not</strong> need to learn everything immediately.
+          </p>
 
-      <p>
-        If you're still struggling with loops and functions, don't start
-        Kubernetes.
-      </p>
+          <p>
+            If you're still struggling with loops and functions, don't start
+            Kubernetes.
+          </p>
 
-      <p>
-        If you haven't built a basic backend, don't spend weeks studying
-        microservices.
-      </p>
+          <p>
+            If you haven't built a basic backend, don't spend weeks studying
+            microservices.
+          </p>
 
-      <p>
-        If you haven't learned SQL, don't rush into advanced database
-        architecture.
-      </p>
+          <p>
+            If you haven't learned SQL, don't rush into advanced database
+            architecture.
+          </p>
 
-      <p>
-        If you haven't built and deployed a normal application, you probably
-        don't need advanced cloud architecture yet.
-      </p>
+          <p>
+            If you haven't built and deployed a normal application, you probably
+            don't need advanced cloud architecture yet.
+          </p>
 
-      <p>
-        If you're still learning basic DSA, don't obsess over advanced
-        competitive-programming techniques unless that is specifically your
-        goal.
-      </p>
+          <p>
+            If you're still learning basic DSA, don't obsess over advanced
+            competitive-programming techniques unless that is specifically your
+            goal.
+          </p>
 
-      <h3>A useful rule</h3>
+          <h3>A useful rule</h3>
 
-      <blockquote>
-        <p>
-          <strong>
-            Learn the next concept that unlocks the next capability.
-          </strong>
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong>
+                Learn the next concept that unlocks the next capability.
+              </strong>
+            </p>
+          </blockquote>
 
-      <p>Not:</p>
+          <p>Not:</p>
 
-      <blockquote>
-        <p>“Learn whatever technology is trending this month.”</p>
-      </blockquote>
+          <blockquote>
+            <p>“Learn whatever technology is trending this month.”</p>
+          </blockquote>
 
-      <p>
-        This is one of the biggest differences between a roadmap and a
-        technology checklist.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            This is one of the biggest differences between a roadmap and a
+            technology checklist.
+          </p>
+        </section>
+        <!-- =========================================
      Recommended Progression
 ========================================= -->
 
-    <section id="recommended-progression">
-      <h2>The Recommended Progression</h2>
+        <section id="recommended-progression" class="article-section">
+          <h2>The Recommended Progression</h2>
 
-      <p>A realistic sequence looks like this:</p>
+          <p>A realistic sequence looks like this:</p>
 
-      <pre><code>Programming Fundamentals
+          <pre><code>Programming Fundamentals
           ↓
 Problem Solving
           ↓
@@ -2012,560 +2091,572 @@ Internship Applications
           ↓
 Interview Preparation</code></pre>
 
-      <p>Notice something important:</p>
+          <p>Notice something important:</p>
 
-      <p>
-        <strong>Projects are not at the end.</strong>
-      </p>
+          <p>
+            <strong>Projects are not at the end.</strong>
+          </p>
 
-      <p>They should appear throughout the roadmap.</p>
+          <p>They should appear throughout the roadmap.</p>
 
-      <p>Your first project may be a simple calculator.</p>
+          <p>Your first project may be a simple calculator.</p>
 
-      <p>
-        Your later project might be a deployed application with a database and
-        API.
-      </p>
+          <p>
+            Your later project might be a deployed application with a database
+            and API.
+          </p>
 
-      <p>The increasing complexity is what demonstrates progress.</p>
-    </section>
-    <!-- =========================================
+          <p>The increasing complexity is what demonstrates progress.</p>
+        </section>
+        <!-- =========================================
      Complete Example
 ========================================= -->
 
-    <section id="complete-example">
-      <h2>A Complete Example</h2>
+        <section id="complete-example" class="article-section">
+          <h2>A Complete Example</h2>
 
-      <p>
-        Imagine a beginner named Alex who wants to become a software developer.
-      </p>
+          <p>
+            Imagine a beginner named Alex who wants to become a software
+            developer.
+          </p>
 
-      <h3>Phase 1</h3>
+          <h3>Phase 1</h3>
 
-      <p>Alex learns programming fundamentals.</p>
+          <p>Alex learns programming fundamentals.</p>
 
-      <p>They build:</p>
+          <p>They build:</p>
 
-      <blockquote>
-        <p>Calculator → Quiz → Expense Tracker</p>
-      </blockquote>
+          <blockquote>
+            <p>Calculator → Quiz → Expense Tracker</p>
+          </blockquote>
 
-      <p>Now Alex can write small programs.</p>
+          <p>Now Alex can write small programs.</p>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 2</h3>
+          <h3>Phase 2</h3>
 
-      <p>Alex learns OOP and basic DSA.</p>
+          <p>Alex learns OOP and basic DSA.</p>
 
-      <p>They build:</p>
+          <p>They build:</p>
 
-      <blockquote>
-        <p>Library Management System</p>
-      </blockquote>
+          <blockquote>
+            <p>Library Management System</p>
+          </blockquote>
 
-      <p>Now Alex is learning how to structure a larger program.</p>
+          <p>Now Alex is learning how to structure a larger program.</p>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 3</h3>
+          <h3>Phase 3</h3>
 
-      <p>Alex learns Git and SQL.</p>
+          <p>Alex learns Git and SQL.</p>
 
-      <p>
-        The library project is connected to a database and tracked using Git.
-      </p>
+          <p>
+            The library project is connected to a database and tracked using
+            Git.
+          </p>
 
-      <p>Now Alex understands:</p>
+          <p>Now Alex understands:</p>
 
-      <blockquote>
-        <p><strong>Code + Version Control + Data</strong></p>
-      </blockquote>
+          <blockquote>
+            <p><strong>Code + Version Control + Data</strong></p>
+          </blockquote>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 4</h3>
+          <h3>Phase 4</h3>
 
-      <p>Alex chooses web development.</p>
+          <p>Alex chooses web development.</p>
 
-      <p>They learn:</p>
+          <p>They learn:</p>
 
-      <blockquote>
-        <p>HTML → CSS → JavaScript → Backend → APIs</p>
-      </blockquote>
+          <blockquote>
+            <p>HTML → CSS → JavaScript → Backend → APIs</p>
+          </blockquote>
 
-      <p>They build a task-management application.</p>
+          <p>They build a task-management application.</p>
 
-      <p>
-        Now Alex understands how different parts of a software system
-        communicate.
-      </p>
+          <p>
+            Now Alex understands how different parts of a software system
+            communicate.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 5</h3>
+          <h3>Phase 5</h3>
 
-      <p>Alex learns testing, debugging and deployment.</p>
+          <p>Alex learns testing, debugging and deployment.</p>
 
-      <p>The task application becomes a usable deployed project.</p>
+          <p>The task application becomes a usable deployed project.</p>
 
-      <p>Now Alex has something they can demonstrate.</p>
+          <p>Now Alex has something they can demonstrate.</p>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 6</h3>
+          <h3>Phase 6</h3>
 
-      <p>Alex strengthens:</p>
+          <p>Alex strengthens:</p>
 
-      <ul>
-        <li>DSA</li>
-        <li>OOP</li>
-        <li>SQL</li>
-        <li>DBMS</li>
-        <li>OS</li>
-        <li>Networks</li>
-      </ul>
+          <ul>
+            <li>DSA</li>
+            <li>OOP</li>
+            <li>SQL</li>
+            <li>DBMS</li>
+            <li>OS</li>
+            <li>Networks</li>
+          </ul>
 
-      <p>while continuing to build.</p>
+          <p>while continuing to build.</p>
 
-      <hr />
+          <hr />
 
-      <h3>Phase 7</h3>
+          <h3>Phase 7</h3>
 
-      <p>Alex prepares:</p>
+          <p>Alex prepares:</p>
 
-      <ul>
-        <li>Resume</li>
-        <li>Portfolio</li>
-        <li>GitHub</li>
-        <li>Project explanations</li>
-        <li>Coding interview skills</li>
-      </ul>
+          <ul>
+            <li>Resume</li>
+            <li>Portfolio</li>
+            <li>GitHub</li>
+            <li>Project explanations</li>
+            <li>Coding interview skills</li>
+          </ul>
 
-      <p>Then starts applying for internships.</p>
+          <p>Then starts applying for internships.</p>
 
-      <p>
-        That's a much more realistic path than trying to master every computer
-        science topic before building anything.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            That's a much more realistic path than trying to master every
+            computer science topic before building anything.
+          </p>
+        </section>
+        <!-- =========================================
      Our Honest Take
 ========================================= -->
 
-    <section id="honest-take">
-      <h2>Our Honest Take</h2>
+        <section id="honest-take" class="article-section">
+          <h2>Our Honest Take</h2>
 
-      <p>There is no single "perfect" computer science roadmap.</p>
+          <p>There is no single "perfect" computer science roadmap.</p>
 
-      <p>Your ideal path depends on your goal.</p>
+          <p>Your ideal path depends on your goal.</p>
 
-      <p>
-        A student targeting backend development needs a different depth of web
-        technologies than someone targeting embedded systems.
-      </p>
+          <p>
+            A student targeting backend development needs a different depth of
+            web technologies than someone targeting embedded systems.
+          </p>
 
-      <p>
-        Someone interested in AI/ML will eventually need mathematics and
-        machine-learning concepts that aren't central to a traditional
-        web-development path.
-      </p>
+          <p>
+            Someone interested in AI/ML will eventually need mathematics and
+            machine-learning concepts that aren't central to a traditional
+            web-development path.
+          </p>
 
-      <p>
-        Someone targeting cybersecurity will need networking, operating systems
-        and security concepts more deeply.
-      </p>
+          <p>
+            Someone targeting cybersecurity will need networking, operating
+            systems and security concepts more deeply.
+          </p>
 
-      <p>So don't treat this roadmap as a law.</p>
+          <p>So don't treat this roadmap as a law.</p>
 
-      <p>Treat it as a <strong>default foundation</strong>.</p>
+          <p>Treat it as a <strong>default foundation</strong>.</p>
 
-      <p>The most important principle is:</p>
+          <p>The most important principle is:</p>
 
-      <blockquote>
-        <p>
-          <strong>
-            Build broad fundamentals first, then go deep in the direction you
-            actually want to pursue.
-          </strong>
-        </p>
-      </blockquote>
+          <blockquote>
+            <p>
+              <strong>
+                Build broad fundamentals first, then go deep in the direction
+                you actually want to pursue.
+              </strong>
+            </p>
+          </blockquote>
 
-      <p>
-        Also, don't confuse <strong>exposure</strong> with
-        <strong>mastery</strong>.
-      </p>
+          <p>
+            Also, don't confuse <strong>exposure</strong> with
+            <strong>mastery</strong>.
+          </p>
 
-      <p>
-        You might study operating systems for a few weeks and understand the
-        major concepts without becoming an OS expert.
-      </p>
+          <p>
+            You might study operating systems for a few weeks and understand the
+            major concepts without becoming an OS expert.
+          </p>
 
-      <p>That's fine.</p>
+          <p>That's fine.</p>
 
-      <p>
-        You can return to it later when your projects or career path demand
-        greater depth.
-      </p>
+          <p>
+            You can return to it later when your projects or career path demand
+            greater depth.
+          </p>
 
-      <p>
-        And don't measure your progress by the number of technologies on your
-        resume.
-      </p>
+          <p>
+            And don't measure your progress by the number of technologies on
+            your resume.
+          </p>
 
-      <p>
-        Measure it by what you can
-        <strong
-          >build, explain, debug and improve without someone holding your
-          hand</strong
-        >.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            Measure it by what you can
+            <strong
+              >build, explain, debug and improve without someone holding your
+              hand</strong
+            >.
+          </p>
+        </section>
+        <!-- =========================================
      Pros & Limitations
 ========================================= -->
 
-    <section id="pros-limitations">
-      <h2>Pros &amp; Limitations</h2>
+        <section id="pros-limitations" class="article-section">
+          <h2>Pros &amp; Limitations</h2>
 
-      <h3>✅ Pros</h3>
+          <h3>✅ Pros</h3>
 
-      <ul>
-        <li>Gives beginners a clear learning order.</li>
-        <li>Prevents unnecessary technology overload.</li>
-        <li>Connects theory with practical development.</li>
-        <li>Encourages projects throughout the learning process.</li>
-        <li>Builds toward internship and interview preparation.</li>
-        <li>Allows specialization after a common foundation.</li>
-        <li>Helps distinguish essential skills from skills that can wait.</li>
-        <li>
-          Can be adapted to different programming languages and career paths.
-        </li>
-      </ul>
+          <ul>
+            <li>Gives beginners a clear learning order.</li>
+            <li>Prevents unnecessary technology overload.</li>
+            <li>Connects theory with practical development.</li>
+            <li>Encourages projects throughout the learning process.</li>
+            <li>Builds toward internship and interview preparation.</li>
+            <li>Allows specialization after a common foundation.</li>
+            <li>
+              Helps distinguish essential skills from skills that can wait.
+            </li>
+            <li>
+              Can be adapted to different programming languages and career
+              paths.
+            </li>
+          </ul>
 
-      <h3>⚠️ Limitations</h3>
+          <h3>⚠️ Limitations</h3>
 
-      <ul>
-        <li>
-          No roadmap can cover every computer science specialization in equal
-          depth.
-        </li>
-        <li>The best language and development path depends on your goals.</li>
-        <li>
-          Different companies and internship roles can have different
-          requirements.
-        </li>
-        <li>Learning speed varies significantly between students.</li>
-        <li>
-          Knowing a topic theoretically is different from being able to use it
-          independently.
-        </li>
-        <li>
-          The roadmap cannot replace actual coding practice and project
-          experience.
-        </li>
-        <li>
-          Technologies and frameworks change, so development-specific portions
-          should be revisited periodically.
-        </li>
-      </ul>
-    </section>
-    <!-- =========================================
+          <ul>
+            <li>
+              No roadmap can cover every computer science specialization in
+              equal depth.
+            </li>
+            <li>
+              The best language and development path depends on your goals.
+            </li>
+            <li>
+              Different companies and internship roles can have different
+              requirements.
+            </li>
+            <li>Learning speed varies significantly between students.</li>
+            <li>
+              Knowing a topic theoretically is different from being able to use
+              it independently.
+            </li>
+            <li>
+              The roadmap cannot replace actual coding practice and project
+              experience.
+            </li>
+            <li>
+              Technologies and frameworks change, so development-specific
+              portions should be revisited periodically.
+            </li>
+          </ul>
+        </section>
+        <!-- =========================================
      Alternatives & Comparisons
 ========================================= -->
 
-    <section id="alternatives">
-      <h2>Alternatives &amp; Comparisons</h2>
+        <section id="alternatives" class="article-section">
+          <h2>Alternatives &amp; Comparisons</h2>
 
-      <p>You don't have to follow one identical path.</p>
+          <p>You don't have to follow one identical path.</p>
 
-      <h3>Traditional CS-first approach</h3>
+          <h3>Traditional CS-first approach</h3>
 
-      <p>
-        <strong>
-          Programming → DSA → CS fundamentals → Development → Projects →
-          Interviews
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Programming → DSA → CS fundamentals → Development → Projects →
+              Interviews
+            </strong>
+          </p>
 
-      <h4>Best for:</h4>
+          <h4>Best for:</h4>
 
-      <p>
-        Students who want a stronger academic and computer-science foundation
-        before specializing.
-      </p>
+          <p>
+            Students who want a stronger academic and computer-science
+            foundation before specializing.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Development-first approach</h3>
+          <h3>Development-first approach</h3>
 
-      <p>
-        <strong>
-          Programming → Development → Projects → Backend → CS fundamentals → DSA
-          → Interviews
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Programming → Development → Projects → Backend → CS fundamentals →
+              DSA → Interviews
+            </strong>
+          </p>
 
-      <h4>Best for:</h4>
+          <h4>Best for:</h4>
 
-      <p>
-        Students who want to start building applications quickly and learn
-        through projects.
-      </p>
+          <p>
+            Students who want to start building applications quickly and learn
+            through projects.
+          </p>
 
-      <p>
-        The risk is that foundational topics can get postponed for too long.
-      </p>
+          <p>
+            The risk is that foundational topics can get postponed for too long.
+          </p>
 
-      <hr />
+          <hr />
 
-      <h3>Balanced approach — Our recommendation</h3>
+          <h3>Balanced approach — Our recommendation</h3>
 
-      <p>
-        <strong>
-          Programming → Problem Solving → OOP → DSA + Projects → SQL + Git →
-          Development → CS fundamentals → Projects → Internship preparation
-        </strong>
-      </p>
+          <p>
+            <strong>
+              Programming → Problem Solving → OOP → DSA + Projects → SQL + Git →
+              Development → CS fundamentals → Projects → Internship preparation
+            </strong>
+          </p>
 
-      <p>This gives you both:</p>
+          <p>This gives you both:</p>
 
-      <p>
-        <strong>the ability to build</strong>
-      </p>
+          <p>
+            <strong>the ability to build</strong>
+          </p>
 
-      <p>and</p>
+          <p>and</p>
 
-      <p>
-        <strong>the ability to understand what you're building.</strong>
-      </p>
+          <p>
+            <strong>the ability to understand what you're building.</strong>
+          </p>
 
-      <p>
-        For most students targeting software-development internships, this is
-        the approach we'd recommend.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            For most students targeting software-development internships, this
+            is the approach we'd recommend.
+          </p>
+        </section>
+        <!-- =========================================
      Frequently Asked Questions
 ========================================= -->
 
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
+        <section id="faq" class="article-section">
+          <h2>Frequently Asked Questions</h2>
 
-      <h3>How long does it take to learn computer science?</h3>
+          <h3>How long does it take to learn computer science?</h3>
 
-      <p>There isn't a fixed timeline.</p>
+          <p>There isn't a fixed timeline.</p>
 
-      <p>
-        You can learn the fundamentals relatively quickly, but becoming
-        genuinely capable of building software and solving unfamiliar problems
-        takes continued practice.
-      </p>
+          <p>
+            You can learn the fundamentals relatively quickly, but becoming
+            genuinely capable of building software and solving unfamiliar
+            problems takes continued practice.
+          </p>
 
-      <p>
-        Think in terms of <strong>progressive capability</strong>, not a
-        countdown.
-      </p>
+          <p>
+            Think in terms of <strong>progressive capability</strong>, not a
+            countdown.
+          </p>
 
-      <h3>Should I learn DSA before development?</h3>
+          <h3>Should I learn DSA before development?</h3>
 
-      <p>
-        Learn the foundations of DSA early, but don't wait until you've mastered
-        DSA before building software.
-      </p>
+          <p>
+            Learn the foundations of DSA early, but don't wait until you've
+            mastered DSA before building software.
+          </p>
 
-      <p>The two tracks can progress together.</p>
+          <p>The two tracks can progress together.</p>
 
-      <h3>Which programming language should I learn first?</h3>
+          <h3>Which programming language should I learn first?</h3>
 
-      <p>Python, Java, C++ and JavaScript can all be reasonable choices.</p>
+          <p>Python, Java, C++ and JavaScript can all be reasonable choices.</p>
 
-      <p>Choose based on your goals and the ecosystem you want to enter.</p>
+          <p>Choose based on your goals and the ecosystem you want to enter.</p>
 
-      <h3>Do I need to learn C before Java or Python?</h3>
+          <h3>Do I need to learn C before Java or Python?</h3>
 
-      <p>No.</p>
+          <p>No.</p>
 
-      <p>
-        C can be valuable for understanding lower-level concepts, but it isn't a
-        prerequisite for learning Java or Python.
-      </p>
+          <p>
+            C can be valuable for understanding lower-level concepts, but it
+            isn't a prerequisite for learning Java or Python.
+          </p>
 
-      <h3>Do I need to learn multiple programming languages?</h3>
+          <h3>Do I need to learn multiple programming languages?</h3>
 
-      <p>Not initially.</p>
+          <p>Not initially.</p>
 
-      <p>
-        Become comfortable with one language first. Add another when you have a
-        practical reason.
-      </p>
+          <p>
+            Become comfortable with one language first. Add another when you
+            have a practical reason.
+          </p>
 
-      <h3>Do I need to learn every framework?</h3>
+          <h3>Do I need to learn every framework?</h3>
 
-      <p>No.</p>
+          <p>No.</p>
 
-      <p>
-        Learn the fundamentals first, then learn the framework required by your
-        chosen development path.
-      </p>
+          <p>
+            Learn the fundamentals first, then learn the framework required by
+            your chosen development path.
+          </p>
 
-      <h3>Should I build projects while learning?</h3>
+          <h3>Should I build projects while learning?</h3>
 
-      <p>Yes.</p>
+          <p>Yes.</p>
 
-      <p>Projects help turn theoretical knowledge into practical ability.</p>
+          <p>
+            Projects help turn theoretical knowledge into practical ability.
+          </p>
 
-      <h3>How many projects should I put on my resume?</h3>
+          <h3>How many projects should I put on my resume?</h3>
 
-      <p>
-        Focus on a small number of strong, relevant projects rather than a large
-        number of tutorial-level projects.
-      </p>
+          <p>
+            Focus on a small number of strong, relevant projects rather than a
+            large number of tutorial-level projects.
+          </p>
 
-      <h3>Do I need certifications?</h3>
+          <h3>Do I need certifications?</h3>
 
-      <p>
-        Certifications can be useful in some contexts, but they shouldn't
-        replace programming ability, projects or relevant experience.
-      </p>
+          <p>
+            Certifications can be useful in some contexts, but they shouldn't
+            replace programming ability, projects or relevant experience.
+          </p>
 
-      <h3>When should I start applying for internships?</h3>
+          <h3>When should I start applying for internships?</h3>
 
-      <p>
-        Once you can demonstrate basic programming ability, some DSA knowledge,
-        meaningful projects and enough understanding to explain your work, you
-        can start applying while continuing to improve.
-      </p>
+          <p>
+            Once you can demonstrate basic programming ability, some DSA
+            knowledge, meaningful projects and enough understanding to explain
+            your work, you can start applying while continuing to improve.
+          </p>
 
-      <h3>Do I need to learn system design as a beginner?</h3>
+          <h3>Do I need to learn system design as a beginner?</h3>
 
-      <p>
-        You can learn basic software architecture and application design as your
-        projects grow, but advanced system-design preparation generally makes
-        more sense later.
-      </p>
+          <p>
+            You can learn basic software architecture and application design as
+            your projects grow, but advanced system-design preparation generally
+            makes more sense later.
+          </p>
 
-      <h3>
-        Do I need to learn cloud and DevOps before applying for internships?
-      </h3>
+          <h3>
+            Do I need to learn cloud and DevOps before applying for internships?
+          </h3>
 
-      <p>Not necessarily.</p>
+          <p>Not necessarily.</p>
 
-      <p>
-        Basic deployment knowledge can be valuable, but don't postpone your
-        applications simply because you haven't mastered advanced cloud or
-        DevOps tooling.
-      </p>
+          <p>
+            Basic deployment knowledge can be valuable, but don't postpone your
+            applications simply because you haven't mastered advanced cloud or
+            DevOps tooling.
+          </p>
 
-      <h3>Should I follow this roadmap exactly?</h3>
+          <h3>Should I follow this roadmap exactly?</h3>
 
-      <p>No.</p>
+          <p>No.</p>
 
-      <p>
-        Use it as a default progression and adjust the depth and order according
-        to your goals, coursework and target roles.
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            Use it as a default progression and adjust the depth and order
+            according to your goals, coursework and target roles.
+          </p>
+        </section>
+        <!-- =========================================
      Final Verdict
 ========================================= -->
 
-    <section id="final-verdict">
-      <h2>Final Verdict</h2>
+        <section id="final-verdict" class="article-section">
+          <h2>Final Verdict</h2>
 
-      <p>You don't need to learn all of computer science at once.</p>
+          <p>You don't need to learn all of computer science at once.</p>
 
-      <p>You need a sequence.</p>
+          <p>You need a sequence.</p>
 
-      <p>
-        Start with programming. Learn to solve problems. Understand OOP. Build
-        your DSA foundation. Learn Git and SQL. Choose a development direction.
-        Build projects. Learn APIs, backend, testing and deployment. Strengthen
-        your computer-science fundamentals. Then prepare for internships and
-        interviews.
-      </p>
+          <p>
+            Start with programming. Learn to solve problems. Understand OOP.
+            Build your DSA foundation. Learn Git and SQL. Choose a development
+            direction. Build projects. Learn APIs, backend, testing and
+            deployment. Strengthen your computer-science fundamentals. Then
+            prepare for internships and interviews.
+          </p>
 
-      <p>The goal isn't to collect technologies.</p>
+          <p>The goal isn't to collect technologies.</p>
 
-      <p>The goal is to become someone who can:</p>
+          <p>The goal is to become someone who can:</p>
 
-      <ul>
-        <li>Write code</li>
-        <li>Solve unfamiliar problems</li>
-        <li>Build useful software</li>
-        <li>Work with data</li>
-        <li>Use development tools</li>
-        <li>Debug failures</li>
-        <li>Deploy applications</li>
-        <li>Explain technical decisions</li>
-        <li>Learn new technologies when needed</li>
-      </ul>
+          <ul>
+            <li>Write code</li>
+            <li>Solve unfamiliar problems</li>
+            <li>Build useful software</li>
+            <li>Work with data</li>
+            <li>Use development tools</li>
+            <li>Debug failures</li>
+            <li>Deploy applications</li>
+            <li>Explain technical decisions</li>
+            <li>Learn new technologies when needed</li>
+          </ul>
 
-      <p>That's what being job-ready actually starts to look like.</p>
+          <p>That's what being job-ready actually starts to look like.</p>
 
-      <p>
-        <strong>
-          Learn → Practice → Build → Understand → Improve → Apply.
-        </strong>
-      </p>
-    </section>
-    <!-- =========================================
+          <p>
+            <strong>
+              Learn → Practice → Build → Understand → Improve → Apply.
+            </strong>
+          </p>
+        </section>
+        <!-- =========================================
      Article Sharing
 ========================================= -->
 
-    <div class="article-share">
-      <span class="article-share-label">Share this article</span>
+        <div class="article-share">
+          <span class="article-share-label">Share this article</span>
 
-      <button id="share-article" type="button">Share</button>
+          <button id="share-article" type="button">Share</button>
 
-      <button id="copy-article-link" type="button">Copy Link</button>
-    </div>
+          <button id="copy-article-link" type="button">Copy Link</button>
+        </div>
 
-    <!-- =========================================
+        <!-- =========================================
      Article Navigation CTA
 ========================================= -->
 
-    <div class="article-navigation-cta">
-      <h2>Explore More Articles</h2>
+        <div class="article-navigation-cta">
+          <h2>Explore More Articles</h2>
 
-      <p>
-        Discover more practical AI guides, study resources, productivity tips,
-        and programming resources from Nexora AI.
-      </p>
+          <p>
+            Discover more practical AI guides, study resources, productivity
+            tips, and programming resources from Nexora AI.
+          </p>
 
-      <a href="../pages/articles.html">Browse All Articles →</a>
-    </div>
+          <a href="../pages/articles.html">Browse All Articles →</a>
+        </div>
 
-    <!-- =========================================
+        <!-- =========================================
      Related Articles
 ========================================= -->
 
-    <aside class="related-articles">
-      <h2>Continue Exploring Nexora AI</h2>
+        <aside class="related-articles">
+          <h2>Continue Exploring Nexora AI</h2>
 
-      <p>Explore more practical guides and resources from Nexora AI.</p>
+          <p>Explore more practical guides and resources from Nexora AI.</p>
 
-      <div class="related-articles-grid">
-        <a href="perfect-ai-study-system.html" class="related-article-card">
-          <h3>The Perfect AI Study System: A Complete Guide for Students</h3>
-          <p>Learn how to build a practical AI-powered study workflow.</p>
-        </a>
+          <div class="related-articles-grid">
+            <a href="perfect-ai-study-system.html" class="related-article-card">
+              <h3>
+                The Perfect AI Study System: A Complete Guide for Students
+              </h3>
+              <p>Learn how to build a practical AI-powered study workflow.</p>
+            </a>
 
-        <div class="related-article-card">
-          <h3>10 Best Free AI Websites Every Student Should Know</h3>
-          <p>Coming soon</p>
-        </div>
+            <div class="related-article-card">
+              <h3>10 Best Free AI Websites Every Student Should Know</h3>
+              <p>Coming soon</p>
+            </div>
 
-        <div class="related-article-card">
-          <h3>7 Smart AI Tools for Serious Students</h3>
-          <p>Coming soon</p>
-        </div>
-      </div>
-    </aside>
-    <!-- =========================================
+            <div class="related-article-card">
+              <h3>7 Smart AI Tools for Serious Students</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
+        </aside>
+        <!-- =========================================
      Footer
 ========================================= -->
-
+      </article>
+    </main>
     <footer>
       <p>© 2026 Nexora AI. All Rights Reserved.</p>
     </footer>
