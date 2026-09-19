@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Contact Nexora AI with questions, feedback, suggestions, or collaboration inquiries."
+    />
+    <meta name="author" content="Nexora AI" />
+
+    <title>Contact Nexora AI | Get in Touch</title>
+
+    <meta property="og:title" content="Contact Nexora AI | Get in Touch" />
+    <meta
+      property="og:description"
+      content="Have a question, suggestion, or feedback? Get in touch with Nexora AI."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      .contact-container {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 30px 20px 60px;
+      }
+
+      .contact-intro {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .contact-intro h2 {
+        font-size: clamp(1.7rem, 4vw, 2.4rem);
+        margin-bottom: 12px;
+      }
+
+      .contact-intro p {
+        line-height: 1.7;
+      }
+
+      .contact-form {
+        display: grid;
+        gap: 18px;
+      }
+
+      .contact-form label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font: inherit;
+        box-sizing: border-box;
+      }
+
+      .contact-form textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
+      }
+
+      .contact-submit {
+        border: none;
+        border-radius: 8px;
+        padding: 13px 20px;
+        background: #2563eb;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .contact-submit:hover {
+        background: #1d4ed8;
+      }
+
+      .contact-note {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #64748b;
+      }
+
+      @media (max-width: 600px) {
+        .contact-container {
+          padding: 24px 16px 40px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="article-header">
+      <img
+        src="../assets/images/branding/nexora-logo.png"
+        alt="Nexora AI"
+        class="nexora-logo"
+      />
+
+      <h1>Contact Us</h1>
+
+      <p class="article-intro">
+        Have a question, suggestion, or feedback? We'd love to hear from you.
+      </p>
+    </header>
+
+    <!-- Contact Form -->
+
+    <main class="contact-container">
+      <section class="contact-intro">
+        <h2>Let's Connect</h2>
+
+        <p>
+          Whether you have feedback about our articles, suggestions for AI
+          tools, or an idea for collaboration, feel free to reach out.
+        </p>
+      </section>
+
+      <form id="contact-form" class="contact-form">
+        <div>
+          <label for="name">Your Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Your Email *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="phone"> Phone Number (Optional) </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number (optional)"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div>
+          <label for="subject">Subject *</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What is this regarding?"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="message">Your Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="contact-submit">Send Message →</button>
+
+        <p class="contact-note">
+          Your message will open in your email app for you to review and send.
+          Your phone number is optional. Please avoid including sensitive
+          personal information.
+        </p>
+      </form>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Nexora AI. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Email Form Handler -->
+
+    <script>
+      const contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const recipient = "nexoraaaai@gmail.com";
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const emailSubject = encodeURIComponent(
+          "Nexora AI Contact: " + subject,
+        );
+
+        const emailBody = encodeURIComponent(
+          "Name: " +
+            name +
+            "\n" +
+            "Email: " +
+            email +
+            "\n" +
+            "Phone: " +
+            (phone || "Not provided") +
+            "\n\n" +
+            "Message:\n" +
+            message,
+        );
+
+        window.location.href =
+          "mailto:" +
+          recipient +
+          "?subject=" +
+          emailSubject +
+          "&body=" +
+          emailBody;
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
