@@ -96,9 +96,44 @@
         color: #64748b;
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         .contact-container {
+          display: block !important;
+          width: 100%;
+          max-width: 100%;
+          box-sizing: border-box;
+          margin: 0;
           padding: 24px 16px 40px;
+        }
+
+        .contact-intro {
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 35px;
+          text-align: center;
+        }
+
+        .contact-form {
+          display: grid;
+          grid-template-columns: 1fr !important;
+          width: 100%;
+          gap: 18px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%;
+          max-width: 100%;
+          box-sizing: border-box;
+        }
+
+        .contact-submit {
+          width: 100%;
+        }
+
+        .contact-note {
+          width: 100%;
+          box-sizing: border-box;
         }
       }
     </style>
@@ -251,10 +286,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-

@@ -88,14 +88,16 @@ if (searchInput) {
 document.addEventListener("DOMContentLoaded", () => {
   const readingProgress = document.querySelector("#reading-progress");
 
-  console.log("Reading progress element:", readingProgress);
+  if (!readingProgress) return;
 
   window.addEventListener("scroll", () => {
     const scrollTop = window.scrollY;
+
     const documentHeight =
       document.documentElement.scrollHeight - window.innerHeight;
 
-    const scrollPercentage = (scrollTop / documentHeight) * 100;
+    const scrollPercentage =
+      documentHeight > 0 ? (scrollTop / documentHeight) * 100 : 0;
 
     readingProgress.style.width = `${scrollPercentage}%`;
   });
