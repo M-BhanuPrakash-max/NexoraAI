@@ -38,6 +38,19 @@
     />
     <link rel="icon" type="image/png" href="../assets/favicon/favicon.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QBK64FY68P"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QBK64FY68P");
+    </script>
   </head>
 
   <body>
@@ -142,6 +155,16 @@
 
             <p>Free Websites • 10 min read</p>
           </a>
+          <!-- Published Article -->
+          <a
+            href="../articles/10-github-projects-for-computer-science-students.html"
+            class="related-article-card"
+            data-category="programming"
+          >
+            <h3>10 GitHub Projects for Computer Science Students</h3>
+
+            <p>Programming • 7 min read</p>
+          </a>
           <!-- Upcoming Article -->
 
           <div class="related-article-card" data-category="ai-tools">
@@ -159,6 +182,11 @@
           </div>
         </div>
       </section>
+      <div class="articles-more">
+        <a href="more-articles.html" class="btn btn-primary">
+          Read More Articles →
+        </a>
+      </div>
     </main>
 
     <!-- =====================================
