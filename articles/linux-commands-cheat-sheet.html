@@ -1,0 +1,2111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn 50 essential Linux commands for beginners and developers. This practical Linux commands cheat sheet explains syntax, examples, options, permissions, and safety tips."
+    />
+    <meta name="author" content="Nexora AI" />
+    <meta name="robots" content="index, follow" />
+    <title>
+      50 Essential Linux Commands for Beginners (With Examples) | Nexora AI
+    </title>
+    <link
+      rel="canonical"
+      href="https://m-bhanuprakash-max.github.io/NexoraAI/articles/linux-commands-cheat-sheet.html"
+    />
+    <meta
+      property="og:title"
+      content="50 Essential Linux Commands for Beginners (With Examples) | Nexora AI"
+    />
+    <meta
+      property="og:description"
+      content="A practical Linux commands cheat sheet covering 50 essential terminal commands, real examples, common options, permissions, and safety warnings."
+    />
+    <meta property="og:type" content="article" />
+    <meta property="article:author" content="Nexora AI" />
+    <meta property="article:section" content="Linux & Developer Skills" />
+    <meta
+      property="og:url"
+      content="https://m-bhanuprakash-max.github.io/NexoraAI/articles/linux-commands-cheat-sheet.html"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="50 Essential Linux Commands for Beginners | Nexora AI"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn 50 useful Linux commands with syntax, examples, options, and beginner-friendly explanations."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "50 Essential Linux Commands for Beginners (With Examples)",
+        "description": "A practical reference to 50 essential Linux terminal commands, including syntax, examples, common options, permissions, and safety guidance.",
+        "author": { "@type": "Organization", "name": "Nexora AI" },
+        "publisher": { "@type": "Organization", "name": "Nexora AI" },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://m-bhanuprakash-max.github.io/NexoraAI/articles/linux-commands-cheat-sheet.html"
+        },
+        "articleSection": "Linux & Developer Skills"
+      }
+    </script>
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="reading-progress" id="reading-progress"></div>
+    <header class="article-header">
+      <div class="article-category">Linux &amp; Developer Skills</div>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span aria-hidden="true">›</span>
+        <a href="../pages/more-articles.html">Articles</a
+        ><span aria-hidden="true">›</span>
+        <span aria-current="page">Linux Commands Cheat Sheet</span>
+      </nav>
+      <h1>
+        Linux Commands Cheat Sheet: 50 Essential Linux Commands Every Beginner
+        and Developer Should Know
+      </h1>
+      <p class="article-intro">
+        New to the Linux terminal? This practical guide explains 50 commands you
+        can use to navigate folders, manage files, inspect your system, work
+        with processes, troubleshoot networks, install software, and check
+        storage. Each command includes its syntax, a realistic example, and
+        notes about permissions or risks.
+      </p>
+      <div class="article-meta">
+        <span>By Nexora AI</span><span>•</span><span>November 2026</span
+        ><span>•</span><span id="reading-time">Reading time</span>
+      </div>
+    </header>
+    <figure class="article-content-image">
+      <img
+        src="../assets/images/articles/linux-commands-cheat-sheet/linux-commands-hero.png"
+        alt="Linux terminal running command-line instructions on a laptop at a developer workstation."
+        width="2752"
+        height="1536"
+        loading="eager"
+      />
+    </figure>
+    <main class="article-container">
+      <article>
+        <nav class="article-toc" aria-label="Table of contents">
+          <h2>Table of Contents</h2>
+          <ol>
+            <li><a href="#introduction">Introduction</a></li>
+            <li>
+              <a href="#terminal-basics">Understanding the Linux Terminal</a>
+            </li>
+            <li>
+              <a href="#category-1">Navigation and directory management</a>
+            </li>
+            <li><a href="#category-2">File and folder operations</a></li>
+            <li><a href="#category-3">Viewing and editing files</a></li>
+            <li><a href="#category-4">Searching and filtering</a></li>
+            <li><a href="#category-5">Permissions and ownership</a></li>
+            <li><a href="#category-6">System information and monitoring</a></li>
+            <li><a href="#category-7">Process management</a></li>
+            <li><a href="#category-8">Networking</a></li>
+            <li><a href="#category-9">Package management</a></li>
+            <li><a href="#category-10">Storage and disk management</a></li>
+            <li>
+              <a href="#practical-examples">Practical Linux Command Examples</a>
+            </li>
+            <li>
+              <a href="#use-carefully">Linux Commands to Use Carefully</a>
+            </li>
+            <li><a href="#mistakes">Common Beginner Mistakes</a></li>
+            <li><a href="#practice">How to Practise Linux Commands</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li>
+              <a href="#references"
+                >Official Documentation and Further Reading</a
+              >
+            </li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ol>
+        </nav>
+
+        <section id="introduction" class="article-section">
+          <h2>1. Introduction: Why Learn Linux Commands?</h2>
+          <p>
+            Linux commands are text instructions entered into a shell to work
+            with files, directories, programs, devices, networks, and system
+            settings. Instead of navigating every task through graphical menus,
+            you can use a terminal to perform repeatable operations and combine
+            small tools into useful workflows.
+          </p>
+          <p>
+            For computer science students and developers, command-line knowledge
+            is useful when working with servers, remote machines, Git,
+            development tools, containers, logs, and deployment environments. It
+            also helps you understand what is happening beneath a graphical
+            interface.
+          </p>
+          <p>
+            This guide is written for beginners. You do not need to memorize all
+            50 commands at once. Start with navigation and file commands,
+            practise the examples in a safe folder, and return to this page as a
+            reference.
+          </p>
+          <p>
+            <strong>Scope note:</strong> Examples target common GNU/Linux
+            systems and a Bash-like shell unless stated otherwise. Some tools
+            are optional packages, some commands are shell built-ins, and
+            package-management commands differ by distribution. Read the notes
+            before copying a command into your own system.
+          </p>
+        </section>
+
+        <section id="terminal-basics" class="article-section">
+          <h2>2. Understanding the Linux Terminal</h2>
+          <h3>What is a terminal?</h3>
+          <p>
+            A terminal is the text-based interface through which you interact
+            with a command-line program. On a desktop Linux system, open the
+            Terminal application from the applications menu. Common keyboard
+            shortcuts include Ctrl+Alt+T on many Ubuntu desktop setups, although
+            shortcuts can vary by desktop environment.
+          </p>
+          <h3>What is a shell?</h3>
+          <p>
+            A shell reads the commands you type, interprets shell syntax, starts
+            programs, and connects their input and output. Bash is common on
+            many Linux systems, but other shells such as Zsh, Fish, and Dash are
+            also used. Shell built-ins such as <code>cd</code> run inside the
+            shell itself.
+          </p>
+          <figure class="article-content-image">
+            <img
+              src="../assets/images/articles/linux-commands-cheat-sheet/linux-terminal-anatomy.png"
+              alt="Linux terminal command anatomy showing the command, options, argument, and resulting output."
+              width="2752"
+              height="1536"
+              loading="lazy"
+            />
+          </figure>
+          <h3>Basic command syntax</h3>
+          <pre><code>command [options] [arguments]</code></pre>
+          <ul>
+            <li>
+              <strong>Command:</strong> the program or shell built-in to run,
+              such as <code>ls</code>.
+            </li>
+            <li>
+              <strong>Options:</strong> change how the command behaves, such as
+              <code>-l</code> or <code>--help</code>.
+            </li>
+            <li>
+              <strong>Arguments:</strong> the file, directory, user, host, or
+              other value the command operates on.
+            </li>
+          </ul>
+          <p>
+            For example, in <code>ls -lah ~/Documents</code>, <code>ls</code> is
+            the command, <code>-lah</code> contains options, and
+            <code>~/Documents</code> is the path argument.
+          </p>
+          <h3>How to execute a command</h3>
+          <ol>
+            <li>Open a terminal window.</li>
+            <li>Type a command, including any options and arguments.</li>
+            <li>Press Enter to run it.</li>
+            <li>
+              Read the output or error message before trying another command.
+            </li>
+          </ol>
+          <p>
+            Use <code>man COMMAND</code> to open a command's manual page when it
+            is installed, or try <code>COMMAND --help</code> for a shorter usage
+            summary. Not every program supports the same help options. The shell
+            usually distinguishes uppercase and lowercase names, and spaces
+            separate arguments.
+          </p>
+          <h3>Paths, quotes, pipes, and elevated privileges</h3>
+          <p>
+            An absolute path starts from <code>/</code>, such as
+            <code>/home/student/notes.txt</code>. A relative path is interpreted
+            from the current directory. Quote paths containing spaces, for
+            example <code>"My Projects/report.txt"</code>. A pipe
+            (<code>|</code>) sends one command's output to another command's
+            input. The <code>sudo</code> program runs an authorized command with
+            elevated privileges; it is not a reason to add administrator access
+            to every command.
+          </p>
+        </section>
+
+        <section id="category-1" class="article-section">
+          <h2>3. Navigation and directory management</h2>
+          <p>Move around the filesystem and create or remove directories.</p>
+          <section class="command-entry" id="cmd-pwd">
+            <h3>1. <code>pwd</code></h3>
+            <p><strong>Syntax:</strong> <code>pwd</code></p>
+            <p>
+              <strong>What it does:</strong> Prints the absolute path of the
+              current working directory.
+            </p>
+            <pre><code>pwd</code></pre>
+            <p>
+              <strong>Example explained:</strong> Run it when you are unsure
+              which directory your terminal is currently using.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> No options are needed
+              for the common use. The result is the directory from which
+              relative paths are interpreted.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> None for ordinary use.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-ls">
+            <h3>2. <code>ls</code></h3>
+            <p><strong>Syntax:</strong> <code>ls [OPTIONS] [PATH]</code></p>
+            <p><strong>What it does:</strong> Lists files and directories.</p>
+            <pre><code>ls -lah ~/Documents</code></pre>
+            <p>
+              <strong>Example explained:</strong> Shows the Documents directory,
+              including hidden entries, with permissions, owner, size, and
+              modification time in a human-readable listing.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -l long listing; -a
+              include hidden names; -h human-readable sizes; -R recurse into
+              subdirectories. Exact output varies by implementation and locale.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> None for ordinary use.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-cd">
+            <h3>3. <code>cd</code></h3>
+            <p><strong>Syntax:</strong> <code>cd [DIRECTORY]</code></p>
+            <p>
+              <strong>What it does:</strong> Changes the current directory in
+              the running shell. It is normally a shell built-in, not a separate
+              executable.
+            </p>
+            <pre><code>cd ~/Projects</code></pre>
+            <p>
+              <strong>Example explained:</strong> Moves to the Projects
+              directory under your home directory. `cd ..` moves to the parent;
+              `cd -` returns to the previous directory in Bash and many common
+              shells.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `~` means the current
+              user&#x27;s home directory; `..` is the parent directory; `.` is
+              the current directory. A directory containing spaces should be
+              quoted, for example `cd &quot;My Projects&quot;`.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> None, but you need
+              execute/search permission on the path components.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-mkdir">
+            <h3>4. <code>mkdir</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>mkdir [OPTIONS] DIRECTORY...</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Creates one or more directories.
+            </p>
+            <pre><code>mkdir -p ~/practice/linux/files</code></pre>
+            <p>
+              <strong>Example explained:</strong> Creates the nested directory
+              path. The `-p` option also avoids an error when the parent
+              directories already exist.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -p create parent
+              directories as needed; -v print a message for each created
+              directory; -m MODE set initial permissions, subject to the process
+              umask.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Requires write
+              permission in the parent directory.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-rmdir">
+            <h3>5. <code>rmdir</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>rmdir [OPTIONS] DIRECTORY...</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Removes empty directories. It does
+              not remove directories containing files.
+            </p>
+            <pre><code>rmdir ~/practice/empty-folder</code></pre>
+            <p>
+              <strong>Example explained:</strong> Removes the directory only if
+              it is empty. If it contains files or subdirectories, the command
+              fails.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -p remove empty parent
+              directories as well; -v report each removal.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Destructive but limited
+              to empty directories. Check the path before running it.
+            </p>
+          </section>
+        </section>
+        <section id="category-2" class="article-section">
+          <h2>4. File and folder operations</h2>
+          <p>Create files, copy or move them, remove them, and create links.</p>
+          <figure class="article-content-image">
+            <img
+              src="../assets/images/articles/linux-commands-cheat-sheet/linux-directory-structure.png"
+              alt="Example Linux directory hierarchy showing the root, home, Documents, Downloads, Projects, etc, var, and usr directories."
+              width="2752"
+              height="1536"
+              loading="lazy"
+            />
+          </figure>
+          <section class="command-entry" id="cmd-touch">
+            <h3>6. <code>touch</code></h3>
+            <p><strong>Syntax:</strong> <code>touch [OPTIONS] FILE...</code></p>
+            <p>
+              <strong>What it does:</strong> Creates an empty file if it does
+              not exist, or updates timestamps on an existing file.
+            </p>
+            <pre><code>touch notes.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Creates `notes.txt` in the
+              current directory if it is absent. If it already exists, its
+              timestamps are updated; its contents are not erased.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -c do not create
+              missing files; -t set a timestamp; -a update access time; -m
+              update modification time.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Usually no administrator
+              privileges. The directory must be writable to create a new file.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-cp">
+            <h3>7. <code>cp</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>cp [OPTIONS] SOURCE DESTINATION</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Copies files; recursive options are
+              used to copy directories.
+            </p>
+            <pre><code>cp report.txt ~/Documents/report-backup.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Copies the file to Documents
+              under a new name. The original remains in place.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -i prompt before
+              overwriting; -n do not overwrite existing destination files (where
+              supported); -r copy directories recursively; -v show copied paths.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Can overwrite
+              destination data. Inspect source and destination carefully; `-i`
+              is useful for interactive work.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-mv">
+            <h3>8. <code>mv</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>mv [OPTIONS] SOURCE DESTINATION</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Moves a file or directory, or
+              renames it when source and destination are in the same directory.
+            </p>
+            <pre><code>mv draft.txt final-report.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Renames `draft.txt` to
+              `final-report.txt` in the current directory.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -i prompt before
+              overwriting; -n do not overwrite existing files
+              (implementation-dependent details); -v show the move.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> May replace an existing
+              destination. Use `-i` and check the destination first.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-rm">
+            <h3>9. <code>rm</code></h3>
+            <p><strong>Syntax:</strong> <code>rm [OPTIONS] FILE...</code></p>
+            <p>
+              <strong>What it does:</strong> Removes directory entries for
+              files. Directories require a recursive option such as `-r`.
+            </p>
+            <pre><code>rm -i old-notes.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Asks for confirmation before
+              removing the named file. This is safer for beginners than an
+              unconditional removal.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -i prompt before each
+              removal; -r recurse into directories; -f ignore nonexistent files
+              and suppress prompts. Avoid combining `-r` and `-f` casually.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Potentially destructive.
+              Removed files may not go to a desktop Trash and may be difficult
+              or impossible to recover. Never paste an unfamiliar `rm` command.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-ln">
+            <h3>10. <code>ln</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>ln [OPTIONS] TARGET LINK_NAME</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Creates a link to an existing file
+              or directory. By default it creates a hard link; `-s` creates a
+              symbolic (soft) link.
+            </p>
+            <pre><code>ln -s /var/log/myapp.log ~/myapp-log</code></pre>
+            <p>
+              <strong>Example explained:</strong> Creates a symbolic link in the
+              home directory that points to the log file. Opening the link
+              accesses the target.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -s symbolic link; -f
+              force replacement of an existing link name (use with care); -v
+              show the link created.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Creating a link requires
+              permission in the destination directory. A symbolic link can point
+              to a target that does not currently exist.
+            </p>
+          </section>
+        </section>
+        <section id="category-3" class="article-section">
+          <h2>5. Viewing and editing files</h2>
+          <p>Read text from the terminal and make simple text-file edits.</p>
+          <section class="command-entry" id="cmd-cat">
+            <h3>11. <code>cat</code></h3>
+            <p><strong>Syntax:</strong> <code>cat [OPTIONS] FILE...</code></p>
+            <p>
+              <strong>What it does:</strong> Writes file contents to standard
+              output. It can also concatenate multiple files.
+            </p>
+            <pre><code>cat README.md</code></pre>
+            <p>
+              <strong>Example explained:</strong> Prints the contents of
+              README.md in the terminal. It is best for short files; large files
+              can scroll past quickly.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -n number output lines;
+              -b number non-empty lines; `cat file1 file2` prints both files in
+              sequence.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only in this
+              example. Avoid using shell redirection with `cat` unless you
+              understand whether it overwrites a file.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-less">
+            <h3>12. <code>less</code></h3>
+            <p><strong>Syntax:</strong> <code>less [OPTIONS] FILE</code></p>
+            <p>
+              <strong>What it does:</strong> Opens a text file in a scrollable
+              pager, without loading the entire display into the terminal at
+              once.
+            </p>
+            <pre><code>less /var/log/syslog</code></pre>
+            <p>
+              <strong>Example explained:</strong> Lets you inspect a log file
+              page by page. Use `/word` to search, `n` for the next match, and
+              `q` to quit.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -N show line numbers;
+              -S chop long lines rather than wrapping them. Key bindings can
+              vary slightly by pager configuration.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. The `less`
+              program may not be installed on very minimal systems.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-head">
+            <h3>13. <code>head</code></h3>
+            <p><strong>Syntax:</strong> <code>head [OPTIONS] FILE...</code></p>
+            <p>
+              <strong>What it does:</strong> Displays the beginning of a file;
+              by default it prints the first 10 lines.
+            </p>
+            <pre><code>head -n 20 server.log</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays the first 20 lines of
+              the log, which is useful for checking headers or the earliest
+              entries in a file.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -n N choose the number
+              of lines; -c N choose the number of bytes. Multiple files are
+              labelled in typical GNU implementations.
+            </p>
+            <p><strong>Permissions and caution:</strong> Read-only.</p>
+          </section>
+          <section class="command-entry" id="cmd-tail">
+            <h3>14. <code>tail</code></h3>
+            <p><strong>Syntax:</strong> <code>tail [OPTIONS] FILE...</code></p>
+            <p>
+              <strong>What it does:</strong> Displays the end of a file; by
+              default it prints the last 10 lines.
+            </p>
+            <pre><code>tail -n 30 server.log</code></pre>
+            <p>
+              <strong>Example explained:</strong> Shows the most recent 30 lines
+              currently stored in the log.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -n N choose the number
+              of lines; -f continue displaying appended data; -F follow a file
+              by name in GNU coreutils.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. `-f` keeps
+              running until interrupted, usually with Ctrl+C.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-nano">
+            <h3>15. <code>nano</code></h3>
+            <p><strong>Syntax:</strong> <code>nano [OPTIONS] [FILE]</code></p>
+            <p>
+              <strong>What it does:</strong> Opens a simple terminal text
+              editor. It is beginner-friendly but may not be installed by
+              default.
+            </p>
+            <pre><code>nano notes.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Opens notes.txt for editing,
+              creating it if it does not exist. The shortcut guide appears at
+              the bottom; `Ctrl+O` saves and `Ctrl+X` exits.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -l show line numbers;
+              -v view-only mode; `Ctrl+W` search. Shortcut labels use `^` for
+              Ctrl.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Saving changes modifies
+              the file. Check the filename before saving, especially when
+              editing configuration files.
+            </p>
+          </section>
+        </section>
+        <section id="category-4" class="article-section">
+          <h2>6. Searching and filtering</h2>
+          <p>
+            Locate files and process text output using common command-line
+            tools.
+          </p>
+          <section class="command-entry" id="cmd-find">
+            <h3>16. <code>find</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>find START_PATH [TESTS] [ACTIONS]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Searches a directory tree for files
+              and directories matching conditions.
+            </p>
+            <pre><code>find ~/Projects -type f -name &#x27;*.java&#x27;</code></pre>
+            <p>
+              <strong>Example explained:</strong> Searches under Projects for
+              regular files whose names end in `.java`. The quotes keep the
+              shell from expanding the wildcard before find receives it.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -type f regular files;
+              -type d directories; -name pattern match names; -iname
+              case-insensitive name match; -mtime N filter by modification age.
+              GNU find has additional options.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> A search is read-only.
+              Actions such as `-delete` or `-exec rm` can remove data; do not
+              add them unless you fully understand the expression.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-grep">
+            <h3>17. <code>grep</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>grep [OPTIONS] PATTERN [FILE...]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Prints lines that match a text
+              pattern.
+            </p>
+            <pre><code>grep -in &#x27;error&#x27; application.log</code></pre>
+            <p>
+              <strong>Example explained:</strong> Searches the log without case
+              sensitivity and prints matching line numbers.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -i ignore case; -n show
+              line numbers; -r search directories recursively; -v show
+              non-matching lines; -E use extended regular expressions; -F treat
+              the pattern as fixed text.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Quote
+              patterns containing spaces or shell-special characters. GNU grep
+              and other grep implementations can differ in extended options.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-sort">
+            <h3>18. <code>sort</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>sort [OPTIONS] [FILE...]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Sorts lines of text and writes the
+              sorted result to standard output.
+            </p>
+            <pre><code>sort -n marks.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Sorts numeric values in
+              marks.txt in numeric order. Without `-n`, sorting is generally
+              lexical rather than numeric.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -n numeric sort; -r
+              reverse; -u output only one line from each equal sort group; -k
+              choose a sort key; -t set a field separator.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only unless output
+              is redirected. `sort file &gt; file` is unsafe because the shell
+              may truncate the input before sort reads it; write to a different
+              output file.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-uniq">
+            <h3>19. <code>uniq</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>uniq [OPTIONS] [INPUT [OUTPUT]]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Filters or reports adjacent
+              repeated lines. It usually works best after `sort` when duplicates
+              may be separated.
+            </p>
+            <pre><code>sort names.txt | uniq -c</code></pre>
+            <p>
+              <strong>Example explained:</strong> Sorts the names so identical
+              lines are adjacent, then prints each unique line with the number
+              of occurrences.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -c prefix lines with
+              counts; -d show repeated lines only; -u show lines that are not
+              repeated. Comparison is line-based.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only in this
+              pipeline.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-wc">
+            <h3>20. <code>wc</code></h3>
+            <p><strong>Syntax:</strong> <code>wc [OPTIONS] [FILE...]</code></p>
+            <p>
+              <strong>What it does:</strong> Counts lines, words, bytes, or
+              characters in input.
+            </p>
+            <pre><code>wc -l *.java</code></pre>
+            <p>
+              <strong>Example explained:</strong> Prints a line count for each
+              Java source file matched by the shell wildcard.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -l lines; -w words; -c
+              bytes; -m characters; -L maximum line length in GNU wc.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Wildcards are
+              expanded by the shell, so the files included depend on the current
+              directory.
+            </p>
+          </section>
+        </section>
+        <section id="category-5" class="article-section">
+          <h2>7. Permissions and ownership</h2>
+          <p>Inspect user identity and control who can access files.</p>
+          <section class="command-entry" id="cmd-chmod">
+            <h3>21. <code>chmod</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>chmod [OPTIONS] MODE FILE...</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Changes file or directory
+              permission bits.
+            </p>
+            <pre><code>chmod u+x deploy.sh</code></pre>
+            <p>
+              <strong>Example explained:</strong> Adds execute permission for
+              the file owner, allowing that user to run the script if its
+              contents and interpreter are valid.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> Symbolic modes include
+              `u` user/owner, `g` group, `o` others, and `a` all; `+` adds, `-`
+              removes, and `=` sets. Numeric modes such as 755 are also common.
+              `-R` applies recursively.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Can make files
+              inaccessible or expose sensitive files. Avoid broad recursive
+              changes such as `chmod -R 777`; use the narrowest permission
+              change needed.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-chown">
+            <h3>22. <code>chown</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>chown [OPTIONS] OWNER[:GROUP] FILE...</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Changes the owner and optionally
+              the group of files or directories.
+            </p>
+            <pre><code>sudo chown alice:developers project.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Changes the owner to alice and
+              group to developers. The example uses sudo because changing
+              ownership usually requires administrator privileges.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -R recursive; -v report
+              changes; `--reference=FILE` copy ownership from another file on
+              GNU chown.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Usually requires root or
+              specific capabilities. A wrong recursive path can affect many
+              files; verify the target before using `-R`.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-chgrp">
+            <h3>23. <code>chgrp</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>chgrp [OPTIONS] GROUP FILE...</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Changes the group ownership of
+              files or directories.
+            </p>
+            <pre><code>chgrp developers shared-notes.txt</code></pre>
+            <p>
+              <strong>Example explained:</strong> Changes the file&#x27;s group
+              to developers if the current user is allowed to make that change
+              (often by owning the file and belonging to the target group).
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -R recursive; -v report
+              changes; `--reference=FILE` copy group ownership on GNU chgrp.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> May require
+              administrator privileges depending on the file and group. Check
+              the group name and path first.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-umask">
+            <h3>24. <code>umask</code></h3>
+            <p><strong>Syntax:</strong> <code>umask [OPTION] [MASK]</code></p>
+            <p>
+              <strong>What it does:</strong> Displays or sets the file-creation
+              permission mask for the current shell and its child processes.
+            </p>
+            <pre><code>umask</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays the current mask. A
+              common value is 022, but the actual value depends on system and
+              user configuration.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `umask -S` displays a
+              symbolic form in common shells; `umask 027` sets a mask for the
+              current shell session. New file and directory modes are affected
+              by the mask; it does not change existing files.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Setting a mask changes
+              defaults for subsequently created files in that shell/session. It
+              does not require root.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-id">
+            <h3>25. <code>id</code></h3>
+            <p><strong>Syntax:</strong> <code>id [OPTIONS] [USER]</code></p>
+            <p>
+              <strong>What it does:</strong> Displays user and group identity
+              information, including numeric IDs.
+            </p>
+            <pre><code>id</code></pre>
+            <p>
+              <strong>Example explained:</strong> Shows the current user&#x27;s
+              UID, primary GID, and supplementary groups. This helps diagnose
+              access and group-membership issues.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -u print only the
+              effective user ID; -g print only the effective group ID; -G print
+              supplementary group IDs; -n show names with ID-selection options.
+            </p>
+            <p><strong>Permissions and caution:</strong> Read-only.</p>
+          </section>
+        </section>
+        <section id="category-6" class="article-section">
+          <h2>8. System information and monitoring</h2>
+          <p>Check the kernel, host, clock, uptime, and memory summary.</p>
+          <section class="command-entry" id="cmd-uname">
+            <h3>26. <code>uname</code></h3>
+            <p><strong>Syntax:</strong> <code>uname [OPTIONS]</code></p>
+            <p>
+              <strong>What it does:</strong> Prints basic information about the
+              running system and kernel.
+            </p>
+            <pre><code>uname -a</code></pre>
+            <p>
+              <strong>Example explained:</strong> Prints available system
+              information such as kernel name, host name, kernel release,
+              version, machine hardware name, and operating-system information
+              where supported.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -s kernel name; -r
+              kernel release; -m machine hardware name; -a all available fields.
+              Output differs by platform.
+            </p>
+            <p><strong>Permissions and caution:</strong> Read-only.</p>
+          </section>
+          <section class="command-entry" id="cmd-hostnamectl">
+            <h3>27. <code>hostnamectl</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>hostnamectl [OPTIONS] [COMMAND]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Displays or changes system
+              host-name settings on systems using systemd.
+            </p>
+            <pre><code>hostnamectl</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays the static,
+              transient, and related host-name information where available.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `hostnamectl status`
+              displays status explicitly; `hostnamectl set-hostname NAME`
+              changes the system hostname and normally requires administrator
+              privileges.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Systemd-specific; not
+              available on every Linux installation. Changing the host name
+              affects system configuration and may require elevated privileges.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-date">
+            <h3>28. <code>date</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>date [OPTIONS] [+FORMAT]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Displays or sets the system date
+              and time.
+            </p>
+            <pre><code>date &#x27;+%Y-%m-%d %H:%M:%S %Z&#x27;</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays the current date,
+              time, and time-zone abbreviation in a predictable format. The `+`
+              introduces a format string in common implementations.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> Common format markers:
+              `%Y` year, `%m` month, `%d` day, `%H` hour, `%M` minute, `%S`
+              second, `%Z` time zone. Setting system time generally needs
+              administrator privileges.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Displaying the clock is
+              safe. Do not use date-setting options unless you understand the
+              impact on logs, certificates, and scheduled tasks.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-uptime">
+            <h3>29. <code>uptime</code></h3>
+            <p><strong>Syntax:</strong> <code>uptime [OPTIONS]</code></p>
+            <p>
+              <strong>What it does:</strong> Shows how long the system has been
+              running, the number of logged-in users, and load averages.
+            </p>
+            <pre><code>uptime</code></pre>
+            <p>
+              <strong>Example explained:</strong> Provides a quick overview of
+              system uptime and recent load. Load averages are not percentages;
+              interpret them in relation to the number of CPU cores and
+              workload.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -p pretty uptime; -s
+              system start time on common procps implementations.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Output format
+              depends on the implementation.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-free">
+            <h3>30. <code>free</code></h3>
+            <p><strong>Syntax:</strong> <code>free [OPTIONS]</code></p>
+            <p>
+              <strong>What it does:</strong> Reports physical memory and swap
+              usage.
+            </p>
+            <pre><code>free -h</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays memory totals and
+              used/available memory in human-readable units. On Linux, the
+              `available` estimate is often more useful than simply subtracting
+              `used` from `total`.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -h human-readable; -m
+              megabytes; -g gigabytes; -s N refresh every N seconds; -w separate
+              buffers and cache on procps implementations.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Usually
+              provided by the procps/procps-ng package.
+            </p>
+          </section>
+        </section>
+        <section id="category-7" class="article-section">
+          <h2>9. Process management</h2>
+          <p>Inspect running programs and send signals to processes.</p>
+          <figure class="article-content-image">
+            <img
+              src="../assets/images/articles/linux-commands-cheat-sheet/linux-process-monitoring.png"
+              alt="Linux process monitoring terminal displaying process IDs, CPU usage, memory usage, and running programs."
+              width="2752"
+              height="1536"
+              loading="lazy"
+            />
+          </figure>
+          <section class="command-entry" id="cmd-ps">
+            <h3>31. <code>ps</code></h3>
+            <p><strong>Syntax:</strong> <code>ps [OPTIONS]</code></p>
+            <p>
+              <strong>What it does:</strong> Displays a snapshot of current
+              processes.
+            </p>
+            <pre><code>ps aux</code></pre>
+            <p>
+              <strong>Example explained:</strong> Shows processes from all users
+              in a widely used BSD-style format, including process IDs, CPU and
+              memory columns, and command names. The `aux` form is common with
+              procps but is not a universal POSIX spelling.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `ps -ef` is another
+              common full-process listing; `ps -u USER` filters by user; `ps -p
+              PID` inspects a specific process. Option styles vary by
+              implementation.
+            </p>
+            <p><strong>Permissions and caution:</strong> Read-only.</p>
+          </section>
+          <section class="command-entry" id="cmd-top">
+            <h3>32. <code>top</code></h3>
+            <p><strong>Syntax:</strong> <code>top [OPTIONS]</code></p>
+            <p>
+              <strong>What it does:</strong> Displays a live, periodically
+              refreshed view of processes and system resource usage.
+            </p>
+            <pre><code>top</code></pre>
+            <p>
+              <strong>Example explained:</strong> Opens an interactive monitor.
+              Press `q` to quit. It can help identify processes using
+              substantial CPU or memory.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -u USER filter by user;
+              -p PID monitor selected process IDs; -b batch mode for
+              non-interactive output. Interactive keys depend on implementation.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only unless you use
+              interactive controls to send signals or change priorities. Exit
+              with `q`.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-pgrep">
+            <h3>33. <code>pgrep</code></h3>
+            <p><strong>Syntax:</strong> <code>pgrep [OPTIONS] PATTERN</code></p>
+            <p>
+              <strong>What it does:</strong> Finds process IDs matching a
+              process name or pattern.
+            </p>
+            <pre><code>pgrep -a firefox</code></pre>
+            <p>
+              <strong>Example explained:</strong> Prints matching process IDs
+              and their full command lines on procps implementations, helping
+              identify the process before acting on it.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -a list full command
+              line; -u USER match by effective user; -f match against the full
+              command line; -l list process name with PID.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. A broad
+              pattern can match more processes than intended; inspect the output
+              before using a signal.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-pkill">
+            <h3>34. <code>pkill</code></h3>
+            <p><strong>Syntax:</strong> <code>pkill [OPTIONS] PATTERN</code></p>
+            <p>
+              <strong>What it does:</strong> Sends a signal to processes
+              matching a name or pattern. It is the process-selection
+              counterpart of pgrep.
+            </p>
+            <pre><code>pkill -TERM -u &quot;$USER&quot; my-test-app</code></pre>
+            <p>
+              <strong>Example explained:</strong> Requests normal termination of
+              matching instances of my-test-app owned by the current user.
+              Replace the pattern with the exact process name you intend to
+              stop.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -TERM send the
+              termination signal; -KILL send an uncatchable kill signal; -u USER
+              restrict by user; -f match full command line. Options depend on
+              procps implementation.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Can terminate
+              applications and cause unsaved work to be lost. Prefer the default
+              TERM signal; reserve KILL for an unresponsive process after safer
+              methods fail.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-kill">
+            <h3>35. <code>kill</code></h3>
+            <p><strong>Syntax:</strong> <code>kill [OPTIONS] PID...</code></p>
+            <p>
+              <strong>What it does:</strong> Sends a signal to one or more
+              process IDs. Despite its name, it can send signals other than
+              termination.
+            </p>
+            <pre><code>kill -TERM 2480</code></pre>
+            <p>
+              <strong>Example explained:</strong> Sends the TERM signal to
+              process 2480, asking it to shut down gracefully. Replace 2480 with
+              a PID you have verified using ps or pgrep.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `kill -l` lists signal
+              names; `kill -TERM PID` requests termination; `kill -KILL PID`
+              forces termination and should be a last resort. A shell may
+              provide kill as a built-in.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> May stop a program and
+              lose unsaved work. You may only signal processes you own unless
+              you have elevated privileges.
+            </p>
+          </section>
+        </section>
+        <section id="category-8" class="article-section">
+          <h2>10. Networking</h2>
+          <p>
+            Inspect network interfaces, test reachability, and connect to remote
+            systems.
+          </p>
+          <section class="command-entry" id="cmd-ip">
+            <h3>36. <code>ip</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>ip [OPTIONS] OBJECT COMMAND</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Inspects and manages network
+              interfaces, addresses, routes, and related networking objects. It
+              is part of the iproute2 suite on common distributions.
+            </p>
+            <pre><code>ip addr show</code></pre>
+            <p>
+              <strong>Example explained:</strong> Lists network interfaces and
+              assigned addresses. This is a modern alternative to older
+              `ifconfig` examples.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `ip link show` lists
+              links; `ip route show` displays routes; `ip -br addr` gives a
+              brief address summary on supported versions. Changing
+              configuration with `ip` may require root and can disrupt
+              connectivity.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Inspection is read-only.
+              Commands such as `ip link set ... down` or `ip addr flush ...`
+              change connectivity and should not be used casually.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-ping">
+            <h3>37. <code>ping</code></h3>
+            <p><strong>Syntax:</strong> <code>ping [OPTIONS] HOST</code></p>
+            <p>
+              <strong>What it does:</strong> Sends ICMP echo requests to test
+              whether a host responds and to observe round-trip times.
+            </p>
+            <pre><code>ping -c 4 example.com</code></pre>
+            <p>
+              <strong>Example explained:</strong> Sends four requests and then
+              exits. A missing response does not prove that a host is offline;
+              firewalls may block ICMP.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -c COUNT number of
+              requests; -i INTERVAL interval between requests; -W timeout for a
+              reply on common iputils implementations. Some systems use
+              different options.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Usually no administrator
+              privileges on modern systems, but implementation and system policy
+              can differ. Use only against systems you are permitted to test.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-ss">
+            <h3>38. <code>ss</code></h3>
+            <p><strong>Syntax:</strong> <code>ss [OPTIONS] [FILTER]</code></p>
+            <p>
+              <strong>What it does:</strong> Displays socket information,
+              including listening and established network connections. It is
+              part of iproute2.
+            </p>
+            <pre><code>ss -tuln</code></pre>
+            <p>
+              <strong>Example explained:</strong> Lists TCP and UDP sockets
+              listening on local addresses, without resolving service names or
+              host names.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -t TCP; -u UDP; -l
+              listening; -n numeric addresses and ports; -p show associated
+              processes where permissions allow; -a all sockets.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Process
+              details may be restricted for ordinary users.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-curl">
+            <h3>39. <code>curl</code></h3>
+            <p><strong>Syntax:</strong> <code>curl [OPTIONS] URL</code></p>
+            <p>
+              <strong>What it does:</strong> Transfers data to or from a URL and
+              supports many protocols. It is commonly used to test HTTP
+              endpoints and download resources.
+            </p>
+            <pre><code>curl -I https://example.com</code></pre>
+            <p>
+              <strong>Example explained:</strong> Sends an HTTP request asking
+              for response headers, which is useful for checking a web server
+              response without downloading the full page body.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -I fetch headers only
+              for HTTP; -L follow redirects; -o FILE save output to a file; -O
+              save using the remote filename; -s silent mode. HTTPS certificate
+              checks are enabled by default.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Downloading a file is
+              generally safe, but executing downloaded scripts is not. Do not
+              use `-k` to bypass TLS certificate checks unless you understand
+              the risk.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-ssh">
+            <h3>40. <code>ssh</code></h3>
+            <p><strong>Syntax:</strong> <code>ssh [OPTIONS] USER@HOST</code></p>
+            <p>
+              <strong>What it does:</strong> Opens an encrypted remote shell
+              session using the Secure Shell protocol.
+            </p>
+            <pre><code>ssh student@server.example.com</code></pre>
+            <p>
+              <strong>Example explained:</strong> Attempts to connect to the
+              host as user `student`. The host name and account must be replaced
+              with details supplied by the server administrator.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -p PORT choose a port;
+              -i FILE select a private-key identity file; -v show connection
+              diagnostics; `ssh-keygen` creates keys but is a separate command.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Remote login requires
+              authorization and a reachable SSH server. Verify host keys and
+              never share private keys or passwords.
+            </p>
+          </section>
+        </section>
+        <section id="category-9" class="article-section">
+          <h2>11. Package management</h2>
+          <p>
+            Install and update software using the package manager for your
+            distribution.
+          </p>
+          <section class="command-entry" id="cmd-apt">
+            <h3>41. <code>apt</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>sudo apt [COMMAND] [PACKAGE]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Manages packages on Debian-based
+              distributions such as Ubuntu and Debian. APT resolves package
+              dependencies using configured repositories.
+            </p>
+            <pre><code>sudo apt update &amp;&amp; sudo apt install curl</code></pre>
+            <p>
+              <strong>Example explained:</strong> Refreshes repository package
+              indexes, then installs curl. The `&amp;&amp;` means the install
+              runs only if the update command succeeds.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `apt update` refreshes
+              indexes; `apt upgrade` upgrades installed packages; `apt install
+              NAME` installs; `apt remove NAME` removes a package but generally
+              keeps configuration files. `apt` is intended for interactive use;
+              scripts commonly use apt-get.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Installing, removing, or
+              upgrading system packages requires administrator privileges. Read
+              the proposed changes before confirming.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-dnf">
+            <h3>42. <code>dnf</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>sudo dnf [COMMAND] [PACKAGE]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Manages RPM packages on Fedora and
+              other distributions that use DNF.
+            </p>
+            <pre><code>sudo dnf install curl</code></pre>
+            <p>
+              <strong>Example explained:</strong> Installs the curl package and
+              resolves dependencies from enabled repositories.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `dnf check-update`
+              checks for available updates; `dnf upgrade` applies updates; `dnf
+              remove NAME` removes a package. Exact subcommands and defaults can
+              vary by DNF version and distribution.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Requires administrator
+              privileges for system-wide changes. Review the transaction summary
+              before confirming.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-pacman">
+            <h3>43. <code>pacman</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>sudo pacman [OPTIONS] [PACKAGE]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Manages packages on Arch Linux and
+              Arch-based distributions.
+            </p>
+            <pre><code>sudo pacman -Syu</code></pre>
+            <p>
+              <strong>Example explained:</strong> Synchronizes package databases
+              and performs a full system upgrade. Arch users should avoid
+              partial upgrades.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -S package operations;
+              -Syu synchronize databases and upgrade the system; -Ss search
+              repositories; -R remove a package. Do not use `pacman -Sy package`
+              as a routine install pattern because partial upgrades are
+              unsupported.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Requires administrator
+              privileges. Read package prompts carefully and follow Arch&#x27;s
+              full-upgrade model.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-zypper">
+            <h3>44. <code>zypper</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>sudo zypper [COMMAND] [PACKAGE]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Manages packages on SUSE Linux
+              Enterprise and openSUSE systems.
+            </p>
+            <pre><code>sudo zypper install curl</code></pre>
+            <p>
+              <strong>Example explained:</strong> Installs curl from configured
+              repositories and resolves dependencies.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `zypper refresh`
+              refreshes repository metadata; `zypper update` updates installed
+              packages; `zypper remove NAME` removes a package. Options and
+              behavior may differ between versions.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Requires administrator
+              privileges for system-wide changes. Review the packages to be
+              installed or removed before confirming.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-dpkg">
+            <h3>45. <code>dpkg</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>dpkg [OPTIONS] PACKAGE_FILE or PACKAGE</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Low-level Debian package tool for
+              installing, inspecting, and removing local `.deb` packages. It
+              does not automatically resolve and download dependencies like APT.
+            </p>
+            <pre><code>dpkg -l | grep &#x27;^ii&#x27;</code></pre>
+            <p>
+              <strong>Example explained:</strong> Lists package database entries
+              and filters for lines whose status begins with `ii`, commonly
+              indicating packages installed and configured.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `dpkg -L PACKAGE` lists
+              files installed by a package; `dpkg -S PATH` searches which
+              installed package owns a path; `sudo dpkg -i FILE.deb` installs a
+              local package but may leave dependencies unresolved.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Installing or removing
+              packages requires administrator privileges. Prefer APT for normal
+              repository-based installs because it handles dependency
+              resolution.
+            </p>
+          </section>
+        </section>
+        <section id="category-10" class="article-section">
+          <h2>12. Storage and disk management</h2>
+          <p>Check filesystem capacity and inspect or mount storage devices.</p>
+          <section class="command-entry" id="cmd-df">
+            <h3>46. <code>df</code></h3>
+            <p><strong>Syntax:</strong> <code>df [OPTIONS] [FILE...]</code></p>
+            <p>
+              <strong>What it does:</strong> Reports available and used space on
+              mounted filesystems.
+            </p>
+            <pre><code>df -h</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays filesystem sizes and
+              free space in human-readable units. It reports filesystem
+              capacity, not the size of one chosen folder.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -h human-readable; -T
+              show filesystem type on GNU df; -i show inode usage; `df -h /home`
+              reports the filesystem containing /home.
+            </p>
+            <p><strong>Permissions and caution:</strong> Read-only.</p>
+          </section>
+          <section class="command-entry" id="cmd-du">
+            <h3>47. <code>du</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>du [OPTIONS] [FILE or DIRECTORY...]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Estimates space used by files and
+              directories.
+            </p>
+            <pre><code>du -sh ~/Downloads</code></pre>
+            <p>
+              <strong>Example explained:</strong> Displays one summarized,
+              human-readable total for the Downloads directory.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -s summary only; -h
+              human-readable; -a include files as well as directories; -d N
+              limit depth in GNU du. Results can differ from `df` because of
+              filesystem allocation, links, and deleted-but-open files.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Scanning
+              large directory trees can take time.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-lsblk">
+            <h3>48. <code>lsblk</code></h3>
+            <p>
+              <strong>Syntax:</strong> <code>lsblk [OPTIONS] [DEVICE...]</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Lists block devices such as disks,
+              partitions, and their mount points. It is commonly supplied by
+              util-linux.
+            </p>
+            <pre><code>lsblk -f</code></pre>
+            <p>
+              <strong>Example explained:</strong> Shows filesystem information,
+              labels, UUIDs, and mount points for detected block devices where
+              available.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> -f filesystem details;
+              -o choose output columns; -p show full device paths; `lsblk -o
+              NAME,SIZE,TYPE,MOUNTPOINTS` displays selected columns on current
+              util-linux versions.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Read-only. Use this to
+              identify a device before mounting or formatting; never guess a
+              device name.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-mount">
+            <h3>49. <code>mount</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>mount [OPTIONS] DEVICE DIRECTORY</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Attaches a filesystem to a
+              directory called a mount point so its contents become accessible
+              there.
+            </p>
+            <pre><code>sudo mount /dev/sdb1 /mnt/usb</code></pre>
+            <p>
+              <strong>Example explained:</strong> Attempts to mount the
+              partition /dev/sdb1 at /mnt/usb. The device must exist, the
+              directory must exist, and the filesystem must be supported.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `mount` with no
+              arguments lists mounted filesystems on common systems; -t TYPE
+              specifies a filesystem type when needed; `findmnt` is often a
+              convenient inspection tool but is a separate command.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Mounting normally
+              requires administrator privileges. Verify the device with `lsblk
+              -f` and ensure the target directory is correct. Do not use an
+              example device path blindly.
+            </p>
+          </section>
+          <section class="command-entry" id="cmd-umount">
+            <h3>50. <code>umount</code></h3>
+            <p>
+              <strong>Syntax:</strong>
+              <code>umount [OPTIONS] DEVICE or MOUNT_POINT</code>
+            </p>
+            <p>
+              <strong>What it does:</strong> Detaches a mounted filesystem from
+              the directory tree. The command is spelled `umount`, without the
+              second n.
+            </p>
+            <pre><code>sudo umount /mnt/usb</code></pre>
+            <p>
+              <strong>Example explained:</strong> Unmounts the filesystem
+              mounted at /mnt/usb. Close files and terminals using that mount
+              point first.
+            </p>
+            <p>
+              <strong>Useful options and notes:</strong> `umount -l` performs a
+              lazy unmount on Linux; it is not a routine fix for a busy device.
+              `umount -f` is filesystem- and situation-dependent and should not
+              be used casually.
+            </p>
+            <p>
+              <strong>Permissions and caution:</strong> Usually requires
+              administrator privileges. Do not unplug removable storage until
+              unmounting succeeds; pending writes may otherwise be lost.
+            </p>
+          </section>
+        </section>
+
+        <section id="practical-examples" class="article-section">
+          <h2>13. Practical Linux Command Examples</h2>
+          <p>
+            Real tasks often require more than one command. The following
+            examples combine the tools above. Run them in a terminal and replace
+            sample paths or names with values from your own system.
+          </p>
+          <figure class="article-content-image">
+            <img
+              src="../assets/images/articles/linux-commands-cheat-sheet/linux-practical-command-examples.png"
+              alt="Linux terminal examples showing file searching, text searching, disk usage, and memory inspection commands."
+              width="2752"
+              height="1536"
+              loading="lazy"
+            />
+          </figure>
+          <h3>1. Find a Java source file by name</h3>
+          <pre><code>find ~/Projects -type f -name '*.java' -print</code></pre>
+          <p>
+            <code>find</code> starts at the Projects directory, limits results
+            to regular files, matches names ending in <code>.java</code>, and
+            prints each match. If the directory does not exist, use the correct
+            starting path.
+          </p>
+          <h3>2. Check available disk space</h3>
+          <pre><code>df -h</code></pre>
+          <p>
+            Shows capacity and available space for mounted filesystems. To check
+            the filesystem containing your home directory, use
+            <code>df -h "$HOME"</code>.
+          </p>
+          <h3>3. Find a running process</h3>
+          <pre><code>pgrep -a firefox
+ps -p 2480 -o pid,ppid,stat,cmd</code></pre>
+          <p>
+            The first command searches for Firefox processes. The second
+            inspects PID 2480 as an example; replace it with a PID returned on
+            your system. Always confirm the process before sending it a signal.
+          </p>
+          <h3>4. Check memory usage</h3>
+          <pre><code>free -h</code></pre>
+          <p>
+            Shows RAM and swap information in readable units. Look at the
+            available-memory estimate as well as used memory; Linux uses
+            otherwise-free RAM for caches.
+          </p>
+          <h3>5. Search for an error in log files</h3>
+          <pre><code>grep -in 'error' ~/app-logs/*.log</code></pre>
+          <p>
+            Searches matching log files without case sensitivity and includes
+            line numbers. If the wildcard matches no files, the shell may pass
+            the unmatched pattern through or report an error depending on the
+            shell.
+          </p>
+          <h3>6. Identify network addresses and listening ports</h3>
+          <pre><code>ip addr show
+ss -tuln</code></pre>
+          <p>
+            The first command lists network interfaces and assigned addresses.
+            The second lists listening TCP and UDP sockets with numeric
+            addresses and ports. These commands inspect state; they do not
+            change network settings.
+          </p>
+          <h3>7. Add execute permission to your own script</h3>
+          <pre><code>chmod u+x ./backup.sh
+ls -l ./backup.sh</code></pre>
+          <p>
+            The first command adds execute permission for the file owner. The
+            second lets you verify the permission bits. Only do this for a
+            script you trust and have reviewed.
+          </p>
+          <h3>8. Count lines in source files</h3>
+          <pre><code>wc -l src/*.java</code></pre>
+          <p>
+            Counts lines in Java files in the src directory. The shell expands
+            the wildcard before running <code>wc</code>.
+          </p>
+        </section>
+
+        <section id="use-carefully" class="article-section">
+          <h2>14. Linux Commands Beginners Should Use Carefully</h2>
+          <p>
+            Linux gives users powerful control over files and the operating
+            system. That power also means a short command can remove data or
+            interrupt a service. Pause before using commands that modify many
+            files, change ownership, manage packages, or affect mounted storage.
+          </p>
+          <ul>
+            <li>
+              <strong><code>rm</code>:</strong> removes directory entries.
+              Recursive removal can delete entire directory trees. Check the
+              path with <code>pwd</code> and <code>ls</code>; use
+              <code>rm -i</code> for interactive confirmation.
+            </li>
+            <li>
+              <strong><code>chmod -R</code> and <code>chown -R</code>:</strong>
+              recursively change permissions or ownership. A wrong path can
+              affect a large part of a project or system. Avoid blanket
+              permissions such as 777.
+            </li>
+            <li>
+              <strong><code>mv</code> and <code>cp</code>:</strong> may
+              overwrite a destination. Use interactive options and inspect the
+              target before proceeding.
+            </li>
+            <li>
+              <strong
+                ><code>kill</code>, <code>pkill</code>, and
+                <code>top</code> controls:</strong
+              >
+              can stop programs. Prefer a graceful TERM signal and verify the
+              target process first.
+            </li>
+            <li>
+              <strong><code>sudo</code>:</strong> gives a command elevated
+              authority. Use it only when the task requires it and you
+              understand what the command will change.
+            </li>
+            <li>
+              <strong><code>mount</code> and <code>umount</code>:</strong>
+              affect access to storage. Identify devices with
+              <code>lsblk -f</code>, close files using the mount, and wait for
+              unmount to succeed before disconnecting removable media.
+            </li>
+            <li>
+              <strong>Package managers:</strong> can install, remove, or upgrade
+              system software. Read the transaction summary. On Arch Linux,
+              avoid partial upgrades; use the documented full system upgrade
+              workflow.
+            </li>
+            <li>
+              <strong><code>curl</code> downloads:</strong> downloading a script
+              is not the same as verifying it. Do not pipe an unfamiliar
+              download directly into a shell or run it with sudo.
+            </li>
+          </ul>
+          <p>
+            <strong>Beginner rule:</strong> do not execute a command simply
+            because it appeared in a tutorial or forum. Understand its target,
+            options, and effects first. Test unfamiliar commands on disposable
+            sample files or a virtual machine.
+          </p>
+        </section>
+
+        <section id="mistakes" class="article-section">
+          <h2>15. Common Linux Command Mistakes</h2>
+          <h3>Using the wrong path</h3>
+          <p>
+            Commands operate on paths relative to the current directory unless
+            you provide an absolute path. Run <code>pwd</code> and
+            <code>ls</code> to check where you are before changing or deleting
+            files.
+          </p>
+          <h3>Confusing permission errors with missing files</h3>
+          <p>
+            <code>Permission denied</code> means the current user lacks a
+            required permission or access is blocked by another system policy.
+            Check ownership and permissions with <code>ls -l</code> and identity
+            with <code>id</code>. Do not automatically solve every permission
+            problem with sudo or chmod 777.
+          </p>
+          <h3>Assuming every command is installed</h3>
+          <p>
+            Some tools, including <code>nano</code>, <code>curl</code>, and
+            <code>tree</code>, may not be installed in minimal environments.
+            Check the error message and use your distribution's package manager
+            if installation is appropriate.
+          </p>
+          <h3>Using options from a different implementation</h3>
+          <p>
+            Linux distributions may ship GNU, BusyBox, or other implementations
+            of familiar utilities. Check <code>man COMMAND</code> or
+            <code>COMMAND --help</code> on your own system instead of assuming
+            every option is universal.
+          </p>
+          <h3>Forgetting spaces and quoting paths</h3>
+          <p>
+            <code>cd My Projects</code> is interpreted as multiple arguments.
+            Use <code>cd "My Projects"</code>. Quotes also protect wildcard
+            characters from being expanded too early when a command needs to
+            receive the pattern itself.
+          </p>
+          <h3>Running commands from the wrong directory</h3>
+          <p>
+            A relative path such as <code>rm output.txt</code> affects the file
+            named output.txt in the current directory. Confirm the location with
+            <code>pwd</code> before running commands that change data.
+          </p>
+        </section>
+
+        <section id="practice" class="article-section">
+          <h2>16. How to Practise Linux Commands Safely</h2>
+          <p>
+            Use a practice directory in your home folder so your first
+            experiments do not affect system files.
+          </p>
+          <pre><code>mkdir -p ~/linux-practice
+cd ~/linux-practice
+mkdir notes projects logs
+touch notes/first.txt
+printf 'Linux practice\nSecond line\n' > notes/first.txt
+ls -lah
+cat notes/first.txt</code></pre>
+          <p>
+            This creates a small directory structure, writes sample text to a
+            file, lists the contents, and reads the file. The redirection
+            operator <code>&gt;</code> creates or replaces the destination file,
+            so use it only with a practice file you are happy to overwrite.
+          </p>
+          <h3>A simple seven-session learning sequence</h3>
+          <ol>
+            <li>
+              <strong>Session 1:</strong> practise <code>pwd</code>,
+              <code>ls</code>, and <code>cd</code> until navigating feels
+              natural.
+            </li>
+            <li>
+              <strong>Session 2:</strong> create and manage practice files using
+              <code>mkdir</code>, <code>touch</code>, <code>cp</code>, and
+              <code>mv</code>.
+            </li>
+            <li>
+              <strong>Session 3:</strong> read files with <code>cat</code>,
+              <code>less</code>, <code>head</code>, and <code>tail</code>.
+            </li>
+            <li>
+              <strong>Session 4:</strong> search with <code>find</code> and
+              <code>grep</code>, then practise pipes with <code>sort</code>,
+              <code>uniq</code>, and <code>wc</code>.
+            </li>
+            <li>
+              <strong>Session 5:</strong> understand <code>ls -l</code>,
+              <code>id</code>, <code>chmod</code>, and <code>umask</code> using
+              files inside your practice folder.
+            </li>
+            <li>
+              <strong>Session 6:</strong> inspect the system using
+              <code>uname</code>, <code>uptime</code>, <code>free</code>,
+              <code>ps</code>, and <code>top</code>.
+            </li>
+            <li>
+              <strong>Session 7:</strong> practise read-only network and storage
+              checks such as <code>ip addr show</code>, <code>ss -tuln</code>,
+              <code>df -h</code>, and <code>lsblk -f</code>.
+            </li>
+          </ol>
+          <p>
+            If you use Windows, Windows Subsystem for Linux (WSL) provides a way
+            to run a Linux distribution alongside Windows. A virtual machine is
+            another option. Both are useful for learning without experimenting
+            on a production server. Always keep backups of important files.
+          </p>
+          <p>
+            For a broader development learning sequence, see Nexora AI's
+            <a href="complete-computer-science-roadmap.html"
+              >Complete Computer Science Roadmap</a
+            >
+            and our guide to
+            <a href="10-github-projects-for-computer-science-students.html"
+              >GitHub Projects for Computer Science Students</a
+            >.
+          </p>
+        </section>
+
+        <section id="faq" class="article-section">
+          <h2>17. Frequently Asked Questions</h2>
+          <h3>What are the basic Linux commands for beginners?</h3>
+          <p>
+            Start with <code>pwd</code>, <code>ls</code>, <code>cd</code>,
+            <code>mkdir</code>, <code>touch</code>, <code>cp</code>,
+            <code>mv</code>, <code>cat</code>, <code>less</code>, and
+            <code>rm</code>. Learn the effect of each command in a practice
+            folder before using it on important files.
+          </p>
+          <h3>How many Linux commands should I learn first?</h3>
+          <p>
+            There is no required number. Learn a small set that covers
+            navigation, file operations, text viewing, searching, and system
+            inspection. Add networking, permissions, processes, and package
+            management as you need them.
+          </p>
+          <h3>
+            Are Linux commands the same on Ubuntu, Fedora, and Arch Linux?
+          </h3>
+          <p>
+            Many everyday commands such as <code>pwd</code>, <code>ls</code>,
+            <code>cp</code>, and <code>grep</code> are available across common
+            distributions. Package-management commands differ: Ubuntu and Debian
+            use APT, Fedora uses DNF, Arch uses pacman, and openSUSE uses
+            zypper. Options can also differ when distributions use different
+            implementations.
+          </p>
+          <h3>What is the difference between a terminal and a shell?</h3>
+          <p>
+            The terminal provides the text interface; the shell interprets
+            commands typed into that interface and launches programs. Bash and
+            Zsh are examples of shells.
+          </p>
+          <h3>How do I find a file in Linux?</h3>
+          <p>
+            Use <code>find</code> to search directories by name, type, or other
+            conditions. For example,
+            <code>find ~/Documents -type f -name 'report.pdf'</code> searches
+            the Documents directory tree for regular files with that exact name.
+          </p>
+          <h3>How do I check disk space in Linux?</h3>
+          <p>
+            Use <code>df -h</code> to check filesystem capacity and
+            <code>du -sh DIRECTORY</code> to estimate the space used by a
+            particular directory.
+          </p>
+          <h3>Which Linux commands require sudo?</h3>
+          <p>
+            Read-only commands such as <code>pwd</code>, <code>ls</code>,
+            <code>df</code>, and <code>free</code> normally do not require sudo.
+            System-wide package changes, many ownership changes, mounting
+            filesystems, and certain network or service changes usually require
+            administrator privileges. Requirements depend on system policy and
+            file ownership.
+          </p>
+          <h3>Can I practise Linux commands on Windows?</h3>
+          <p>
+            Yes. You can use Windows Subsystem for Linux or a Linux virtual
+            machine. These provide a Linux environment in which you can practise
+            commands without replacing Windows.
+          </p>
+          <h3>Where can I find the full syntax of a Linux command?</h3>
+          <p>
+            Use the command's manual page with <code>man COMMAND</code>, where
+            available. You can also try <code>COMMAND --help</code> or consult
+            the official documentation for the relevant tool and distribution.
+          </p>
+        </section>
+
+        <section id="references" class="article-section">
+          <h2>18. Official Documentation and Further Reading</h2>
+          <p>
+            Command options can vary by distribution, package version, shell,
+            and implementation. Use the documentation installed on your machine
+            as the final reference for the exact environment where you are
+            working.
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.gnu.org/software/coreutils/manual/coreutils.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GNU Coreutils Manual</a
+              >
+              — file, directory, permission, and storage utilities such as ls,
+              cp, mv, rm, chmod, df, and du.
+            </li>
+            <li>
+              <a
+                href="https://www.gnu.org/software/findutils/manual/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GNU Findutils Manual</a
+              >
+              — find and related file-search tools.
+            </li>
+            <li>
+              <a
+                href="https://www.gnu.org/software/grep/manual/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GNU Grep Manual</a
+              >
+              — grep syntax, matching options, and examples.
+            </li>
+            <li>
+              <a
+                href="https://man7.org/linux/man-pages/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Linux man-pages project</a
+              >
+              — online manual pages for Linux system interfaces and many
+              command-line tools.
+            </li>
+            <li>
+              <a
+                href="https://ubuntu.com/server/docs/package-management/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ubuntu package management documentation</a
+              >
+              — APT and dpkg workflows.
+            </li>
+            <li>
+              <a
+                href="https://wiki.archlinux.org/title/Pacman"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ArchWiki: pacman</a
+              >
+              — package operations and important full-upgrade guidance for Arch
+              Linux.
+            </li>
+            <li>
+              <a
+                href="https://fedoraproject.org/wiki/User_Guide_-_Managing_Software"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Fedora Project: Managing Software</a
+              >
+              — command-line package installation, upgrades, and removal with
+              DNF.
+            </li>
+            <li>
+              <a
+                href="https://doc.opensuse.org/documentation/tumbleweed/zypper/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >openSUSE Zypper documentation</a
+              >
+              — package installation, updates, and repository management.
+            </li>
+            <li>
+              <a
+                href="https://ubuntu.com/server/docs/configuring-networks/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ubuntu networking documentation</a
+              >
+              — examples using iproute2 and network configuration.
+            </li>
+            <li>
+              <a
+                href="https://www.openssh.com/manual.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >OpenSSH manuals</a
+              >
+              — SSH client and secure remote access documentation.
+            </li>
+            <li>
+              <a
+                href="https://curl.se/docs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >curl documentation</a
+              >
+              — options and protocol behavior for curl.
+            </li>
+          </ul>
+        </section>
+
+        <section id="conclusion" class="article-section">
+          <h2>19. Conclusion</h2>
+          <p>
+            You do not need to memorize every Linux command before you can use
+            the terminal productively. Learn the commands that solve your
+            current problem, understand their options, and practise in a safe
+            environment. Over time, navigation, file management, searching,
+            process inspection, networking, and package management will become
+            familiar parts of your development workflow.
+          </p>
+          <p>
+            Keep this Linux commands cheat sheet as a reference, but use the
+            manual pages and distribution documentation whenever a command may
+            change important files or system settings.
+          </p>
+          <p>
+            <strong>Next step:</strong> Set up a small Linux practice
+            environment and complete the seven-session learning sequence above.
+            Then apply what you learn to a programming project or development
+            workflow.
+          </p>
+          <p>
+            To continue building your technical foundation, explore the
+            <a href="complete-computer-science-roadmap.html"
+              >Complete Computer Science Roadmap</a
+            >, practise with
+            <a href="10-github-projects-for-computer-science-students.html"
+              >GitHub project ideas</a
+            >, or learn Java through our
+            <a href="10-java-projects-for-students.html"
+              >Java Projects for Students</a
+            >
+            guide.
+          </p>
+        </section>
+
+        <div class="article-share">
+          <span class="article-share-label">Share this article</span>
+          <button id="share-article" type="button">Share</button>
+          <button id="copy-article-link" type="button">Copy Link</button>
+        </div>
+        <div class="article-navigation-cta">
+          <h2>Build Your Linux and Developer Skills</h2>
+          <p>
+            Use this command reference as a starting point, then apply the
+            skills in real programming and project workflows.
+          </p>
+          <a href="../pages/more-articles.html">Browse All Articles →</a>
+        </div>
+        <aside class="related-articles">
+          <h2>Continue Exploring Nexora AI</h2>
+          <p>
+            Continue with these existing guides to strengthen your computer
+            science and programming skills.
+          </p>
+          <div class="related-articles-grid">
+            <a
+              href="complete-computer-science-roadmap.html"
+              class="related-article-card"
+              ><h3>The Complete Computer Science Roadmap</h3>
+              <p>
+                Plan your programming, computer science, and project-building
+                progression.
+              </p></a
+            >
+            <a
+              href="10-github-projects-for-computer-science-students.html"
+              class="related-article-card"
+              ><h3>10 GitHub Projects for Computer Science Students</h3>
+              <p>
+                Practise development workflows and build portfolio projects.
+              </p></a
+            >
+            <a
+              href="10-java-projects-for-students.html"
+              class="related-article-card"
+              ><h3>10 Java Projects for Students</h3>
+              <p>
+                Apply programming fundamentals through practical projects.
+              </p></a
+            >
+          </div>
+        </aside>
+      </article>
+    </main>
+    <footer><p>© 2026 Nexora AI. All Rights Reserved.</p></footer>
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
